@@ -1,21 +1,23 @@
 <template>
-  <!-- <h2>My Portfolio</h2> -->
-  <home-page></home-page>
+  <welcome-page></welcome-page>
 </template>
 
 <script>
-import HomePage from "./components/HomePage.vue";
+import WelcomePage from "./components/WelcomePage.vue";
 export default {
   components: {
-    HomePage,
+    WelcomePage,
   },
 };
 </script>
 
 <style>
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
+
 * {
   margin: 0;
   box-sizing: border-box;
+  font-family: Lora, "Arial Narrow Bold", sans-serif;
 }
 /* #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
