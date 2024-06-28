@@ -1,54 +1,171 @@
 <template>
   <div class="container">
     <div class="container1">
-      <p>Welcome, am glad you're here &#x1F942;</p>
-      <h2>M. ABIODUN FATAI</h2>
-      <div>
+      <p class="welcome">Welcome, am glad you're here &#x1F942;</p>
+      <h2 class="myname">M. ABIODUN <span class="fatai">FATAI</span></h2>
+      <div class="nickname">
         <hr />
         <p>mplusAbiodun</p>
       </div>
-      <p>FRONTEND WEB DEVELOPER</p>
-      <p>Please, click me &#x1F60A;</p>
-      <div>
-        <hr />
-        <hr />
-        <hr />
-        <p>PORTFOLIO</p>
+      <p class="frontend">FRONT-END WEB DEVELOPER</p>
+      <div class="explore_cont">
+        <p>LET'S EXPLORE</p>
+        <i class="fa-solid fa-arrow-up-right-from-square"></i>
       </div>
-      <p>SELECTED WORK</p>
-      <p>2022 - 2024</p>
+      <div class="lines">
+        <hr class="first_line" />
+        <hr class="second_line" />
+        <hr class="third_line" />
+      </div>
+      <div class="footer">
+        <p>SELECTED WORKS</p>
+        <p>2022 - 2024</p>
+      </div>
     </div>
     <div class="container2">
-      <p>2022 - 2024</p>
+      <!-- <h2> -->
+      <!-- <span>P</span>
+          <span>O</span>
+          <span>R</span>
+          <span>T</span>
+          <span>F</span>
+          <span>O</span>
+          <span>L</span>
+          <span>I</span>
+          <span>0</span> -->
+      <!-- <span>2</span>
+          <span>0</span>
+          <span>2</span>
+          <span>2</span>
+          <span></span>
+          <span>-</span>
+          <span></span>
+          <span>2</span>
+          <span>0</span>
+          <span>2</span>
+          <span>4</span> -->
+      <!-- </h2> -->
+      <h2>2022 - 2024</h2>
     </div>
   </div>
 </template>
 <style scoped>
 .container {
-  font-family: "Arial Narrow Bold", sans-serif;
-  /* width: 70%; */
   display: flex;
   flex-direction: row;
-  padding: 0 15rem;
+  padding: 3.5rem 14rem;
   margin: 0 auto;
-  /* background: red; */
-  /* background-image: url("data:image/jpeg;base64,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"); */
-  /* background-image: url("https://img.freepik.com/premium-photo/black-white-background-with-white-black-white-pattern_1148384-30979.jpg?w=740"); */
-  background-image: url("@/assets/backgroung.png");
+  background-image: url("@/assets/backg4.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 .container1 {
-  width: 75%;
-  height: 100vh;
-  /* background: black; */
+  width: 70%;
+  padding: 3rem 0;
+  background: black;
   color: #fff;
+  border-radius: 10px;
+  border: 1.5px solid #fff;
+  border-right: none;
+}
+.welcome {
+  display: none;
+  color: #daa520;
+  font-size: 12px;
+  letter-spacing: 0.9px;
+  margin-left: 4rem;
+}
+.myname {
+  margin: 2rem 0 0 3rem;
+  width: 19rem;
+  font-size: 45px;
+  text-align: right;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+.nickname {
+  display: flex;
+  margin: -5px 0 0 8.5rem;
+}
+.nickname hr {
+  width: 5rem;
+  height: 1px;
+  margin: 8px 8px 0 0;
+  border: 1px solid #a4790b;
+}
+.nickname p {
+  font-size: 12px;
+  letter-spacing: 4.3px;
+  opacity: 70%;
+  color: #daa520;
+}
+.frontend {
+  margin: 4rem auto 1rem;
+  width: 20rem;
+  font-size: 35px;
+  text-align: center;
+  letter-spacing: 1px;
+  opacity: 50%;
+}
+.explore_cont {
+  display: flex;
+  justify-content: center;
+  width: 15rem;
+  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.7);
+  border-radius: 5px;
+  padding: 1rem;
+  margin: 0 auto;
+}
+.explore_cont p {
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.fa-solid {
+  margin-left: 5px;
+}
+.lines {
+  display: flex;
+  margin-top: 12rem;
+  opacity: 80%;
+}
+.first_line {
+  width: 8rem;
+  height: 1px;
+  margin-right: 0.7rem;
+  border: 1px solid#fff;
+}
+.second_line {
+  width: 2rem;
+  height: 1px;
+  margin: -0.7rem 0.5rem 0rem 0;
+  transform: skewY(-40deg);
+  border: 1px solid#fff;
+}
+.third_line {
+  width: 3rem;
+  height: 1px;
+  border: 1px solid#fff;
+}
+.footer {
+  margin: 3rem 0 0 3rem;
+  font-size: 12px;
+  line-height: 20px;
+  opacity: 70%;
 }
 .container2 {
-  /* background: #fff; */
-  border: 1px solid black;
-  width: 25%;
-  height: 100vh;
+  background: #fff;
+  border: 2px solid black;
+  border-left: none;
+  width: 30%;
+  height: 48rem;
+  border-radius: 10px;
+  padding: 1rem;
+}
+.container2 h2 {
+  display: block;
+  transform: skewY(-50deg);
+  margin-top: 0;
 }
 </style>
