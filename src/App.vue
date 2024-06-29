@@ -1,12 +1,13 @@
 <template>
-  <welcome-page></welcome-page>
+  <!-- <welcome-page></welcome-page> -->
+  <router-view></router-view>
 </template>
 
 <script>
-import WelcomePage from "./components/WelcomePage.vue";
+// import WelcomePage from "./components/WelcomePage.vue";
 export default {
   components: {
-    WelcomePage,
+    // WelcomePage,
   },
 };
 </script>

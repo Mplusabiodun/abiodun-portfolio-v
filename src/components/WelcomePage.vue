@@ -9,8 +9,8 @@
       </div>
       <p class="frontend">FRONT-END WEB DEVELOPER</p>
       <div class="explore_cont">
-        <p>LET'S EXPLORE</p>
-        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        <router-link to="/home">LET'S EXPLORE</router-link>
+        <i @click="explore" class="fa-solid fa-arrow-up-right-from-square"></i>
       </div>
       <div class="lines">
         <hr class="first_line" />
@@ -23,32 +23,19 @@
       </div>
     </div>
     <div class="container2">
-      <!-- <h2> -->
-      <!-- <span>P</span>
-          <span>O</span>
-          <span>R</span>
-          <span>T</span>
-          <span>F</span>
-          <span>O</span>
-          <span>L</span>
-          <span>I</span>
-          <span>0</span> -->
-      <!-- <span>2</span>
-          <span>0</span>
-          <span>2</span>
-          <span>2</span>
-          <span></span>
-          <span>-</span>
-          <span></span>
-          <span>2</span>
-          <span>0</span>
-          <span>2</span>
-          <span>4</span> -->
-      <!-- </h2> -->
       <h2>2022 - 2024</h2>
     </div>
   </div>
 </template>
+<script>
+export default {
+  methods: {
+    explore() {
+      this.$router.push("/home");
+    },
+  },
+};
+</script>
 <style scoped>
 .container {
   display: flex;
@@ -117,13 +104,15 @@
   padding: 1rem;
   margin: 0 auto;
 }
-.explore_cont p {
+.explore_cont a {
   font-size: 15px;
   font-weight: bold;
   letter-spacing: 1px;
+  text-decoration: none;
+  color: #fff;
 }
 .fa-solid {
-  margin-left: 5px;
+  margin-left: 8px;
 }
 .lines {
   display: flex;
@@ -133,18 +122,18 @@
 .first_line {
   width: 8rem;
   height: 1px;
-  margin-right: 0.7rem;
+  margin-right: 0.5rem;
   border: 1px solid#fff;
 }
 .second_line {
-  width: 2rem;
+  width: 1.5rem;
   height: 1px;
-  margin: -0.7rem 0.5rem 0rem 0;
+  margin: -0.6rem 0.5rem 0rem 0;
   transform: skewY(-40deg);
   border: 1px solid#fff;
 }
 .third_line {
-  width: 3rem;
+  width: 2rem;
   height: 1px;
   border: 1px solid#fff;
 }
@@ -164,8 +153,10 @@
   padding: 1rem;
 }
 .container2 h2 {
-  display: block;
-  transform: skewY(-50deg);
-  margin-top: 0;
+  transform: rotate(270deg);
+  letter-spacing: 1.7rem;
+  width: 50rem;
+  font-size: 4rem;
+  margin: 14rem 0 0rem -18.5rem;
 }
 </style>
