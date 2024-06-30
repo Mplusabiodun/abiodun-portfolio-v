@@ -6,7 +6,8 @@ import HomePage from "./components/HomePage.vue";
 const router = createRouter({
   history: createWebHistory(),
   routes: [
-    { path: "/", component: WelcomePage },
+    { path: "/", redirect: "/welcome" },
+    { path: "/welcome", component: WelcomePage },
     { path: "/home", component: HomePage },
     //   { path: "/:notFound(.*)", component: NotFound },
   ],

@@ -9,7 +9,7 @@
       </div>
       <p class="frontend">FRONT-END WEB DEVELOPER</p>
       <div class="explore_cont">
-        <router-link to="/home">LET'S EXPLORE</router-link>
+        <router-link to="#">LET'S EXPLORE</router-link>
         <i @click="explore" class="fa-solid fa-arrow-up-right-from-square"></i>
       </div>
       <div class="lines">
@@ -23,12 +23,52 @@
       </div>
     </div>
     <div class="container2">
-      <h2>2022 - 2024</h2>
+      <div class="tablecontainer">
+        <div class="deco"></div>
+        <h2>TABLE <span class="of">OF</span> CONTENTS</h2>
+      </div>
+      <div class="twotwo firsttwo">
+        <div class="firstdiv">
+          <h3>04</h3>
+          <p>ABOUT ME</p>
+        </div>
+        <div>
+          <h3>06</h3>
+          <p>MY RESUME</p>
+        </div>
+      </div>
+      <div class="twotwo secondtwo">
+        <div class="firstdiv">
+          <h3>08</h3>
+          <p>PROJECTS</p>
+        </div>
+        <div>
+          <h3>10</h3>
+          <p>ABOUT ME</p>
+        </div>
+      </div>
+      <div class="twotwo thirdtwo">
+        <div class="firstdiv">
+          <h3>12</h3>
+          <p>CONTACT ME</p>
+        </div>
+        <div>
+          <h3>14</h3>
+          <p>SOCIAL ACCOUNTS</p>
+        </div>
+      </div>
+      <!-- <h2>2022 - 2024</h2> -->
     </div>
   </div>
+  <home-page></home-page>
+  <!-- <div class="container3"></div> -->
 </template>
 <script>
+import HomePage from "./HomePage.vue";
 export default {
+  components: {
+    HomePage,
+  },
   methods: {
     explore() {
       this.$router.push("/home");
@@ -37,6 +77,15 @@ export default {
 };
 </script>
 <style scoped>
+/* .container3 {
+  background: url("@/assets/about.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 50rem;
+  margin-bottom: 3rem;
+} */
 .container {
   display: flex;
   flex-direction: row;
@@ -48,7 +97,7 @@ export default {
   background-position: center;
 }
 .container1 {
-  width: 70%;
+  width: 64%;
   padding: 3rem 0;
   background: black;
   color: #fff;
@@ -147,16 +196,60 @@ export default {
   background: #fff;
   border: 2px solid black;
   border-left: none;
-  width: 30%;
+  width: 36%;
   height: 48rem;
   border-radius: 10px;
-  padding: 1rem;
+  padding: 0.5rem;
 }
-.container2 h2 {
+.tablecontainer {
+  display: flex;
+  margin: 9rem 0 0 2rem;
+}
+.deco {
+  width: 1.4rem;
+  height: 8px;
+  margin: 0.5rem 1rem 0 0;
+  background: black;
+}
+.tablecontainer h2 {
+  width: 8rem;
+  line-height: 28px;
+  letter-spacing: 1px;
+}
+.of {
+  opacity: 30%;
+  font-weight: bold;
+  border-radius: 3px solid black;
+}
+.twotwo {
+  display: flex;
+  margin: 3rem 0 3.5rem 0.8rem;
+  /* justify-content: space-between; */
+}
+.twotwo h3 {
+  font-size: 30px;
+  opacity: 30%;
+}
+.twotwo p {
+  font-size: 15px;
+  letter-spacing: 0.7px;
+  font-weight: 500;
+}
+.firsttwo,
+.thirdtwo {
+  margin-left: 3.5rem;
+}
+.firstdiv {
+  margin-right: 2rem;
+}
+.twotwo div {
+  text-align: center;
+}
+/* .container2 h2 {
   transform: rotate(270deg);
   letter-spacing: 1.7rem;
   width: 50rem;
   font-size: 4rem;
   margin: 14rem 0 0rem -18.5rem;
-}
+} */
 </style>
