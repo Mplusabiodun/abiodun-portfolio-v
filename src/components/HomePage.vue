@@ -12,7 +12,7 @@
       </div>
       <div class="thick_here">
         <hr class="thick" />
-        <h2 class="here">I'M GLAD YOU'RE HERE</h2>
+        <h2 class="here">WELCOME, AM GLAD YOU'RE HERE</h2>
       </div>
       <p class="im_Abiodun">I'M ABIODUN FATAI</p>
       <p class="brief">
@@ -21,7 +21,7 @@
         Frontend developer with great enthusiasm for building user centric
         software products. I started this journey to explore my passion for
         writing codes and solving complex software problems. Trust me it was
-        indeed amazing writing my first HTML code ('Hello world') and being able
+        indeed amazing writing my first HTML code ('Hello World') and being able
         to display on the screen.
       </p>
     </div>
@@ -125,7 +125,7 @@
 
 .role_pics {
   display: flex;
-  margin: 1.5rem 0 1rem;
+  margin: 2rem 0 1.5rem;
 }
 .role_pics p {
   transform: rotate(270deg);
@@ -137,8 +137,8 @@
   opacity: 70%;
 }
 #fatai {
-  width: 17rem;
-  height: 22rem;
+  width: 16rem;
+  height: 21rem;
   margin-left: -11rem;
 }
 .thick_here {
@@ -156,14 +156,14 @@
   opacity: 60%;
 }
 .im_Abiodun {
-  font-size: 15px;
-  margin: 10px 0 10px 2rem;
+  font-size: 18px;
+  margin: 15px 0 18px 2.5rem;
   letter-spacing: 1px;
   font-weight: bold;
 }
 .brief {
   font-size: 11px;
-  margin: 0 0 0 2rem;
+  margin: 0 0 0 2.5rem;
   letter-spacing: 0.7px;
   line-height: 15px;
 }
