@@ -4,7 +4,7 @@
       <div class="mabiodun">
         <p>ABIODUN FATAI</p>
         <hr />
-        <p>PORTFOLIO 2024</p>
+        <p>PORTFOLIO '24</p>
       </div>
       <div class="role_pics">
         <p>FRONT-END WEB DEVELOPER</p>
@@ -54,46 +54,119 @@
     and technical writing. -->
 
     <div class="scontainer">
-      <div>
-        <h3>ADDRESS</h3>
-        <p>No.6 Fatai's Lodge, Idofin, Igboora, Oyo State. Nigeria</p>
+      <div class="mabiodun margin_bottom">
+        <p>ABIODUN FATAI</p>
+        <hr />
+        <p>PORTFOLIO '24</p>
       </div>
-      <div>
-        <h3>EDUCATION</h3>
-        <p>ALTSCHOOL AFRICA</p>
-      </div>
-      <div>
-        <h3>HOBBIES</h3>
-        <ul>
-          <li>CODING</li>
-          <li>WATCHING FOOTBALL</li>
-          <li>TRAVELLING</li>
-        </ul>
-      </div>
-      <div>
-        <h3>SKILLED</h3>
-        <ul>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>GIT VC</li>
-          <li>JAVASCRIPT</li>
-          <li>VUE</li>
-          <li>REACT</li>
-        </ul>
-      </div>
-      <div>
-        <h3>PROJECTS</h3>
-        <li></li>
-      </div>
-      <div>
-        <h3>CONTACT</h3>
-        <p>fataimonsuru2020@gmail.com</p>
-        <p>09063268232</p>
+      <div class="margin_top">
+        <div class="first_two">
+          <div class="background_div">
+            <div class="upper_background">
+              <h3>ADDRESS</h3>
+              <p>NO.6 FATAI'S LODGE, IDOFIN, IGBOORA, OYO STATE. NIGERIA</p>
+            </div>
+          </div>
+          <div class="background_div">
+            <div class="upper_background">
+              <h3>EDUCATION</h3>
+              <li>ALTSCHOOL AFRICA</li>
+              <li>FEDERAL POLTECHNIC EDE</li>
+              <li>FEDERAL POLTECHNIC UNIVERSITY OF TECHNOLOGY MINNA</li>
+            </div>
+          </div>
+        </div>
+        <div class="first_two">
+          <div class="background_div">
+            <div class="upper_background">
+              <h3>INTRESTS</h3>
+              <li>CODING</li>
+              <li>WATCHING FOOTBALL</li>
+              <li>TRAVELLING</li>
+            </div>
+          </div>
+          <div class="background_div">
+            <div class="upper_background">
+              <h3>SKILLED</h3>
+
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>GIT VC</li>
+              <li>JAVASCRIPT</li>
+              <li>VUE</li>
+              <li>REACT</li>
+            </div>
+          </div>
+        </div>
+        <div class="first_two">
+          <div class="background_div">
+            <div class="upper_background">
+              <h3>PROJECTS</h3>
+              <li>AUDIOPHILE</li>
+              <li>ABIODUN PORTFOLIO</li>
+              <li>RECIPE ...</li>
+            </div>
+          </div>
+          <div class="background_div">
+            <div class="upper_background">
+              <h3>CONTACT</h3>
+              <p>fataimonsuru2020@gmail.com</p>
+              <p>09063268232</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </template>
 <style scoped>
+.margin_top {
+  margin-top: 2rem;
+}
+.first_two {
+  display: flex;
+  margin: 1rem 0;
+}
+.background_div {
+  background: rgba(128, 128, 128, 0.08);
+  width: 11.5rem;
+  height: 10rem;
+  border-bottom-right-radius: 15px;
+  margin: 8px 12px;
+  padding: 10px;
+}
+.upper_background {
+  /* background: rgba(128, 128, 128, 0.78); */
+  background: rgba(128, 128, 128, 0.38);
+  width: 11rem;
+  height: 9.5rem;
+  border-bottom-right-radius: 15px;
+  border-top-left-radius: 15px;
+  padding: 4.5px;
+  font-size: 11px;
+  margin: -1.2rem 0 0 -1.2rem;
+}
+.upper_background h3 {
+  text-align: center;
+  margin: 8px 0;
+}
+.upper_background p {
+  text-align: center;
+  width: 8rem;
+  margin: 3px auto;
+  letter-spacing: 0.3px;
+  font-size: 10px;
+}
+.upper_background li {
+  text-align: center;
+  list-style-type: none;
+  /* margin: 3px 0 0 -20px; */
+  margin: 3px auto;
+  letter-spacing: 0.3px;
+  line-height: 15px;
+  font-size: 10px;
+}
+
 .pcontainer {
   background: url("@/assets/emptypaper.jpg");
   background-repeat: no-repeat;
@@ -115,11 +188,12 @@
 .mabiodun p {
   font-size: 11px;
   letter-spacing: 0.7px;
+  /* margin-left: 1rem; */
 }
 .mabiodun hr {
   width: 7rem;
   height: 1px;
-  margin: 0.5rem 2.7rem 0 2.7rem;
+  margin: 0.5rem 3.1rem 0 3.1rem;
   border: 1px solid black;
 }
 
@@ -167,7 +241,6 @@
   letter-spacing: 0.7px;
   line-height: 15px;
 }
-
 .scontainer {
   width: 25rem;
   margin: 4.2rem 0rem 0 4rem;

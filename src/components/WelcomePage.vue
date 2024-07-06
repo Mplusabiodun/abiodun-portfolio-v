@@ -57,7 +57,6 @@
           <p>SOCIAL ACCOUNTS</p>
         </div>
       </div>
-      <!-- <h2>2022 - 2024</h2> -->
     </div>
   </div>
   <home-page></home-page>
