@@ -1,14 +1,15 @@
 import { createRouter, createWebHistory } from "vue-router";
 
-import WelcomePage from "./components/WelcomePage.vue";
-import HomePage from "./components/HomePage.vue";
+import HomePage from "./components/Main/HomePage.vue";
+// import AboutMe from "./components/NotAgain/MoreDetails/AboutMe.vue";
 
 const router = createRouter({
   history: createWebHistory(),
   routes: [
-    { path: "/", redirect: "/welcome" },
-    { path: "/welcome", component: WelcomePage },
+    { path: "/", redirect: "/home" },
     { path: "/home", component: HomePage },
+    // { path: "/about", component: AboutMe },
+    // { path: "/abiodun_resume", component: AboutMe },
     //   { path: "/:notFound(.*)", component: NotFound },
   ],
   scrollBehavior(_, _2, savedposition) {

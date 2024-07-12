@@ -88,7 +88,6 @@
           <div class="background_div">
             <div class="upper_background">
               <h3>SKILLED</h3>
-
               <li>HTML</li>
               <li>CSS</li>
               <li>GIT VC</li>
@@ -110,7 +109,7 @@
           <div class="background_div">
             <div class="upper_background">
               <h3>CONTACT</h3>
-              <p>fataimonsuru2020@gmail.com</p>
+              <p id="myemail">fataimonsuru2020@gmail.com</p>
               <p>09063268232</p>
             </div>
           </div>
@@ -120,53 +119,6 @@
   </div>
 </template>
 <style scoped>
-.margin_top {
-  margin-top: 2rem;
-}
-.first_two {
-  display: flex;
-  margin: 1rem 0;
-}
-.background_div {
-  background: rgba(128, 128, 128, 0.08);
-  width: 11.5rem;
-  height: 10rem;
-  border-bottom-right-radius: 15px;
-  margin: 8px 12px;
-  padding: 10px;
-}
-.upper_background {
-  /* background: rgba(128, 128, 128, 0.78); */
-  background: rgba(128, 128, 128, 0.38);
-  width: 11rem;
-  height: 9.5rem;
-  border-bottom-right-radius: 15px;
-  border-top-left-radius: 15px;
-  padding: 4.5px;
-  font-size: 11px;
-  margin: -1.2rem 0 0 -1.2rem;
-}
-.upper_background h3 {
-  text-align: center;
-  margin: 8px 0;
-}
-.upper_background p {
-  text-align: center;
-  width: 8rem;
-  margin: 3px auto;
-  letter-spacing: 0.3px;
-  font-size: 10px;
-}
-.upper_background li {
-  text-align: center;
-  list-style-type: none;
-  /* margin: 3px 0 0 -20px; */
-  margin: 3px auto;
-  letter-spacing: 0.3px;
-  line-height: 15px;
-  font-size: 10px;
-}
-
 .pcontainer {
   background: url("@/assets/emptypaper.jpg");
   background-repeat: no-repeat;
@@ -180,7 +132,6 @@
 .fcontainer {
   width: 24.5rem;
   margin: 4.2rem 0 0 -0.8rem;
-  /* margin: 4.2rem 0 0 -3.8rem; */
 }
 .mabiodun {
   display: flex;
@@ -188,7 +139,6 @@
 .mabiodun p {
   font-size: 11px;
   letter-spacing: 0.7px;
-  /* margin-left: 1rem; */
 }
 .mabiodun hr {
   width: 7rem;
@@ -244,6 +194,53 @@
 .scontainer {
   width: 25rem;
   margin: 4.2rem 0rem 0 4rem;
-  /* background: grey; */
+}
+.margin_top {
+  margin-top: 2rem;
+}
+.first_two {
+  display: flex;
+  margin: 1rem 0;
+}
+.background_div {
+  background: rgba(128, 128, 128, 0.08);
+  width: 11.5rem;
+  height: 10rem;
+  border-bottom-right-radius: 15px;
+  margin: 8px 12px;
+  padding: 10px;
+}
+.upper_background {
+  background: rgba(128, 128, 128, 0.38);
+  width: 11rem;
+  height: 9.5rem;
+  border-bottom-right-radius: 15px;
+  border-top-left-radius: 15px;
+  padding: 4.5px;
+  font-size: 11px;
+  margin: -1.2rem 0 0 -1.2rem;
+}
+.upper_background h3 {
+  text-align: center;
+  margin: 8px 0;
+}
+.upper_background p {
+  text-align: center;
+  width: 8rem;
+  margin: 3px auto;
+  letter-spacing: 0.3px;
+  font-size: 10px;
+}
+.upper_background li {
+  text-align: center;
+  list-style-type: none;
+  margin: 3px auto;
+  letter-spacing: 0.3px;
+  line-height: 15px;
+  font-size: 10px;
+}
+#myemail {
+  margin-left: 0.6rem;
+  /* margin-right: 1rem; */
 }
 </style>

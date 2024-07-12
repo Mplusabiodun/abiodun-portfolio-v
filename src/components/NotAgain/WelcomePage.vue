@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="container1">
-      <p class="welcome">Welcome, am glad you're here &#x1F942;</p>
+      <p class="welcome">WELCOME &#x1F942;</p>
       <h2 class="myname">M. ABIODUN <span class="fatai">FATAI</span></h2>
       <div class="nickname">
         <hr />
@@ -9,7 +9,7 @@
       </div>
       <p class="frontend">FRONT-END WEB DEVELOPER</p>
       <div class="explore_cont">
-        <router-link to="#">LET'S EXPLORE</router-link>
+        <router-link to="/about">LET'S EXPLORE</router-link>
         <i @click="explore" class="fa-solid fa-arrow-up-right-from-square"></i>
       </div>
       <div class="lines">
@@ -29,41 +29,53 @@
       </div>
       <div class="twotwo firsttwo">
         <div class="firstdiv">
-          <h3>04</h3>
-          <p>ABOUT ME</p>
+          <router-link to="/about">
+            <h3>04</h3>
+            <p>ABOUT ME</p>
+          </router-link>
+          <!-- <router-link to="#">ABOUT ME</router-link> -->
         </div>
         <div>
-          <h3>06</h3>
-          <p>MY RESUME</p>
+          <router-link to="#">
+            <h3>06</h3>
+            <p>MY RESUME</p>
+          </router-link>
         </div>
       </div>
       <div class="twotwo secondtwo">
         <div class="firstdiv">
-          <h3>08</h3>
-          <p>PROJECTS</p>
+          <router-link to="#">
+            <h3>08</h3>
+            <p>PROJECTS</p>
+          </router-link>
         </div>
         <div>
-          <h3>10</h3>
-          <p>ABOUT ME</p>
+          <router-link to="#">
+            <h3>10</h3>
+            <p>ABOUT ME</p>
+          </router-link>
         </div>
       </div>
       <div class="twotwo thirdtwo">
         <div class="firstdiv">
-          <h3>12</h3>
-          <p>CONTACT ME</p>
+          <a href="#">
+            <h3>12</h3>
+            <p>CONTACT ME</p>
+          </a>
         </div>
         <div>
-          <h3>14</h3>
-          <p>SOCIAL ACCOUNTS</p>
+          <a href="#">
+            <h3>14</h3>
+            <p>SOCIAL ACCOUNTS</p>
+          </a>
         </div>
       </div>
     </div>
   </div>
   <home-page></home-page>
-  <!-- <div class="container3"></div> -->
 </template>
 <script>
-import HomePage from "./HomePage.vue";
+import HomePage from "./HomePage2.vue";
 export default {
   components: {
     HomePage,
@@ -76,15 +88,6 @@ export default {
 };
 </script>
 <style scoped>
-/* .container3 {
-  background: url("@/assets/about.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  width: 100%;
-  height: 50rem;
-  margin-bottom: 3rem;
-} */
 .container {
   display: flex;
   flex-direction: row;
@@ -105,11 +108,13 @@ export default {
   border-right: none;
 }
 .welcome {
-  display: none;
+  /* display: none; */
   color: #daa520;
-  font-size: 12px;
+  font-size: 15px;
   letter-spacing: 0.9px;
-  margin-left: 4rem;
+  margin: -1rem 0 2.5rem 2rem;
+  /* margin-top: -1rem; */
+  opacity: 18%;
 }
 .myname {
   margin: 2rem 0 0 3rem;
@@ -232,6 +237,13 @@ export default {
 .twotwo p {
   font-size: 15px;
   letter-spacing: 0.7px;
+  font-weight: 500;
+}
+.twotwo a {
+  font-size: 15px;
+  letter-spacing: 0.7px;
+  text-decoration: none;
+  color: black;
   font-weight: 500;
 }
 .firsttwo,
