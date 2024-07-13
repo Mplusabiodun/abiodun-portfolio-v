@@ -65,7 +65,7 @@ li {
   justify-content: right;
 }
 .quicklinks li {
-  margin-left: 6rem;
+  margin-left: 4.8rem;
   font-size: 16px;
   font-weight: bold;
   letter-spacing: 1px;
