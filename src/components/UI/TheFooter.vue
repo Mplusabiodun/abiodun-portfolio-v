@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <ul class="quicklinks">
-      <li><router-link to="/welcome">HOME</router-link></li>
+      <li><router-link to="/home">HOME</router-link></li>
       <li><router-link to="/about">ABOUT</router-link></li>
       <li><router-link to="#">RESUME</router-link></li>
       <li><router-link to="#">PROJECTS</router-link></li>
