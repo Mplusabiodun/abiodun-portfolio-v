@@ -24,13 +24,14 @@
       <h2 class="heres">Here's what sets me apart and makes me unique</h2>
       <div class="unique_list">
         <div class="aboutme learnmore">
-          <p>learn more about me</p>
+          <p>Learn more about me</p>
         </div>
         <div class="aboutme bookacall">
           <h4>Book a call with me</h4>
           <p>I'd love to chat even f there's no agenda!</p>
         </div>
         <div class="aboutme xaccount">
+          <img src="@/assets/fatai2.jpg" alt="twitter_profile_pics" />
           <h3>@Mplus51610027</h3>
           <button>Follow</button>
         </div>
@@ -78,8 +79,8 @@
     <section class="project_section">
       <h4 class="project">PROJECTS</h4>
       <h2 class="project_note">
-        I take pride in providing the best in my career path and phases I find
-        myself
+        I take pride in providing the best, in my career path and phases I find
+        myself.
       </h2>
       <ul class="project_ul">
         <li class="project_li">
@@ -173,7 +174,7 @@ export default {
 }
 .blog_like,
 .project_note {
-  width: 33rem;
+  width: 34rem;
 }
 .unique_list {
   display: grid;
@@ -183,19 +184,43 @@ export default {
   gap: 1.7rem;
 }
 .aboutme {
-  background: rgb(25, 60, 129);
+  /* background: rgb(25, 60, 129); */
+  background: rgb(14, 35, 78);
   border-radius: 20px;
   border: 0.8px solid rgb(82, 118, 191);
   padding: 1rem;
 }
 .learnmore {
   grid-row: 1/3;
+  background: url("@/assets/messi.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  align-content: flex-end;
+}
+.learnmore p {
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+  letter-spacing: 1px;
+  width: 8rem;
+  text-align: center;
+  margin: 0 auto;
+  cursor: pointer;
 }
 .bookacall {
   grid-column: 2/5;
 }
-/* .xaccount {
-} */
+.xaccount {
+  justify-content: center;
+  justify-items: center;
+}
+.xaccount img {
+  width: 3.8rem;
+  height: 4rem;
+  border-radius: 50%;
+  margin: 0rem auto;
+}
 .toolbox {
   grid-column: 3/5;
   grid-row: 2/4;
@@ -259,11 +284,9 @@ export default {
 }
 .project_li {
   list-style-type: none;
-  /* margin: 0 auto; */
 }
 .project_grid {
   display: grid;
-  /* justify-content: center; */
   margin-left: 3rem;
   text-align: center;
   height: 20rem;
