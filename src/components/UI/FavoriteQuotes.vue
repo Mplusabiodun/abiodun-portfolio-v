@@ -97,7 +97,7 @@
 }
 .input_div button {
   padding: 0.8rem 1.4rem;
-  height: 3rem;
+  /* height: 3rem; */
   margin: 2rem 0 0 0;
   color: #020617;
   background: #fff;

@@ -27,30 +27,91 @@
           <p>Learn more about me</p>
         </div>
         <div class="aboutme bookacall">
-          <h4>Book a call with me</h4>
-          <p>I'd love to chat even f there's no agenda!</p>
+          <div>
+            <h4 class="acall">Book a call with me</h4>
+            <p class="love_to">I'd love to chat even if there's no agenda!</p>
+          </div>
+          <div class="calendar"></div>
         </div>
         <div class="aboutme xaccount">
-          <img src="@/assets/fatai2.jpg" alt="twitter_profile_pics" />
+          <img
+            id="xaccount_img"
+            src="@/assets/fatai2.jpg"
+            alt="twitter_profile_pics"
+          />
           <h3>@Mplus51610027</h3>
           <button>Follow</button>
         </div>
         <div class="aboutme toolbox">
-          <h4>Toolbox</h4>
-          <p>Checkout my favorite tools and spots around the web.</p>
-          <!-- <ul>
-            <li>MY LOGO AT THE CENTER</li>
-            <li>vsCode logo</li>
-            <li>FreeCodeCamp logo</li>
-            <li>Netlify logo</li>
-            <li>MDN logo</li>
-            <li>Chatgpt logo</li>
-            <li>Youtube logo</li>
-          </ul> -->
+          <h4 class="toolboxheading">Toolbox</h4>
+          <p class="toolbox_checkout">
+            Checkout some of my favorite tools and spots around the web.
+          </p>
+          <div class="circle1">
+            <img id="mdnlogo" src="@/assets/mpluslogo.png" alt="mdnlogo" />
+            <img id="vsclogo" src="@/assets/mpluslogo.png" alt="vsclogo" />
+            <img id="netlify" src="@/assets/mpluslogo.png" alt="netlify" />
+            <div class="circle2">
+              <img id="codecamp" src="@/assets/mpluslogo.png" alt="codecamp" />
+              <img
+                id="youtubelogo"
+                src="@/assets/mpluslogo.png"
+                alt="youtubelogo"
+              />
+              <img
+                id="chatgptlogo"
+                src="@/assets/mpluslogo.png"
+                alt="chatgptlogo"
+              />
+              <div class="circle3">
+                <img
+                  id="mpluslogo"
+                  src="@/assets/mpluslogo.png"
+                  alt="mpluslogo"
+                />
+              </div>
+            </div>
+          </div>
         </div>
         <div class="aboutme connections">
-          <h4>Connections</h4>
-          <p>An ever-evolvng list of people I have met and wish to meet.</p>
+          <h4 class="connection_head">Connections</h4>
+          <p class="ever_evolvig">
+            An ever-evolvng list of people I have met and wish to meet.
+          </p>
+          <div class="tomeet">
+            <img
+              id="adeyemi_ruqoyah"
+              src="@/assets/mpluslogo.png"
+              alt="damolabadmus"
+            />
+            <img
+              id="max_schumuller"
+              src="@/assets/mpluslogo.png"
+              alt="damolabadmus"
+            />
+            <img
+              id="colt_steele"
+              src="@/assets/mpluslogo.png"
+              alt="damolabadmus"
+            />
+            <img
+              id="damola_badmus"
+              src="@/assets/mpluslogo.png"
+              alt="damolabadmus"
+            />
+            <img id="jaystar" src="@/assets/mpluslogo.png" alt="jaystar" />
+
+            <img
+              id="adeyemiyusuff"
+              src="@/assets/mpluslogo.png"
+              alt="damolabadmus"
+            />
+            <img
+              id="braydon_coyer"
+              src="@/assets/mpluslogo.png"
+              alt="damolabadmus"
+            />
+          </div>
           <!-- <ul>
             <li>Braydon coyer pics</li>
             <li>damola badmus pics</li>
@@ -105,15 +166,17 @@ export default {
 };
 </script>
 <style scoped>
+/* @import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"); */
 .container {
   background: #020617;
   padding: 12rem 9rem;
   color: #fff;
 }
 .myname {
+  /* font-family: Lora, "Arial Narrow Bold", sans-serif; */
   font-size: 3.7rem;
-  font-weight: 800;
-  line-height: 4.1rem;
+  font-weight: 750;
+  line-height: 4.3rem;
   text-align: center;
   margin: 0 auto;
   position: relative;
@@ -178,18 +241,28 @@ export default {
 }
 .unique_list {
   display: grid;
-  height: 38rem;
+  height: 36rem;
   grid-template-columns: repeat(4, 1fr);
   /* grid-template-rows: repeat(3, 1fr); */
   gap: 1.7rem;
 }
 .aboutme {
+  background: linear-gradient(
+    rgb(18, 48, 107),
+    rgb(18, 48, 107),
+    rgb(29, 39, 56),
+    rgb(29, 39, 56),
+    rgb(29, 39, 56),
+    rgb(23, 31, 44),
+    rgb(23, 31, 44)
+  );
   /* background: rgb(25, 60, 129); */
-  background: rgb(14, 35, 78);
+  /* background: rgb(14, 35, 78); */
   border-radius: 20px;
   border: 0.8px solid rgb(82, 118, 191);
   padding: 1rem;
 }
+/* LEARNMORE START */
 .learnmore {
   grid-row: 1/3;
   background: url("@/assets/messi.png");
@@ -197,6 +270,7 @@ export default {
   background-size: cover;
   background-position: center;
   align-content: flex-end;
+  cursor: pointer;
 }
 .learnmore p {
   font-size: 1.4rem;
@@ -208,26 +282,207 @@ export default {
   margin: 0 auto;
   cursor: pointer;
 }
+/* LEARNMORE STOP */
+
+/* BOOKACALL START */
 .bookacall {
   grid-column: 2/5;
+  display: flex;
+  overflow: hidden;
 }
+.acall {
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  opacity: 90%;
+}
+.love_to {
+  width: 14rem;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  opacity: 50%;
+}
+.calendar {
+  background: url("@/assets/bookacall.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 23rem;
+  height: 5rem;
+  margin: 1rem 0 -2rem 4rem;
+  border-radius: 5px;
+}
+/* BOOKACALL STOP */
+
+/* XACCOUNT START */
 .xaccount {
   justify-content: center;
   justify-items: center;
+  padding-top: 1.5rem;
+  text-align: center;
+  cursor: pointer;
 }
-.xaccount img {
-  width: 3.8rem;
-  height: 4rem;
+.xaccount:hover {
+  opacity: 90%;
+}
+#xaccount_img {
+  width: 4rem;
+  height: 4.2rem;
   border-radius: 50%;
-  margin: 0rem auto;
 }
+.xaccount h3 {
+  letter-spacing: 1px;
+  margin: 0.6rem 0;
+}
+.xaccount button {
+  margin-bottom: -1rem;
+  padding: 0.8rem 1.4rem;
+  color: #020617;
+  background: #fff;
+  border: 1px solid #ffffff5b;
+  border-radius: 1.3rem;
+  font-weight: 600;
+}
+/* XACCOUNT STOP */
+
+/* TOOLBOX START*/
 .toolbox {
   grid-column: 3/5;
   grid-row: 2/4;
+  text-align: center;
+  padding: 1rem 0 0 0;
 }
+.toolboxheading {
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+}
+.toolbox_checkout {
+  width: 18rem;
+  font-size: 0.9rem;
+  letter-spacing: 0.8px;
+  text-align: center;
+  margin: 5px auto;
+  opacity: 50%;
+}
+.circle1 {
+  background: inherit;
+  border: 0.8px solid rgb(82, 118, 191);
+  width: 19rem;
+  height: 19rem;
+  margin: 2rem auto 0rem;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+}
+#mdnlogo,
+#vsclogo,
+#netlify,
+#codecamp,
+#youtubelogo,
+#chatgptlogo {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+}
+#mdnlogo {
+  margin: -0.3rem 0rem 0 5rem;
+}
+#vsclogo {
+  margin: 10rem 0rem 0 -0.3rem;
+}
+#netlify {
+  margin: -6rem 0rem 0 17.8rem;
+}
+.circle2 {
+  background: inherit;
+  border: 0.8px solid rgb(82, 118, 191);
+  width: 13rem;
+  height: 13rem;
+  margin: -6.8rem auto 0;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+}
+#codecamp {
+  margin: 3rem 0rem 0 -0.5rem;
+}
+#youtubelogo {
+  margin: -4.5rem 0rem 0 9rem;
+}
+#chatgptlogo {
+  margin: 9rem 0rem 0 7rem;
+}
+.circle3 {
+  background: inherit;
+  border: 0.8px solid rgb(82, 118, 191);
+  width: 7rem;
+  height: 7rem;
+  margin: -10.5rem auto 0;
+  border-radius: 50%;
+}
+#mpluslogo {
+  width: 3.3rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  margin: 1.6rem auto;
+}
+/* TOOLBOX STOP */
+
+/* CONNECTIONS START */
 .connections {
   grid-column: 1/3;
 }
+.connection_head {
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+}
+.ever_evolvig {
+  font-size: 0.9rem;
+  letter-spacing: 0.8px;
+  margin: 0px 0 7px;
+  opacity: 50%;
+}
+.tomeet {
+  display: flex;
+  flex-direction: column;
+  /* margin: 0; */
+}
+#adeyemi_ruqoyah,
+#max_schumuller,
+#colt_steele,
+#damola_badmus,
+#jaystar,
+#adeyemiyusuff,
+#braydon_coyer {
+  width: 1.8rem;
+  height: 1.8rem;
+  border-radius: 50%;
+}
+#adeyemi_ruqoyah {
+  margin: 0 0 0 1rem;
+}
+#max_schumuller {
+  margin: -1rem 0 0 6rem;
+}
+#colt_steele {
+  margin: -2.5rem 0 0 13rem;
+}
+#damola_badmus {
+  width: 2.6rem;
+  height: 2.6rem;
+  margin: 0rem 0 0 9rem;
+}
+#jaystar {
+  width: 2.6rem;
+  height: 2.6rem;
+  margin: -2.5rem 0 0 16rem;
+}
+#adeyemiyusuff {
+  margin: -3.6rem 0 0 20.5rem;
+}
+#braydon_coyer {
+  margin: -2.6rem 0 -4rem 25rem;
+}
+/* CONNECTIONS STOP */
 .learn_more,
 .more_projects {
   display: flex;
