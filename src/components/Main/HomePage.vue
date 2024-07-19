@@ -48,19 +48,19 @@
             Checkout some of my favorite tools and spots around the web.
           </p>
           <div class="circle1">
-            <img id="mdnlogo" src="@/assets/mpluslogo.png" alt="mdnlogo" />
-            <img id="vsclogo" src="@/assets/mpluslogo.png" alt="vsclogo" />
-            <img id="netlify" src="@/assets/mpluslogo.png" alt="netlify" />
+            <img id="mdnlogo" src="@/assets/mdn.png" alt="mdnlogo" />
+            <img id="vsclogo" src="@/assets/vscode.png" alt="vsclogo" />
+            <img id="netlify" src="@/assets/netlify.png" alt="netlify" />
             <div class="circle2">
-              <img id="codecamp" src="@/assets/mpluslogo.png" alt="codecamp" />
+              <img id="codecamp" src="@/assets/codecamp.png" alt="codecamp" />
               <img
                 id="youtubelogo"
-                src="@/assets/mpluslogo.png"
+                src="@/assets/youtube.png"
                 alt="youtubelogo"
               />
               <img
                 id="chatgptlogo"
-                src="@/assets/mpluslogo.png"
+                src="@/assets/github.png"
                 alt="chatgptlogo"
               />
               <div class="circle3">
@@ -81,46 +81,37 @@
           <div class="tomeet">
             <img
               id="adeyemi_ruqoyah"
-              src="@/assets/mpluslogo.png"
+              src="@/assets/ruqoyah.jpg"
               alt="damolabadmus"
             />
             <img
               id="max_schumuller"
-              src="@/assets/mpluslogo.png"
+              src="@/assets/max.png"
               alt="damolabadmus"
             />
             <img
               id="colt_steele"
-              src="@/assets/mpluslogo.png"
+              src="@/assets/colt_steele.png"
               alt="damolabadmus"
             />
             <img
               id="damola_badmus"
-              src="@/assets/mpluslogo.png"
+              src="@/assets/damolabadmus.png"
               alt="damolabadmus"
             />
-            <img id="jaystar" src="@/assets/mpluslogo.png" alt="jaystar" />
+            <img id="jaystar" src="@/assets/jaystar.png" alt="jaystar" />
 
             <img
               id="adeyemiyusuff"
-              src="@/assets/mpluslogo.png"
+              src="@/assets/yusuff.jpg"
               alt="damolabadmus"
             />
             <img
               id="braydon_coyer"
-              src="@/assets/mpluslogo.png"
+              src="@/assets/braydon.png"
               alt="damolabadmus"
             />
           </div>
-          <!-- <ul>
-            <li>Braydon coyer pics</li>
-            <li>damola badmus pics</li>
-            <li>Jaystar bee pics</li>
-            <li>Max schumuller pics</li>
-            <li>Colt Steele pics</li>
-            <li>Adeyemi Ruqoyah pics</li>
-            <li>Adeyemi Yusuff pics</li>
-          </ul> -->
         </div>
       </div>
       <button class="learn_more">Learn more</button>
@@ -131,9 +122,52 @@
         I like sharing my experiments and knowledge with others
       </h2>
       <div class="blog_grid">
-        <div class="blog_m medium_first"></div>
-        <div class="blog_m medium_second"></div>
-        <div class="blog_m medium_third"></div>
+        <div class="blog_m medium_first">
+          <div class="custom_div">
+            <h3>MY CUSTOM COUNTER HOOK</h3>
+            <p>
+              Started being a technical writer on this day Jan 6, 2023 and
+              Published my first article edition on
+              <a
+                href="https://medium.com/@fataimonsuru2020/custom-counter-hook-with-increment-decrement-reset-and-set-value-function-ba53d9e56a56"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Medium</a
+              >.
+            </p>
+          </div>
+          <div class="conterhookblog">
+            <!-- <img
+            id="conterhookblog"
+            src="@/assets/counterhook.png"
+            alt="custom_counetr hook"
+          /> -->
+          </div>
+        </div>
+        <div class="blog_m medium_second">
+          <!-- <h3> -->
+          <a
+            href="https://medium.com/gitconnected/why-do-most-programmers-face-imposter-syndrome-001a97f433c7"
+            target="blank"
+            >IMPOST<span class="syndrome">ER SYNDROME</span></a
+          >.
+          <!-- </h3> -->
+          <p>
+            Everybody f<span class="imposterword"
+              >aces it, yet everyone fears i</span
+            >t.
+          </p>
+        </div>
+        <div class="blog_m medium_third">
+          <h3>
+            <a
+              href="https://www.geeksforgeeks.org/networking-for-programmers/"
+              target="blank"
+              >NETWORKING</a
+            >
+          </h3>
+          <p>Connecting, collaborating and Succeeding.</p>
+        </div>
       </div>
       <button class="more_articles">More articles</button>
     </section>
@@ -145,10 +179,38 @@
       </h2>
       <ul class="project_ul">
         <li class="project_li">
+          <h3 class="project_Title">AUDIOPHILE</h3>
+          <p class="about_project">
+            An online premier store for high quality headphones, earphones and
+            speakers. An all in one stop to fulfillyour audio needs. For music
+            lovers and sound specialists devoted to help them get their audio
+            needs.
+          </p>
+          <a href="https://gadgets-ecommerce-vue3.netlify.app/" target="blank"
+            >audiophile-ecommerce</a
+          >
           <div class="project_grid">
-            <div class="myproject p_first"></div>
-            <div class="myproject p_second"></div>
-            <div class="myproject p_third"></div>
+            <div class="myproject p_first">
+              <img
+                id="laptop_screen"
+                src="@/assets/counterhook.png"
+                alt="laptop_screen"
+              />
+            </div>
+            <div class="myproject p_second">
+              <img
+                id="ipad_screen"
+                src="@/assets/counterhook_ipad.png"
+                alt="ipad_screen"
+              />
+            </div>
+            <div class="myproject p_third">
+              <img
+                id="mobile_screen"
+                src="@/assets/counterhook_mobile.png"
+                alt="mobile_screen"
+              />
+            </div>
           </div>
         </li>
       </ul>
@@ -190,6 +252,7 @@ export default {
   height: 22rem;
   border-radius: 1.7rem;
   margin: 0 0.5rem 0 0;
+  border: 1.5px solid #ffffffd5;
 }
 .photo1 {
   transform: rotate(-7deg);
@@ -256,8 +319,6 @@ export default {
     rgb(23, 31, 44),
     rgb(23, 31, 44)
   );
-  /* background: rgb(25, 60, 129); */
-  /* background: rgb(14, 35, 78); */
   border-radius: 20px;
   border: 0.8px solid rgb(82, 118, 191);
   padding: 1rem;
@@ -270,6 +331,7 @@ export default {
   background-size: cover;
   background-position: center;
   align-content: flex-end;
+  opacity: 70%;
   cursor: pointer;
 }
 .learnmore p {
@@ -289,6 +351,10 @@ export default {
   grid-column: 2/5;
   display: flex;
   overflow: hidden;
+}
+.bookacall:hover {
+  opacity: 90%;
+  cursor: pointer;
 }
 .acall {
   font-size: 1.2rem;
@@ -350,6 +416,10 @@ export default {
   grid-row: 2/4;
   text-align: center;
   padding: 1rem 0 0 0;
+}
+.toolbox:hover {
+  opacity: 90%;
+  cursor: pointer;
 }
 .toolboxheading {
   font-size: 1.2rem;
@@ -431,6 +501,10 @@ export default {
 .connections {
   grid-column: 1/3;
 }
+.connections:hover {
+  opacity: 90%;
+  cursor: pointer;
+}
 .connection_head {
   font-size: 1.2rem;
   letter-spacing: 1px;
@@ -444,7 +518,6 @@ export default {
 .tomeet {
   display: flex;
   flex-direction: column;
-  /* margin: 0; */
 }
 #adeyemi_ruqoyah,
 #max_schumuller,
@@ -523,26 +596,135 @@ export default {
   gap: 1.7rem;
 }
 .blog_m {
-  background: rgb(25, 60, 129);
+  background: linear-gradient(
+    rgb(18, 48, 107),
+    rgb(18, 48, 107),
+    rgb(29, 39, 56),
+    rgb(29, 39, 56),
+    rgb(29, 39, 56),
+    rgb(23, 31, 44),
+    rgb(23, 31, 44)
+  );
+  /* background: rgb(25, 60, 129); */
   border-radius: 20px;
   border: 0.8px solid rgb(82, 118, 191);
   padding: 1rem;
 }
 .medium_first {
   grid-column: 1/3;
+  display: flex;
+  overflow: hidden;
+  padding-top: rem;
+}
+.custom_div {
+  width: 30rem;
+  letter-spacing: 1px;
+  align-content: flex-end;
+  padding: 0rem 2rem 0;
+}
+.custom_div h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  opacity: 90%;
+  margin-bottom: 1rem;
+  margin-top: -2rem;
+}
+.custom_div p {
+  font-size: 0.9rem;
+  opacity: 70%;
+  line-height: 25px;
+}
+.custom_div a {
+  font-size: 0.9rem;
+  opacity: 100%;
+  font-weight: bold;
+}
+.conterhookblog {
+  background: url("@/assets/counterhook.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 25rem;
+  height: 14rem;
+  margin: -4rem 2rem -2rem;
+  align-self: flex-end;
+  border-radius: 15px;
 }
 .medium_second {
   grid-column: 1/2;
+  background: url("@/assets/imposter_syndrome.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: rgb(2, 6, 23);
+  padding-left: 2rem;
+  align-content: center;
+  font-weight: 800;
+}
+.medium_second h3 {
+  width: 15rem;
+  /* color: rgb(2, 6, 23); */
+}
+.medium_second a {
+  color: black;
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+.syndrome {
+  color: #fff;
+}
+.imposterword {
+  /* opacity: 80%; */
+  color: #fff;
 }
 .medium_third {
   grid-column: 2/3;
+  background: url("@/assets/networking.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /* color: rgb(2, 6, 23); */
+  /* padding-left: 2rem; */
+  /* align-content: center; */
+  font-weight: 800;
+}
+.medium_third a {
+  color: #fff;
+  font-weight: 900;
+  text-decoration: none;
+}
+.medium_third p {
+  /* color: #fff; */
+  opacity: 60%;
+  font-weight: 900;
+  text-decoration: none;
 }
 .project_li {
   list-style-type: none;
+  margin-left: 3rem;
+}
+.project_Title {
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+}
+.about_project {
+  font-size: 0.9rem;
+  width: 35rem;
+  opacity: 60%;
+  text-align: left;
+  margin: 0.6rem 0;
+  line-height: 20px;
+  letter-spacing: 0.7px;
+}
+.project_li a {
+  font-size: 1rem;
+  letter-spacing: 1px;
+  text-decoration: none;
 }
 .project_grid {
   display: grid;
-  margin-left: 3rem;
+  margin-top: 0.6rem;
   text-align: center;
   height: 20rem;
   grid-template-columns: repeat(4, 1fr);
@@ -557,18 +739,36 @@ export default {
 .p_first {
   grid-column: 1/3;
   grid-row: 1/3;
+  overflow: hidden;
+  padding: 0;
+}
+#laptop_screen {
+  width: 26.9rem;
+  height: 20rem;
+  margin: 0;
 }
 .p_second {
   grid-column: 3/5;
   width: 20rem;
   justify-self: center;
   margin-left: -6.5rem;
+  overflow: hidden;
+  padding: 0;
+}
+#ipad_screen {
+  width: 21rem;
+  /* height: 6rem; */
+  background-size: cover;
+  background-position: center;
+  margin: 0;
 }
 .p_third {
   grid-column: 3/5;
   width: 14rem;
   justify-self: center;
   margin-left: -6rem;
+  overflow: hidden;
+  padding: 0;
 }
 .more_projects {
   display: flex;
