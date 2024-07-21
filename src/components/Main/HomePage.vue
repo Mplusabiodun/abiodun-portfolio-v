@@ -136,22 +136,14 @@
               >.
             </p>
           </div>
-          <div class="conterhookblog">
-            <!-- <img
-            id="conterhookblog"
-            src="@/assets/counterhook.png"
-            alt="custom_counetr hook"
-          /> -->
-          </div>
+          <div class="conterhookblog"></div>
         </div>
         <div class="blog_m medium_second">
-          <!-- <h3> -->
           <a
             href="https://medium.com/gitconnected/why-do-most-programmers-face-imposter-syndrome-001a97f433c7"
             target="blank"
             >IMPOST<span class="syndrome">ER SYNDROME</span></a
           >.
-          <!-- </h3> -->
           <p>
             Everybody f<span class="imposterword"
               >aces it, yet everyone fears i</span
@@ -169,7 +161,7 @@
           <p>Connecting, collaborating and Succeeding.</p>
         </div>
       </div>
-      <button class="more_articles">More articles</button>
+      <button @click="moreBlogs" class="more_articles">More articles</button>
     </section>
     <section class="project_section">
       <h4 class="project">PROJECTS</h4>
@@ -179,42 +171,34 @@
       </h2>
       <ul class="project_ul">
         <li class="project_li">
-          <h3 class="project_Title">AUDIOPHILE</h3>
-          <p class="about_project">
-            An online premier store for high quality headphones, earphones and
-            speakers. An all in one stop to fulfillyour audio needs. For music
-            lovers and sound specialists devoted to help them get their audio
-            needs.
-          </p>
-          <a href="https://gadgets-ecommerce-vue3.netlify.app/" target="blank"
-            >audiophile-ecommerce</a
-          >
-          <div class="project_grid">
-            <div class="myproject p_first">
+          <div class="projects_box">
+            <div class="myproject">
               <img
-                id="laptop_screen"
+                id="project_image"
                 src="@/assets/counterhook.png"
                 alt="laptop_screen"
               />
             </div>
-            <div class="myproject p_second">
-              <img
-                id="ipad_screen"
-                src="@/assets/counterhook_ipad.png"
-                alt="ipad_screen"
-              />
-            </div>
-            <div class="myproject p_third">
-              <img
-                id="mobile_screen"
-                src="@/assets/counterhook_mobile.png"
-                alt="mobile_screen"
-              />
+            <div class="project_details">
+              <h3 class="project_Title">AUDIOPHILE</h3>
+              <p class="about_project">
+                An online premier store for high quality headphones, earphones
+                and speakers. An all in one stop to fulfillyour audio needs. For
+                music lovers and sound specialists devoted to help them get
+                their audio needs.
+              </p>
+              <a
+                href="https://gadgets-ecommerce-vue3.netlify.app/"
+                target="blank"
+                >audiophile-ecommerce</a
+              >
             </div>
           </div>
         </li>
       </ul>
-      <button class="more_projects">Love to see more?</button>
+      <button @click="moreProjects" class="more_projects">
+        Love to see more?
+      </button>
     </section>
     <favorite-quotes></favorite-quotes>
   </div>
@@ -225,17 +209,23 @@ export default {
   components: {
     FavoriteQuotes,
   },
+  methods: {
+    moreProjects() {
+      return this.$router.push("/projects");
+    },
+    moreBlogs() {
+      return this.$router.push("/blogs");
+    },
+  },
 };
 </script>
 <style scoped>
-/* @import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"); */
 .container {
   background: #020617;
   padding: 12rem 9rem;
   color: #fff;
 }
 .myname {
-  /* font-family: Lora, "Arial Narrow Bold", sans-serif; */
   font-size: 3.7rem;
   font-weight: 750;
   line-height: 4.3rem;
@@ -359,13 +349,13 @@ export default {
 .acall {
   font-size: 1.2rem;
   letter-spacing: 1px;
-  opacity: 90%;
+  opacity: 80%;
 }
 .love_to {
   width: 14rem;
   font-size: 0.9rem;
   letter-spacing: 1px;
-  opacity: 50%;
+  opacity: 45%;
 }
 .calendar {
   background: url("@/assets/bookacall.jpg");
@@ -376,6 +366,7 @@ export default {
   height: 5rem;
   margin: 1rem 0 -2rem 4rem;
   border-radius: 5px;
+  opacity: 60%;
 }
 /* BOOKACALL STOP */
 
@@ -398,6 +389,7 @@ export default {
 .xaccount h3 {
   letter-spacing: 1px;
   margin: 0.6rem 0;
+  opacity: 80%;
 }
 .xaccount button {
   margin-bottom: -1rem;
@@ -424,6 +416,7 @@ export default {
 .toolboxheading {
   font-size: 1.2rem;
   letter-spacing: 1px;
+  opacity: 80%;
 }
 .toolbox_checkout {
   width: 18rem;
@@ -452,6 +445,7 @@ export default {
   width: 2rem;
   height: 2rem;
   border-radius: 50%;
+  opacity: 80%;
 }
 #mdnlogo {
   margin: -0.3rem 0rem 0 5rem;
@@ -502,12 +496,12 @@ export default {
   grid-column: 1/3;
 }
 .connections:hover {
-  opacity: 90%;
   cursor: pointer;
 }
 .connection_head {
   font-size: 1.2rem;
   letter-spacing: 1px;
+  opacity: 80%;
 }
 .ever_evolvig {
   font-size: 0.9rem;
@@ -605,7 +599,6 @@ export default {
     rgb(23, 31, 44),
     rgb(23, 31, 44)
   );
-  /* background: rgb(25, 60, 129); */
   border-radius: 20px;
   border: 0.8px solid rgb(82, 118, 191);
   padding: 1rem;
@@ -663,7 +656,6 @@ export default {
 }
 .medium_second h3 {
   width: 15rem;
-  /* color: rgb(2, 6, 23); */
 }
 .medium_second a {
   color: black;
@@ -675,7 +667,6 @@ export default {
   color: #fff;
 }
 .imposterword {
-  /* opacity: 80%; */
   color: #fff;
 }
 .medium_third {
@@ -684,9 +675,6 @@ export default {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  /* color: rgb(2, 6, 23); */
-  /* padding-left: 2rem; */
-  /* align-content: center; */
   font-weight: 800;
 }
 .medium_third a {
@@ -695,92 +683,75 @@ export default {
   text-decoration: none;
 }
 .medium_third p {
-  /* color: #fff; */
   opacity: 60%;
   font-weight: 900;
   text-decoration: none;
 }
+
+/* PROJECT START */
+.project_ul {
+  margin-bottom: 3rem;
+}
 .project_li {
   list-style-type: none;
-  margin-left: 3rem;
+  margin: 5rem 0 0 1rem;
+}
+.projects_box {
+  display: flex;
+  margin-top: 0.6rem;
+  text-align: left;
+}
+.myproject {
+  width: 26rem;
+  height: 20rem;
+  overflow: hidden;
+  border: 2px solid rgb(82, 118, 191);
+  border-radius: 20px;
+  margin: 0 4rem 0 0;
+}
+#project_image {
+  width: 26.5rem;
+  height: 21rem;
+}
+.project_details {
+  margin: 2rem 0 0 0;
 }
 .project_Title {
+  /* color: rgb(82, 118, 191); */
   font-size: 1.4rem;
+  width: 26rem;
+  font-size: 2.5rem;
+  line-height: 50px;
   letter-spacing: 1px;
 }
 .about_project {
-  font-size: 0.9rem;
-  width: 35rem;
+  width: 27rem;
+  margin: 1.5rem 0 1rem 0rem;
   opacity: 60%;
-  text-align: left;
-  margin: 0.6rem 0;
-  line-height: 20px;
-  letter-spacing: 0.7px;
+  font-size: 0.9rem;
+  line-height: 25px;
+  letter-spacing: 1px;
 }
 .project_li a {
   font-size: 1rem;
   letter-spacing: 1px;
   text-decoration: none;
 }
-.project_grid {
-  display: grid;
-  margin-top: 0.6rem;
-  text-align: center;
-  height: 20rem;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1.7rem;
-}
-.myproject {
-  background: rgb(25, 60, 129);
-  border-radius: 20px;
-  border: 0.8px solid rgb(82, 118, 191);
-  padding: 1rem;
-}
-.p_first {
-  grid-column: 1/3;
-  grid-row: 1/3;
-  overflow: hidden;
-  padding: 0;
-}
-#laptop_screen {
-  width: 26.9rem;
-  height: 20rem;
-  margin: 0;
-}
-.p_second {
-  grid-column: 3/5;
-  width: 20rem;
-  justify-self: center;
-  margin-left: -6.5rem;
-  overflow: hidden;
-  padding: 0;
-}
-#ipad_screen {
-  width: 21rem;
-  /* height: 6rem; */
-  background-size: cover;
-  background-position: center;
-  margin: 0;
-}
-.p_third {
-  grid-column: 3/5;
-  width: 14rem;
-  justify-self: center;
-  margin-left: -6rem;
-  overflow: hidden;
-  padding: 0;
-}
+/* .project_section a  */
 .more_projects {
   display: flex;
   justify-content: center;
-  padding: 0.7rem 1.2rem;
-  margin: 3rem auto;
+  padding: 0.7rem 1.4rem;
+  /* width: 11rem; */
+  font-size: 0.8rem;
+  text-decoration: none;
+  margin: 0 auto;
+  letter-spacing: 0.8px;
   color: #fff;
   background: inherit;
   border: 1px solid #ffffff5b;
   border-radius: 1.3rem;
   font-weight: 600;
-  letter-spacing: 0.8px;
 }
 .more_projects:hover {
   color: #020617;

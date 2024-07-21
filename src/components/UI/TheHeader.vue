@@ -7,7 +7,7 @@
       <ul>
         <li class="about">ABOUT</li>
         <li>BLOG</li>
-        <li>PROJECT</li>
+        <li>PROJECTS</li>
         <li>CONTACT</li>
       </ul>
     </nav>

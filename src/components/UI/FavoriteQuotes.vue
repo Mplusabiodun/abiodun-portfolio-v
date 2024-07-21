@@ -12,7 +12,7 @@
         <textarea
           name="message"
           id="message"
-          cols="40"
+          cols="35"
           rows="3"
           placeholder="Leave a message or comment for Fatai."
         ></textarea>
@@ -63,18 +63,18 @@
   margin: 8rem 0 0;
 }
 .will_you {
-  width: 28rem;
+  width: 24rem;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   margin: 0rem auto;
   line-height: 2rem;
   font-weight: 300;
   letter-spacing: 1.2px;
 }
 .myquotes {
-  width: 19rem;
+  width: 15rem;
   text-align: left;
-  font-size: 1.5rem;
+  font-size: 1rem;
   margin: 2rem auto 3rem;
   line-height: 1.8rem;
   letter-spacing: 1px;
@@ -83,11 +83,12 @@
 .input_div {
   display: flex;
   justify-content: center;
+  margin: 0 0rem 0 3rem;
 }
 #message {
   width: 100%;
   padding: 0.8rem 1.4rem;
-  margin: 0 1rem 0 0rem;
+  /* margin: 0 1rem 0 -1rem; */
   color: #fff;
   background: inherit;
   border: 1px solid #ffffff5b;
@@ -97,8 +98,7 @@
 }
 .input_div button {
   padding: 0.8rem 1.4rem;
-  /* height: 3rem; */
-  margin: 2rem 0 0 0;
+  margin: 2rem 0 0 1rem;
   color: #020617;
   background: #fff;
   border: 1px solid #ffffff5b;
@@ -117,7 +117,7 @@
   background: rgb(25, 60, 129);
   width: 5rem;
   margin: 0 auto;
-  padding: 0.5rem 0.8rem;
+  padding: 0.4rem 0.7rem;
   border-radius: 10px;
 }
 
@@ -129,19 +129,17 @@
 
 .skill_div ul li {
   list-style-type: none;
-  font-size: 1rem;
-  /* font-weight: bold; */
-  /* letter-spacing: 1px; */
-  margin: 2rem 0 0;
+  font-size: 0.9rem;
+  margin: 1.1rem 0 0;
   text-align: left;
   line-height: 2rem;
   font-weight: 500;
-  letter-spacing: 1.2px;
+  letter-spacing: 1px;
   opacity: 70%;
 }
 .logo {
-  width: 1.4rem;
-  height: 1.4rem;
+  width: 1.3rem;
+  height: 1.3rem;
   margin: -1rem 0.6rem 0 0;
 }
 </style>
