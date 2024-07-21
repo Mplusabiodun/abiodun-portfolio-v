@@ -21,35 +21,28 @@
     </div>
     <ul class="blog_grid">
       <li class="grid_element">
-        <div class="blog_m medium_second">
+        <div class="medium_second">
           <a
             href="https://medium.com/gitconnected/why-do-most-programmers-face-imposter-syndrome-001a97f433c7"
             target="blank"
-            >IMPOST<span class="syndrome">ER SYNDROME</span></a
+            >IMPOSTER SYNDROME</a
           >.
-          <p>
-            Everybody f<span class="imposterword"
-              >aces it, yet everyone fears i</span
-            >t.
-          </p>
+          <p>Everybody faces it, yet everyone fears it.</p>
         </div>
       </li>
       <!-- TESTING -->
-      <li class="grid_element">
-        <div class="blog_m medium_second">
+      <!-- 
+        <li class="grid_element">
+        <div class="medium_second">
           <a
             href="https://medium.com/gitconnected/why-do-most-programmers-face-imposter-syndrome-001a97f433c7"
             target="blank"
-            >IMPOST<span class="syndrome">ER SYNDROME</span></a
+            >IMPOSTER SYNDROME</a
           >.
-          <p>
-            Everybody f<span class="imposterword"
-              >aces it, yet everyone fears i</span
-            >t.
-          </p>
+          <p>Everybody faces it, yet everyone fears it.</p>
         </div>
-      </li>
-    </ul>
+      </li> 
+    --></ul>
     <favorite-quotes></favorite-quotes>
   </div>
 </template>
@@ -98,7 +91,7 @@ li {
 .medium_first {
   display: flex;
   overflow: hidden;
-  padding-top: 6rem;
+  padding: 6rem 1rem 1rem;
 }
 .custom_div {
   width: 30rem;
@@ -135,33 +128,40 @@ li {
   border-radius: 15px;
 }
 .blog_grid {
-  margin: 0 auto;
+  margin: 2rem auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  height: 25rem;
   column-gap: 1.7rem;
+  padding: 0;
 }
 .grid_element {
-  height: 25rem;
+  margin: 0rem 0;
+  background: green;
+  border-radius: 2rem;
+  overflow: hidden;
 }
 .medium_second {
-  grid-column: 1/2;
+  /* grid-column: 1/2; */
   background: url("@/assets/imposter_syndrome.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   color: rgb(2, 6, 23);
-  padding-left: 2rem;
-  align-content: center;
+  padding: 0 0 2rem 2rem;
+  height: 14rem;
+  align-content: flex-end;
   font-weight: 800;
-}
-.medium_second h3 {
-  width: 15rem;
 }
 .medium_second a {
   color: black;
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   text-decoration: none;
+  letter-spacing: 1px;
+}
+.medium_second p {
+  font-weight: bold;
+  font-size: 1rem;
+  letter-spacing: 1px;
 }
 </style>

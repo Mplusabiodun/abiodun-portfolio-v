@@ -1,18 +1,39 @@
 <template>
   <div class="container">
     <div>
-      <img id="logo" src="@/assets/mpluslogo.png" alt="" />
+      <img @click="toHome" id="logo" src="@/assets/mpluslogo.png" alt="" />
     </div>
     <nav>
       <ul>
-        <li class="about">ABOUT</li>
-        <li>BLOG</li>
-        <li>PROJECTS</li>
-        <li>CONTACT</li>
+        <li @click="scrollToTarget" class="about">ABOUT</li>
+        <li @click="scrollToBlog">BLOG</li>
+        <li @click="scrollToProjects">PROJECTS</li>
+        <li @click="scrollToContact">CONTACT</li>
       </ul>
     </nav>
   </div>
 </template>
+<script>
+export default {
+  methods: {
+    toHome() {
+      this.$router.push("/home");
+    },
+    scrollToTarget() {
+      this.$emit("scroll-to-target");
+    },
+    scrollToBlog() {
+      this.$emit("scroll-to-blog");
+    },
+    scrollToProjects() {
+      this.$emit("scroll-to-projects");
+    },
+    scrollToContact() {
+      this.$emit("scroll-to-contact");
+    },
+  },
+};
+</script>
 <style scoped>
 .container {
   display: flex;

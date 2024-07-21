@@ -19,7 +19,8 @@
       indeed amazing writing my first HTML code ("Hello World") and being able
       to display on the screen.
     </p>
-    <section class="about_section">
+    <!-- class="target-component" -->
+    <section id="target" class="about_section target-component">
       <h4 class="about">ABOUT</h4>
       <h2 class="heres">Here's what sets me apart and makes me unique</h2>
       <div class="unique_list">
@@ -175,7 +176,7 @@
             <div class="myproject">
               <img
                 id="project_image"
-                src="@/assets/counterhook.png"
+                src="@/assets/audiophile.png"
                 alt="laptop_screen"
               />
             </div>
@@ -216,6 +217,10 @@ export default {
     moreBlogs() {
       return this.$router.push("/blogs");
     },
+    // scrollToTop() {
+    //   window.scrollTo(0, 0);
+    // }
+    // <router-link to="#target" @click.native="$root.scrollToTop()">Go to Target</router-link>
   },
 };
 </script>
@@ -703,7 +708,7 @@ export default {
 }
 .myproject {
   width: 26rem;
-  height: 20rem;
+  height: 18rem;
   overflow: hidden;
   border: 2px solid rgb(82, 118, 191);
   border-radius: 20px;
@@ -711,7 +716,7 @@ export default {
 }
 #project_image {
   width: 26.5rem;
-  height: 21rem;
+  height: 18rem;
 }
 .project_details {
   margin: 2rem 0 0 0;

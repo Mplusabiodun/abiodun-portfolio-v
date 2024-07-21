@@ -2,9 +2,9 @@
   <div class="container">
     <ul class="quicklinks">
       <li><router-link to="/home">HOME</router-link></li>
-      <li><router-link to="#">ABOUT</router-link></li>
-      <li><router-link to="#">RESUME</router-link></li>
-      <li><router-link to="#">PROJECTS</router-link></li>
+      <li @click="$emit('to-about')">ABOUT</li>
+      <li><router-link to="/resume">RESUME</router-link></li>
+      <li @click="$emit('to-Projects')">PROJECTS</li>
     </ul>
     <div class="inner_cont">
       <div class="get_cont">
@@ -47,6 +47,9 @@
     </p>
   </div>
 </template>
+<script>
+export default {};
+</script>
 <style scoped>
 .container {
   width: 100%;
@@ -59,6 +62,7 @@
 }
 li {
   list-style-type: none;
+  cursor: pointer;
 }
 .quicklinks {
   display: flex;

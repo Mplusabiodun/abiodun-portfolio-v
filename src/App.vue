@@ -1,20 +1,64 @@
 <template>
   <div class="container_header">
-    <the-header class="header"></the-header>
+    <the-header
+      @scroll-to-target="scrollToAbout"
+      @scroll-to-blog="scrollToBlog"
+      @scroll-to-projects="scrollToProjects"
+      @scroll-to-contact="scrollToContact"
+      class="header"
+    ></the-header>
   </div>
-  <router-view></router-view>
+  <router-view ref="targetComponent"></router-view>
   <div class="container_footer">
-    <the-footer class="footer"></the-footer>
+    <the-footer
+      @to-Projects="scrollToProjects"
+      @to-about="scrollToAbout"
+      class="footer"
+    ></the-footer>
   </div>
 </template>
 
 <script>
 import TheHeader from "./components/UI/TheHeader.vue";
 import TheFooter from "./components/UI/TheFooter.vue";
+
 export default {
   components: {
     TheHeader,
     TheFooter,
+  },
+  methods: {
+    // scrollToTarget() {
+    //   this.$refs.targetComponent.$el.scrollIntoView({ behavior: "smooth" });
+    // },
+    scrollToAbout() {
+      window.scrollTo({
+        top: 1560, // vertical scroll position
+        left: 0, // horizontal scroll position
+        behavior: "smooth", // smooth scrolling
+      });
+    },
+    scrollToBlog() {
+      window.scrollTo({
+        top: 2590, // vertical scroll position
+        left: 0, // horizontal scroll position
+        behavior: "smooth", // smooth scrolling
+      });
+    },
+    scrollToProjects() {
+      window.scrollTo({
+        top: 3440, // vertical scroll position
+        left: 0, // horizontal scroll position
+        behavior: "smooth", // smooth scrolling
+      });
+    },
+    scrollToContact() {
+      window.scrollTo({
+        top: 5090, // vertical scroll position
+        left: 0, // horizontal scroll position
+        behavior: "smooth", // smooth scrolling
+      });
+    },
   },
 };
 </script>
