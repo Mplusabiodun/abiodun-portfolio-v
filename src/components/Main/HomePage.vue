@@ -170,29 +170,26 @@
         I take pride in providing the best, in my career path and phases I find
         myself.
       </h2>
-      <ul class="project_ul">
+      <ul v-for="project in projects" :key="project.name" class="project_ul">
         <li class="project_li">
+          <!-- {{ project }} -->
           <div class="projects_box">
             <div class="myproject">
               <img
                 id="project_image"
-                src="@/assets/audiophile.png"
+                :src="project.image"
                 alt="laptop_screen"
               />
+              <!-- src="@/assets/audiophile.png" -->
             </div>
             <div class="project_details">
-              <h3 class="project_Title">AUDIOPHILE</h3>
+              <h3 class="project_Title">{{ project.name }}</h3>
               <p class="about_project">
-                An online premier store for high quality headphones, earphones
-                and speakers. An all in one stop to fulfillyour audio needs. For
-                music lovers and sound specialists devoted to help them get
-                their audio needs.
+                {{ project.description }}
               </p>
-              <a
-                href="https://gadgets-ecommerce-vue3.netlify.app/"
-                target="blank"
-                >audiophile-ecommerce</a
-              >
+              <a :href="project.livelink" target="blank">{{
+                project.linkName
+              }}</a>
             </div>
           </div>
         </li>
@@ -206,9 +203,43 @@
 </template>
 <script>
 import FavoriteQuotes from "../UI/FavoriteQuotes.vue";
+import audiophile from "@/assets/audiophile.png";
+import recipePage from "@/assets/projects/recipe.png";
+import portfolio from "@/assets/projects/my_portfolio.png";
+
 export default {
   components: {
     FavoriteQuotes,
+  },
+  data() {
+    return {
+      projects: [
+        {
+          image: audiophile,
+          name: "AUDIOPHILE",
+          description:
+            "An online premier store for high quality headphones, earphones and speakers. An all in one stop to fulfillyour audio needs. For music lovers and sound specialists devoted to help them get their audio needs.",
+          livelink: "https://gadgets-ecommerce-vue3.netlify.app/",
+          linkName: "audiophile-ecommerce",
+        },
+        {
+          image: recipePage,
+          name: "RECIPE PAGE",
+          description:
+            "My solution to the Recipe page challenge on Frontend Mentor. An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked to perfection, optionally filled with your choice of cheese.",
+          livelink: "https://a-recipe-page.netlify.app/",
+          linkName: "a-recipe-page",
+        },
+        {
+          image: portfolio,
+          name: "ABIODUN PORTFOLIO",
+          description:
+            "My portfolio is a reflection of my dedication, passion for giving a friendly user interface,  describing my skills, creativity, and commitment to excellence. Each project showcases my ability to adapt and excel in different environments and challenges.",
+          livelink: "https://a-recipe-page.netlify.app/",
+          linkName: "abiodun-portfolio-v",
+        },
+      ],
+    };
   },
   methods: {
     moreProjects() {
@@ -217,11 +248,10 @@ export default {
     moreBlogs() {
       return this.$router.push("/blogs");
     },
-    // scrollToTop() {
-    //   window.scrollTo(0, 0);
-    // }
-    // <router-link to="#target" @click.native="$root.scrollToTop()">Go to Target</router-link>
   },
+  // mounted() {
+  //   console.log(this.projects);
+  // },
 };
 </script>
 <style scoped>
@@ -719,14 +749,13 @@ export default {
   height: 18rem;
 }
 .project_details {
-  margin: 2rem 0 0 0;
+  margin: 1.7rem 0 0 0;
 }
 .project_Title {
   /* color: rgb(82, 118, 191); */
-  font-size: 1.4rem;
   width: 26rem;
-  font-size: 2.5rem;
-  line-height: 50px;
+  font-size: 2.1rem;
+  line-height: 40px;
   letter-spacing: 1px;
 }
 .about_project {

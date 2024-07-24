@@ -28,10 +28,8 @@ export default {
     TheFooter,
   },
   methods: {
-    // scrollToTarget() {
-    //   this.$refs.targetComponent.$el.scrollIntoView({ behavior: "smooth" });
-    // },
     scrollToAbout() {
+      // this.$router.push(`/home`);
       window.scrollTo({
         top: 1560, // vertical scroll position
         left: 0, // horizontal scroll position
