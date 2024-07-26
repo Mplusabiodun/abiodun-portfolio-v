@@ -5,6 +5,9 @@ import MoreProjects from "./components/Main/MoreProjects.vue";
 import MyBlogs from "./components/Main/MyBlogs.vue";
 import MyResume from "./components/Main/MyResume.vue";
 import NotFound from "./components/UI/NotFound.vue";
+import ToolBox from "./components/Main/AboutDivision/ToolBox.vue";
+import TheConnection from "./components/Main/AboutDivision/TheConnection.vue";
+import AboutMe from "./components/Main/AboutDivision/AboutMe.vue";
 
 const router = createRouter({
   history: createWebHistory(),
@@ -16,6 +19,10 @@ const router = createRouter({
     { path: "/resume", component: MyResume },
     // { path: "/abiodun_resume", component: AboutMe },
     { path: "/:notFound(.*)", component: NotFound },
+
+    { path: "/toolbox", component: ToolBox },
+    { path: "/connections", component: TheConnection },
+    { path: "/about", component: AboutMe },
   ],
   scrollBehavior(_, _2, savedposition) {
     // console.log(to, from, savedposition);

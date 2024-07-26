@@ -24,17 +24,17 @@
       <h4 class="about">ABOUT</h4>
       <h2 class="heres">Here's what sets me apart and makes me unique</h2>
       <div class="unique_list">
-        <div class="aboutme learnmore">
+        <div @click="about" class="aboutme learnmore">
           <p>Learn more about me</p>
         </div>
-        <div class="aboutme bookacall">
+        <div @click="bookacall" class="aboutme bookacall">
           <div>
             <h4 class="acall">Book a call with me</h4>
             <p class="love_to">I'd love to chat even if there's no agenda!</p>
           </div>
           <div class="calendar"></div>
         </div>
-        <div class="aboutme xaccount">
+        <div @click="twitter" class="aboutme xaccount">
           <img
             id="xaccount_img"
             src="@/assets/fatai2.jpg"
@@ -43,25 +43,41 @@
           <h3>@Mplus51610027</h3>
           <button>Follow</button>
         </div>
-        <div class="aboutme toolbox">
+        <div @click="toolbox" class="aboutme toolbox">
           <h4 class="toolboxheading">Toolbox</h4>
           <p class="toolbox_checkout">
             Checkout some of my favorite tools and spots around the web.
           </p>
           <div class="circle1">
-            <img id="mdnlogo" src="@/assets/mdn.png" alt="mdnlogo" />
-            <img id="vsclogo" src="@/assets/vscode.png" alt="vsclogo" />
-            <img id="netlify" src="@/assets/netlify.png" alt="netlify" />
+            <img
+              id="mdnlogo"
+              src="@/assets/toolboxpics/mdn.png"
+              alt="mdnlogo"
+            />
+            <img
+              id="vsclogo"
+              src="@/assets/toolboxpics/vscode.png"
+              alt="vsclogo"
+            />
+            <img
+              id="netlify"
+              src="@/assets/toolboxpics/netlify.png"
+              alt="netlify"
+            />
             <div class="circle2">
-              <img id="codecamp" src="@/assets/codecamp.png" alt="codecamp" />
+              <img
+                id="codecamp"
+                src="@/assets/toolboxpics/codecamp.png"
+                alt="codecamp"
+              />
               <img
                 id="youtubelogo"
-                src="@/assets/youtube.png"
+                src="@/assets/toolboxpics/youtube.png"
                 alt="youtubelogo"
               />
               <img
                 id="chatgptlogo"
-                src="@/assets/github.png"
+                src="@/assets/toolboxpics/github.png"
                 alt="chatgptlogo"
               />
               <div class="circle3">
@@ -74,7 +90,7 @@
             </div>
           </div>
         </div>
-        <div class="aboutme connections">
+        <div @click="connections" class="aboutme connections">
           <h4 class="connection_head">Connections</h4>
           <p class="ever_evolvig">
             An ever-evolvng list of people I have met and wish to meet.
@@ -82,40 +98,44 @@
           <div class="tomeet">
             <img
               id="adeyemi_ruqoyah"
-              src="@/assets/ruqoyah.jpg"
-              alt="damolabadmus"
+              src="@/assets/connections/ruqoyah.jpg"
+              alt="ruqoyah"
             />
             <img
               id="max_schumuller"
-              src="@/assets/max.png"
-              alt="damolabadmus"
+              src="@/assets/connections/max.png"
+              alt="max_schumuller"
             />
             <img
               id="colt_steele"
-              src="@/assets/colt_steele.png"
-              alt="damolabadmus"
+              src="@/assets/connections/colt_steele.png"
+              alt="colt_steele"
             />
             <img
               id="damola_badmus"
-              src="@/assets/damolabadmus.png"
+              src="@/assets/connections/damolabadmus.png"
               alt="damolabadmus"
             />
-            <img id="jaystar" src="@/assets/jaystar.png" alt="jaystar" />
+            <img
+              id="jaystar"
+              src="@/assets/connections/jaystar.png"
+              alt="jaystar"
+            />
 
             <img
               id="adeyemiyusuff"
-              src="@/assets/yusuff.jpg"
-              alt="damolabadmus"
+              src="@/assets/connections/yusuff.jpg"
+              alt="yusuff"
             />
             <img
               id="braydon_coyer"
-              src="@/assets/braydon.png"
-              alt="damolabadmus"
+              src="@/assets/connections/braydon.png"
+              alt="braydon"
             />
           </div>
         </div>
       </div>
-      <button class="learn_more">Learn more</button>
+      <button @click="about" class="learn_more">Learn more</button>
     </section>
     <section class="blog_section">
       <h4 class="blog">BLOG</h4>
@@ -242,11 +262,32 @@ export default {
     };
   },
   methods: {
+    bookacall() {
+      const email = "fataimonsuru2020@gmail.com";
+      const subject = "Call or chat";
+      const body =
+        "Dear Fatai, i'll like to have a call or chat with you, thanks";
+      window.location.href = `mailto:${email}?subject=${encodeURIComponent(
+        subject
+      )}&body=${encodeURIComponent(body)}`;
+    },
+    twitter() {
+      window.open("https://twitter.com/Mplus51610027", "_blank");
+    },
     moreProjects() {
-      return this.$router.push("/projects");
+      this.$router.push("/projects");
     },
     moreBlogs() {
-      return this.$router.push("/blogs");
+      this.$router.push("/blogs");
+    },
+    toolbox() {
+      this.$router.push("/toolbox");
+    },
+    connections() {
+      this.$router.push("/connections");
+    },
+    about() {
+      this.$router.push("/about");
     },
   },
   // mounted() {
@@ -407,8 +448,8 @@ export default {
 
 /* XACCOUNT START */
 .xaccount {
-  justify-content: center;
-  justify-items: center;
+  /* justify-content: center; */
+  /* justify-items: center; */
   padding-top: 1.5rem;
   text-align: center;
   cursor: pointer;

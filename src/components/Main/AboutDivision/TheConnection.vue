@@ -1,0 +1,142 @@
+<template>
+  <section class="container">
+    <h2 class="connection">Connections</h2>
+    <h3 class="here">
+      Here are some remarkable individuals I have met in person.
+    </h3>
+    <ul class="metindividual">
+      <li v-for="person in met_already" :key="person.s_name">
+        <img id="app_img" :src="person.image" :alt="person.s_name" />
+        <p>{{ person.s_name }}</p>
+      </li>
+    </ul>
+    <!-- LOVE TO MEET -->
+    <div class="havnt_meet">
+      <h3 class="here to_meet">
+        I would love to meet these individuals someday.
+      </h3>
+      <ul class="metindividual">
+        <li v-for="individual in love_tomeet" :key="individual.s_name">
+          <img id="app_img" :src="individual.image" :alt="individual.s_name" />
+          <p>{{ individual.s_name }}</p>
+        </li>
+      </ul>
+    </div>
+
+    <favorite-quotes></favorite-quotes>
+  </section>
+</template>
+<script>
+import FavoriteQuotes from "@/components/UI/FavoriteQuotes.vue";
+// MET
+import Ruqoyah from "@/assets/connections/ruqoyah.jpg";
+import Yusuff from "@/assets/connections/yusuff.jpg";
+// import Islamiyyah from "@/assets/toolboxpics/islamiyyah.png";
+// import Sodiq from "@/assets/toolboxpics/sodiq.png";
+// import Jeleel from "@/assets/toolboxpics/jeleel.png";
+// import Ganiy from "@/assets/toolboxpics/ganiy.png";
+// import Mubaraq from "@/assets/toolboxpics/mubaraq.png";
+
+// LOVE TO MEET
+import Damola from "@/assets/connections/damolabadmus.png";
+import Jaystar from "@/assets/connections/jaystar.png";
+import Max from "@/assets/connections/max.png";
+import Braydon from "@/assets/connections/braydon.png";
+import Colt from "@/assets/connections/colt_steele.png";
+// import Jerry from "@/assets/toolboxpics/jerry.png";
+// import Tabitha from "@/assets/toolboxpics/tabitha.png";
+
+export default {
+  components: {
+    FavoriteQuotes,
+  },
+  data() {
+    return {
+      met_already: [
+        { image: Ruqoyah, s_name: "Ruqoyah Adeyemi" },
+        { image: Yusuff, s_name: "Yusuff Adeyemi" },
+        // { image: youtube, s_name: "Islamiyyah Okesola" },
+        // { image: MDN, s_name: "Sodiq Adebisi" },
+        // { image: github, s_name: "Jeleel Adeyemi" },
+        // { image: github, s_name: "Ganiy Adebayo" },
+        // { image: github, s_name: "Mubaraq Adeoye" },
+      ],
+      love_tomeet: [
+        { image: Damola, s_name: "Damola Badmus" },
+        { image: Jaystar, s_name: "John Ayilara" },
+        { image: Max, s_name: "Max Schumuller" },
+        { image: Braydon, s_name: "Bradon Coyer " },
+        { image: Colt, s_name: "Colt Steele" },
+        // { image: github, s_name: "Jerry Uke" },
+        // { image: github, s_name: "Tabitha Kayhu" },
+      ],
+    };
+  },
+};
+</script>
+<style scoped>
+.container {
+  background: #020617;
+  padding: 9rem 12rem;
+  color: #fff;
+}
+.connection {
+  font-size: 3.2rem;
+  width: 38rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  line-height: 3.5rem;
+  text-align: center;
+  margin: 0 auto;
+}
+.here {
+  width: 30rem;
+  text-align: center;
+  margin: 3rem auto 2.2rem;
+  font-size: 1.8rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+.to_meet {
+  margin-top: 9rem;
+}
+.metindividual {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  padding: 0;
+}
+li {
+  background: linear-gradient(
+    rgb(18, 48, 107),
+    rgb(18, 48, 107),
+    rgb(29, 39, 56),
+    rgb(29, 39, 56),
+    rgb(29, 39, 56),
+    rgb(23, 31, 44),
+    rgb(23, 31, 44)
+  );
+  border-radius: 20px;
+  border: 0.8px solid rgb(82, 118, 191);
+  padding: 1rem;
+  list-style-type: none;
+  height: 12rem;
+  text-align: center;
+}
+#app_img {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  margin-top: 0rem;
+}
+li p {
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0rem 0 0 0;
+  opacity: 70%;
+}
+.havnt_meet {
+  opacity: 80%;
+}
+</style>
