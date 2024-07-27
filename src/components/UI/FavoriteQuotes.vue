@@ -5,8 +5,7 @@
         Will you like to read some of my favourite quotes?
       </h3>
       <p class="myquotes">
-        Other people liking you is a bonus, you liking yourself is the real
-        price.
+        {{ displayedQuote }}
       </p>
       <div class="input_div">
         <textarea
@@ -57,6 +56,38 @@
     </div>
   </section>
 </template>
+<script>
+export default {
+  data() {
+    return {
+      myFavQuotes: [
+        "Background could only make things not easy, not impossible. Tell me how uneasy it was I'll listen but not why you couldn't.",
+        "Other people liking you is bonus, you liking you is the REAL price.",
+        "Well, Hope is never something you should rely on. While waiting for the best, prepare for the worst Champ.",
+        "A man has to do what he has to do, whatever it takes.",
+        "If it's meant for everyone, it would have been easy, keep your head champ.",
+        "Coding: where imagination meets innovation!.",
+        "Coding: the art of turning ideas into reality, one line at a time!.",
+        "Life is code, and code is life. It's all about the loops!.",
+        "Coding: where magic happens, and bugs My code, my rules, my digital kingdom!.",
+        "Doesn't have to be within, yours is to make the puzzle work out.",
+        "In life, people will HURT you and go free, don't sit and hope things will happen to them rather put yourself together and strive harder. GOD is for everyone.",
+      ],
+      displayedQuote: null,
+    };
+  },
+  methods: {
+    displayRandomItem() {
+      const randomIndex = Math.floor(Math.random() * this.myFavQuotes.length);
+      this.displayedQuote = this.myFavQuotes[randomIndex];
+    },
+  },
+  created() {
+    this.displayRandomItem();
+    setInterval(this.displayRandomItem, 5000);
+  },
+};
+</script>
 <style scoped>
 .fav_cont {
   display: flex;
@@ -77,7 +108,7 @@
   font-size: 1rem;
   margin: 2rem auto 3rem;
   line-height: 1.8rem;
-  letter-spacing: 1px;
+  letter-spacing: 1.2px;
   opacity: 60%;
 }
 .input_div {
@@ -88,7 +119,6 @@
 #message {
   width: 100%;
   padding: 0.8rem 1.4rem;
-  /* margin: 0 1rem 0 -1rem; */
   color: #fff;
   background: inherit;
   border: 1px solid #ffffff5b;
@@ -108,7 +138,6 @@
 }
 .skill_div {
   padding: 0.5rem;
-  /* background: grey; */
   margin-left: 5rem;
   width: 28rem;
 }

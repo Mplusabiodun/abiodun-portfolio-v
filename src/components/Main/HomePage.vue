@@ -259,6 +259,7 @@ export default {
           linkName: "abiodun-portfolio-v",
         },
       ],
+      opacity: 0,
     };
   },
   methods: {
@@ -290,9 +291,6 @@ export default {
       this.$router.push("/about");
     },
   },
-  // mounted() {
-  //   console.log(this.projects);
-  // },
 };
 </script>
 <style scoped>
@@ -340,6 +338,7 @@ export default {
   text-align: center;
   margin-top: 10rem;
   opacity: 50%;
+  transition: opacity 0.5s ease-out;
 }
 .about_section,
 .blog_section,

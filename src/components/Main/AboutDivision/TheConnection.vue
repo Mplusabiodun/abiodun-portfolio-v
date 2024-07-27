@@ -31,11 +31,11 @@ import FavoriteQuotes from "@/components/UI/FavoriteQuotes.vue";
 // MET
 import Ruqoyah from "@/assets/connections/ruqoyah.jpg";
 import Yusuff from "@/assets/connections/yusuff.jpg";
-// import Islamiyyah from "@/assets/toolboxpics/islamiyyah.png";
-// import Sodiq from "@/assets/toolboxpics/sodiq.png";
-// import Jeleel from "@/assets/toolboxpics/jeleel.png";
-// import Ganiy from "@/assets/toolboxpics/ganiy.png";
-// import Mubaraq from "@/assets/toolboxpics/mubaraq.png";
+import Islamiyyah from "@/assets/connections/islamiyyah.png";
+import Jeleel from "@/assets//connections/jeleel.png";
+import Sodiq from "@/assets/connections/sodiq.jpg";
+// import Ganiy from "@/assets/connections/ganiy.png";
+// import Mubaraq from "@/assets/connections/mubaraq.png";
 
 // LOVE TO MEET
 import Damola from "@/assets/connections/damolabadmus.png";
@@ -43,8 +43,8 @@ import Jaystar from "@/assets/connections/jaystar.png";
 import Max from "@/assets/connections/max.png";
 import Braydon from "@/assets/connections/braydon.png";
 import Colt from "@/assets/connections/colt_steele.png";
-// import Jerry from "@/assets/toolboxpics/jerry.png";
-// import Tabitha from "@/assets/toolboxpics/tabitha.png";
+import Jerry from "@/assets/connections/jerry_uke.png";
+import Tabitha from "@/assets/connections/tabitha_kayu.png";
 
 export default {
   components: {
@@ -55,11 +55,11 @@ export default {
       met_already: [
         { image: Ruqoyah, s_name: "Ruqoyah Adeyemi" },
         { image: Yusuff, s_name: "Yusuff Adeyemi" },
-        // { image: youtube, s_name: "Islamiyyah Okesola" },
-        // { image: MDN, s_name: "Sodiq Adebisi" },
-        // { image: github, s_name: "Jeleel Adeyemi" },
-        // { image: github, s_name: "Ganiy Adebayo" },
-        // { image: github, s_name: "Mubaraq Adeoye" },
+        { image: Islamiyyah, s_name: "Islamiyyah Okesola" },
+        { image: Jeleel, s_name: "Jeleel Adeyemi" },
+        { image: Sodiq, s_name: "Sodiq Adebisi" },
+        // { image: Ganiy, s_name: "Ganiy Adebayo" },
+        // { image: Mubaraq, s_name: "Mubaraq Adeoye" },
       ],
       love_tomeet: [
         { image: Damola, s_name: "Damola Badmus" },
@@ -67,8 +67,8 @@ export default {
         { image: Max, s_name: "Max Schumuller" },
         { image: Braydon, s_name: "Bradon Coyer " },
         { image: Colt, s_name: "Colt Steele" },
-        // { image: github, s_name: "Jerry Uke" },
-        // { image: github, s_name: "Tabitha Kayhu" },
+        { image: Jerry, s_name: "Jerry Uke" },
+        { image: Tabitha, s_name: "Tabitha Kayvu" },
       ],
     };
   },
