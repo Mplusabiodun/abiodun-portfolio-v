@@ -19,19 +19,13 @@
         </div>
         <ul class="accounts">
           <li>
-            <a href="#">
-              <i class="fa-brands fa-github"></i>
-            </a>
+            <i class="fa-brands fa-github"></i>
           </li>
           <li>
-            <a href="#">
-              <i class="fa-brands fa-linkedin"></i>
-            </a>
+            <i class="fa-brands fa-linkedin"></i>
           </li>
           <li>
-            <a href="#">
-              <i class="fa-brands fa-square-x-twitter"></i>
-            </a>
+            <i class="fa-brands fa-square-x-twitter"></i>
           </li>
         </ul>
         <div class="phone_cont">

@@ -22,34 +22,56 @@
       <h3 class="skills">Skills</h3>
       <ul>
         <li>
-          <img class="logo" src="@/assets/html.png" alt="html_logo" />HTML
+          <img
+            class="logo"
+            src="@/assets/skills_social/html.png"
+            alt="html_logo"
+          />HTML
         </li>
-        <li><img class="logo" src="@/assets/css.png" alt="css_logo" />CSS</li>
         <li>
           <img
             class="logo"
-            src="@/assets/tailwind.png"
+            src="@/assets/skills_social/css.png"
+            alt="css_logo"
+          />CSS
+        </li>
+        <li>
+          <img
+            class="logo"
+            src="@/assets/skills_social/tailwind.png"
             alt="tailwind_logo"
           />TAILWIND
         </li>
         <li>
           <img
             class="logo"
-            src="@/assets/javascript.png"
+            src="@/assets/skills_social/javascript.png"
             alt="javascript_logo"
           />
           JAVASCRIPT
         </li>
         <li>
-          <img class="logo" src="@/assets/vue.png" alt="vue_logo" />
+          <img
+            class="logo"
+            src="@/assets/skills_social/vue.png"
+            alt="vue_logo"
+          />
           VUE
         </li>
         <li>
-          <img class="logo" src="@/assets/html.png" alt="git_vc" />
+          <img
+            class="logo"
+            src="@/assets/skills_social/html.png"
+            alt="git_vc"
+          />
           GIT VC
         </li>
         <li>
-          <img class="logo" src="@/assets/react.png" alt="react_logo" />
+          <img
+            class="logo"
+            src="@/assets/skills_social/react.png"
+            alt="react_logo"
+          />
           REACT
         </li>
       </ul>

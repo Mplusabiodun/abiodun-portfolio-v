@@ -18,7 +18,7 @@
 </template>
 <script>
 import FavoriteQuotes from "../UI/FavoriteQuotes.vue";
-import audiophile from "@/assets/audiophile.png";
+import audiophile from "@/assets/projects/audiophile.png";
 import recipePage from "@/assets/projects/recipe.png";
 import portfolio from "@/assets/projects/my_portfolio.png";
 import findacoach from "@/assets/projects/find_a_coach.png";

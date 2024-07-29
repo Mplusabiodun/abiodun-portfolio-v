@@ -1,8 +1,8 @@
 <template>
   <section class="container">
-    <h2 class="greetngs">
-      <span class="good">Good morning!</span>I'm Fatai, an enthusiasm frontend
-      developer.
+    <h2 class="greetings">
+      <span class="good">{{ greeting }}</span
+      >I'm Fatai, an enthusiasm frontend developer
     </h2>
     <!-- container 2 -->
     <div class="container2">
@@ -11,30 +11,15 @@
           Hey there! Let me quickly tell you about myself and what I enjoy
           doing.
         </p>
-        <img class="fatai" src="@/assets/fataisnap.jpg" alt="Fatai" />
+        <img class="fatai" src="@/assets/mypics/fataisnap.jpg" alt="Fatai" />
         <h3 class="started">
           I Started my creativity journey years back and I can proudly say I
           learned from the best, always on the lookout for my next adventure.
         </h3>
-        <p>
-          In a world full of possibilities, I believe in the magic of kindness
-          and strive to bring a sprinkle of joy to everything I do and everyone
-          around.
-        </p>
-        <p>
-          A student at Altschool Africa, Creating designs that inspire positive
-          and building applications that made life more easier have been my
-          ultimate goal.
-        </p>
-        <p>
-          A fans of nature and I have always love to spend my leisure time
-          enjoying my peaceful thoughts without distraction. I'm always thrilled
-          to meet fellow dreamers, explorers, the journey ahead and stories
-          waiting to be told. Feel free to reach out, and let's create our own
-          fairytale!.
+        <p v-for="journey in myJourney" :key="journey">
+          {{ journey }}
         </p>
       </div>
-      <!-- END OF LEFT SIDE -->
 
       <!-- START OF RIGHT SIDE -->
       <div class="right_cont">
@@ -42,17 +27,10 @@
           Hey there! Let me quickly tell you about myself and what I enjoy
           doing.
         </p>
-        <img class="fatai" src="@/assets/fatai2.jpg" alt="Fatai" />
+        <img class="fatai" src="@/assets/mypics/fatai2.jpg" alt="Fatai" />
         <h3 class="started">The leap over to web development.</h3>
-        <p>
-          I decided to explore web development before too long. Given my
-          inclination towards visual expression and design, I naturally
-          gravitated towards frontend development.
-        </p>
-        <p>
-          So, I started learning HTML, CSS, and JavaScript. In 2023, I got into
-          Tailwind, Git and Vue. Embarked on projects including my Portfolio,
-          Not long after that I started with React framework.
+        <p v-for="learning in myLearning" :key="learning">
+          {{ learning }}
         </p>
       </div>
     </div>
@@ -60,96 +38,138 @@
     <!-- CONTAINER 3 -->
     <div class="container3">
       <div class="left_cont">
-        <img class="fatai flower" src="@/assets/fatai2.jpg" alt="Fatai" />
-        <!-- <h3 class="started">What I'm doing now.</h3>
-        <p>
-          Currently, am nearing the completion of my degree in Engineering,
-          which have been years of roller coater.
-        </p>
-        <p>
-          In my free time, I enjoy creative coding, watching or playing
-          football, watching movies, playing games with friends and spending
-          time with my family.
-        </p>
-        <p>Thanks for checking out my corner of the web.</p> -->
+        <img
+          class="fatai flower"
+          src="@/assets/mypics/flower1.jpg"
+          alt="Fatai"
+        />
       </div>
-      <!-- START OF RIGHT SIDE -->
       <div class="right_cont">
         <h3 class="started value_inlife">What I truly value in life.</h3>
         <p>
-          I believe in the quite popular word that <em>EXPECTATIONS HURT</em>.
-          Most importantly hardwork pays, valued family maybe because am blessed
-          with a beautiful ones, great sisters and people around me.
+          I believe in the quite popular word that
+          <em>EXPECTATIONS HURT, stop living with entitlement mentality</em>.
+          Most importantly hardwork pays, its better to wait than to regret.
         </p>
         <p>
-          And of course definitely looking forward to have mine, someday
-          probably in the years to come.
+          I valued family maybe because am blessed with beautiful ones, great
+          sisters and people around me. And of course definitely looking forward
+          to have mine someday, probably in the years to come.
         </p>
-        <!-- <img class="fatai flower" src="@/assets/fatai2.jpg" alt="Fatai" /> -->
       </div>
     </div>
-    <!-- container 3  stops here-->
 
     <!-- CONTAINER 4 -->
     <div class="container4">
       <div class="left_cont">
-        <!-- <img class="fatai flower" src="@/assets/fatai2.jpg" alt="Fatai" /> -->
         <h3 class="started">What I'm doing now.</h3>
-        <p>
-          Currently, am nearing the completion of my degree in Engineering,
-          which have been years of roller coater.
+        <p v-for="currently in currentlyOn" :key="currently">
+          {{ currently }}
         </p>
         <p>
-          In my free time, I enjoy creative coding, watching or playing
-          football, watching movies, playing games with friends and spending
-          time with my family.
+          Thanks for checking out my corner of the web. <span>&#127863;</span>
         </p>
-        <p>Thanks for checking out my corner of the web.</p>
       </div>
       <!-- START OF RIGHT SIDE -->
       <div class="right_cont">
-        <!-- <h3 class="started value_inlife">What I truly value in life.</h3>
-        <p>
-          I believe in the quite popular word that <em>EXPECTATIONS HURT</em>.
-          Most importantly hardwork pays, valued family maybe because am blessed
-          with a beautiful ones, great sisters and people around me.
-        </p>
-        <p>
-          And of course definitely looking forward to have mine, someday
-          probably in the years to come.
-        </p> -->
         <img
           class="fatai onlylaptop"
-          src="@/assets/fataisnap.jpg"
+          src="@/assets/mypics/flower2.jpg"
           alt="Fatai"
         />
       </div>
     </div>
-
+    <!-- EXPERIENCE -->
     <div class="experience_section">
       <h4 class="experience">EXPERIENCE</h4>
       <h2 class="experience_note">
         My work history and accomplishments timeline.
       </h2>
-      <ul class="project_ul">
-        <li class="project_li">
-          <h2>AltSchool Africa</h2>
-          <div class="project_details">
-            <h3 class="project_Title"></h3>
-            <p class="about_project"></p>
+      <ul>
+        <li v-for="experience in experiences" :key="experience.title">
+          <h2>{{ experience.title }}</h2>
+          <div class="experience_details">
+            <h3>{{ experience.role }}</h3>
+            <p>{{ experience.year }}</p>
+            <p>
+              {{ experience.about }}
+            </p>
           </div>
         </li>
       </ul>
     </div>
+
+    <!-- CERTIFICATES -->
+    <ul class="cert">
+      <li v-for="accomplishment in accomplishments" :key="accomplishment.from">
+        <img
+          id="certificates"
+          :src="accomplishment.certificate"
+          :alt="accomplishment.from"
+        />
+        <p>{{ accomplishment.from }}</p>
+      </li>
+    </ul>
     <favorite-quotes></favorite-quotes>
   </section>
 </template>
 <script>
 import FavoriteQuotes from "@/components/UI/FavoriteQuotes.vue";
+import responsiveness from "@/assets/certificates/responsiveness.png";
+import softwareCareer from "@/assets/certificates/software_career.png";
 
 export default {
   components: {
     FavoriteQuotes,
+  },
+  data() {
+    return {
+      myJourney: [
+        "In a world full of possibilities, I believe in the magic of kindness and strive to bring a sprinkle of joy to everything I do and everyone around.",
+        "A student at Altschool Africa, Creating designs that inspire positive and building applications that made life more easier have been my ultimate goal.",
+        "A fans of nature and I have always love to spend my leisure time enjoying my peaceful thoughts without distraction. I'm always thrilled to meet fellow dreamers, explorers, the journey ahead and stories waiting to be told. Feel free to reach out, and let's create our own fairytale!.",
+      ],
+      myLearning: [
+        "I decided to explore web development before too long. Given my inclination towards visual expression and design, I naturally gravitated towards frontend development.",
+        "I decided to explore web development before too long. Given my inclination towards visual expression and design, I naturally gravitated towards frontend development.",
+      ],
+      currentlyOn: [
+        "Currently, am nearing the completion of my degree in Engineering, which have been years of roller coater for me.",
+        "In my free time, I enjoy creative coding, watching or playing football, watching movies, playing games with friends and spending time with my family.",
+        // "Thanks for checking out my corner of the web.",
+      ],
+      experiences: [
+        {
+          title: "AltSchool Africa",
+          role: "Student -  Frontend Developer",
+          year: "2021 - 2023",
+          about:
+            "Trained to be a Frontend developer with several skills - Communication, Contributing to open source projects et cetra. Gradauted with class '23.",
+        },
+      ],
+      accomplishments: [
+        { certificate: responsiveness, from: "FreeCodeCamp" },
+        { certificate: softwareCareer, from: "Udemy" },
+      ],
+      greetings: "",
+    };
+  },
+  methods: {
+    updateGreeting() {
+      const currentHour = new Date().getHours();
+      if (5 <= currentHour && currentHour < 12) {
+        this.greeting = "Good Morning";
+      } else if (12 <= currentHour && currentHour < 18) {
+        this.greeting = "Good Afternoon";
+      } else {
+        this.greeting = "Good Evening";
+      }
+      console.log(currentHour);
+      console.log(new Date());
+    },
+  },
+  created() {
+    this.updateGreeting();
   },
 };
 </script>
@@ -159,14 +179,17 @@ export default {
   padding: 7rem 9rem;
   color: #fff;
 }
-.greetngs {
-  font-size: 3.1rem;
-  width: 40rem;
+.greetings {
+  font-size: 3.3rem;
+  width: 45rem;
   font-weight: 800;
   letter-spacing: 1px;
-  line-height: 3.5rem;
+  line-height: 3.3rem;
   text-align: center;
   margin: 0 auto;
+}
+.good {
+  display: block;
 }
 /* container 2   */
 .container2,
@@ -181,9 +204,6 @@ export default {
 }
 .container4 {
   margin: 0rem auto 0;
-}
-.good {
-  display: block;
 }
 .left_cont {
   margin: 0 6rem 0 0;
@@ -257,5 +277,42 @@ p {
   line-height: 2.5rem;
   font-weight: 300;
   letter-spacing: 1px;
+}
+.experience_section ul {
+  margin: 3rem 0;
+}
+.experience_section li {
+  list-style-type: none;
+  margin: 4rem 1rem 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  opacity: 80%;
+  letter-spacing: 0.9px;
+}
+.experience_section p {
+  font-size: 1.1rem;
+}
+.cert {
+  margin: 4rem 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  padding: 0;
+}
+.cert li {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+#certificates {
+  width: 26.5rem;
+  height: 18rem;
+  border: 2px solid rgb(82, 118, 191);
+  border-radius: 20px;
+}
+.cert p {
+  margin: 0 auto;
+  text-align: center;
 }
 </style>

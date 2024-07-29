@@ -62,18 +62,15 @@ export default {
 </script>
 
 <style>
-/* @import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"); */
-/* @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"); */
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 
 * {
   margin: 0;
   box-sizing: border-box;
-  /* font-family: Lora, "Arial Narrow Bold", sans-serif; */
   font-family: Manrope, sans-serif;
 }
 
-body {
+/* body {
   --token-1170bfc8-607b-4b81-950b-9b5d20e62214: rgb(2, 6, 23);
   --token-a2487c6a-fcb0-4c82-a4d4-9e441490a6e2: rgb(189, 197, 209);
   --token-ae816849-3c94-47ab-ac08-dd65b7215b22: rgb(52, 211, 153);
@@ -85,7 +82,7 @@ body {
   --token-ff16434d-45d3-4adc-a4b4-fb86763211e0: rgb(129, 140, 248);
   --token-3ef3d5ab-6fce-4d90-ba14-b03d18301902: rgb(251, 191, 36);
   --token-b9d1ebef-7193-4802-8efb-4bde9a9c342b: rgb(255, 84, 166);
-}
+} */
 .container_header {
   background: rgb(2, 6, 23);
   padding: 1rem 7rem 0;
@@ -94,14 +91,27 @@ body {
   right: 0;
   left: 0;
   z-index: 50;
-  margin-bottom: 4rem;
+  /* margin-bottom: 4rem; */
 }
 .container_footer {
   background: rgb(2, 6, 23);
-  /* margin-top: 15rem; */
   padding: 1rem 4rem 0;
   bottom: 0;
   right: 0;
   left: 0;
+}
+
+/* iPad */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .container_header {
+    padding: 1rem 7rem 0;
+  }
+}
+
+/* Mobile ----------- */
+@media only screen and (max-width: 767px) {
+  /* .container_footer {
+    padding: 3rem 2rem;
+  } */
 }
 </style>

@@ -20,29 +20,13 @@
       <div class="conterhookblog"></div>
     </div>
     <ul class="blog_grid">
-      <li class="grid_element">
-        <div class="medium_second">
-          <a
-            href="https://medium.com/gitconnected/why-do-most-programmers-face-imposter-syndrome-001a97f433c7"
-            target="blank"
-            >IMPOSTER SYNDROME</a
-          >.
-          <p>Everybody faces it, yet everyone fears it.</p>
-        </div>
+      <li v-for="blog in blogs" :key="blog.blogName" class="grid_element">
+        <!-- <div class="medium_second"> -->
+        <a :href="blog.blogLink" target="blank">{{ blog.blogName }}</a>
+        <p>{{ blog.blogWord }}</p>
+        <!-- </div> -->
       </li>
-      <!-- TESTING -->
-      <!-- 
-        <li class="grid_element">
-        <div class="medium_second">
-          <a
-            href="https://medium.com/gitconnected/why-do-most-programmers-face-imposter-syndrome-001a97f433c7"
-            target="blank"
-            >IMPOSTER SYNDROME</a
-          >.
-          <p>Everybody faces it, yet everyone fears it.</p>
-        </div>
-      </li> 
-    --></ul>
+    </ul>
     <favorite-quotes></favorite-quotes>
   </div>
 </template>
@@ -52,6 +36,35 @@ import FavoriteQuotes from "../UI/FavoriteQuotes.vue";
 export default {
   components: {
     FavoriteQuotes,
+  },
+  data() {
+    return {
+      blogs: [
+        {
+          blogName: "IMPOSTER SYNDROME",
+          blogLink:
+            "https://medium.com/gitconnected/why-do-most-programmers-face-imposter-syndrome-001a97f433c7",
+          blogWord: "Everybody faces it, yet everyone fears it.",
+        },
+        {
+          blogName: "EAT THE FROG",
+          blogLink: "https://unito.io/blog/eat-the-frog/",
+          blogWord: "Get Your Most Difficult Work Done First.",
+        },
+        {
+          blogName: "THE POMODORO® TECHNIQUE",
+          blogLink:
+            "https://www.pomodorotechnique.com/what-is-the-pomodoro-technique.php",
+          blogWord:
+            "Transforming both work and home life and make us far more productive.",
+        },
+        {
+          blogName: "PRODUCTIVITY HACKS",
+          blogLink: "https://www.project.co/productivity-hacks/",
+          blogWord: "15 of the Best Productivity Hacks for 2024.",
+        },
+      ],
+    };
   },
 };
 </script>
@@ -135,33 +148,37 @@ li {
   padding: 0;
 }
 .grid_element {
-  margin: 0rem 0;
-  background: green;
+  margin: 2rem 0 0;
   border-radius: 2rem;
   overflow: hidden;
-}
-.medium_second {
-  /* grid-column: 1/2; */
-  background: url("@/assets/imposter_syndrome.png");
+  background: linear-gradient(
+    rgb(18, 48, 107),
+    rgb(18, 48, 107),
+    rgb(29, 39, 56),
+    rgb(29, 39, 56),
+    rgb(29, 39, 56),
+    rgb(23, 31, 44),
+    rgb(23, 31, 44)
+  );
+  /* background: url("@/assets/imposter_syndrome.png"); */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  color: rgb(2, 6, 23);
-  padding: 0 0 2rem 2rem;
+  /* color: rgb(2, 6, 23); */
+  padding: 0 2rem 1.5rem;
   height: 14rem;
   align-content: flex-end;
-  font-weight: 800;
 }
-.medium_second a {
-  color: black;
-  font-weight: bold;
-  font-size: 1.3rem;
+.grid_element a {
+  font-weight: 800;
+  font-size: 1.4rem;
   text-decoration: none;
   letter-spacing: 1px;
 }
-.medium_second p {
+.grid_element p {
   font-weight: bold;
   font-size: 1rem;
   letter-spacing: 1px;
+  margin-top: 1rem;
 }
 </style>

@@ -5,10 +5,26 @@
       you're here!
     </h2>
     <div class="images">
-      <img class="myphotos photo1" src="@/assets/try2.jpg" alt="" />
-      <img class="myphotos photo2" src="@/assets/fatai2.jpg" alt="" />
-      <img class="myphotos photo3" src="@/assets/new2.jpg" alt="" />
-      <img class="myphotos photo4" src="@/assets/westernsun.jpg" alt="" />
+      <img
+        class="myphotos photo1"
+        src="@/assets/mypics/try2.jpg"
+        alt="fataipics1"
+      />
+      <img
+        class="myphotos photo2"
+        src="@/assets/mypics/fatai2.jpg"
+        alt="fataipics2"
+      />
+      <img
+        class="myphotos photo3"
+        src="@/assets/mypics/new2.jpg"
+        alt="fataipics3"
+      />
+      <img
+        class="myphotos photo4"
+        src="@/assets/mypics/westernsun.jpg"
+        alt="fatai@westernsun"
+      />
     </div>
     <p class="brief_about">
       A National Diploma Distinction holder and currently Civil Engineering
@@ -37,7 +53,7 @@
         <div @click="twitter" class="aboutme xaccount">
           <img
             id="xaccount_img"
-            src="@/assets/fatai2.jpg"
+            src="@/assets/mypics/fatai2.jpg"
             alt="twitter_profile_pics"
           />
           <h3>@Mplus51610027</h3>
@@ -184,6 +200,8 @@
       </div>
       <button @click="moreBlogs" class="more_articles">More articles</button>
     </section>
+
+    <!-- Project -->
     <section class="project_section">
       <h4 class="project">PROJECTS</h4>
       <h2 class="project_note">
@@ -192,7 +210,6 @@
       </h2>
       <ul v-for="project in projects" :key="project.name" class="project_ul">
         <li class="project_li">
-          <!-- {{ project }} -->
           <div class="projects_box">
             <div class="myproject">
               <img
@@ -200,7 +217,6 @@
                 :src="project.image"
                 alt="laptop_screen"
               />
-              <!-- src="@/assets/audiophile.png" -->
             </div>
             <div class="project_details">
               <h3 class="project_Title">{{ project.name }}</h3>
@@ -223,7 +239,7 @@
 </template>
 <script>
 import FavoriteQuotes from "../UI/FavoriteQuotes.vue";
-import audiophile from "@/assets/audiophile.png";
+import audiophile from "@/assets/projects/audiophile.png";
 import recipePage from "@/assets/projects/recipe.png";
 import portfolio from "@/assets/projects/my_portfolio.png";
 
@@ -305,7 +321,8 @@ export default {
   line-height: 4.3rem;
   text-align: center;
   margin: 0 auto;
-  position: relative;
+  letter-spacing: 1px;
+  /* position: relative; */
 }
 .images {
   display: flex;
@@ -437,8 +454,8 @@ export default {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  width: 23rem;
-  height: 5rem;
+  width: 25rem;
+  height: 6rem;
   margin: 1rem 0 -2rem 4rem;
   border-radius: 5px;
   opacity: 60%;
@@ -447,8 +464,6 @@ export default {
 
 /* XACCOUNT START */
 .xaccount {
-  /* justify-content: center; */
-  /* justify-items: center; */
   padding-top: 1.5rem;
   text-align: center;
   cursor: pointer;
@@ -708,7 +723,7 @@ export default {
   font-weight: bold;
 }
 .conterhookblog {
-  background: url("@/assets/counterhook.png");
+  background: url("@/assets/projects/counterhook.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -830,5 +845,212 @@ export default {
 .more_projects:hover {
   color: #020617;
   background: #ffffffd5;
+}
+
+/* iPad */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    padding: 17rem 3rem;
+  }
+  .myname {
+    font-size: 2.8rem;
+    width: 39rem;
+    letter-spacing: 1.5px;
+    margin: 0 auto;
+  }
+  .images {
+    margin: 8rem auto;
+  }
+  .myphotos {
+    width: 10rem;
+    height: 18rem;
+    border-radius: 1rem;
+  }
+  .photo1 {
+    margin-left: 0rem;
+  }
+  .about,
+  .blog,
+  .project {
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+  }
+  .heres,
+  .blog_like,
+  .project_note {
+    width: 26rem;
+    font-size: 1.8rem;
+  }
+  .blog_like,
+  .project_note {
+    width: 32rem;
+  }
+  .unique_list {
+    gap: 1rem;
+    margin: 0 -1rem;
+  }
+  /* LEARNMORE START */
+  .learnmore p {
+    font-size: 1.2rem;
+  }
+  /* LEARNMORE STOP */
+  /* BOOKACALL START */
+  .acall {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  .love_to {
+    font-size: 0.8rem;
+  }
+  .calendar {
+    width: 26rem;
+    margin: 1rem 0 -4rem 1rem;
+    border-radius: 7px;
+  }
+  /* BOOKACALL STOP */
+  /* XACCOUNT START */
+  .xaccount h3 {
+    font-size: 1rem;
+  }
+  .xaccount button {
+    padding: 0.6rem 1rem;
+  }
+  /* XACCOUNT STOP */
+  /* TOOLBOX START*/
+  /* .toolbox {
+    grid-column: 3/5;
+    grid-row: 2/4;
+    text-align: center;
+    padding: 1rem 0rem 0;
+  } */
+  /* .toolbox:hover {
+    opacity: 90%;
+    cursor: pointer;
+  } */
+  .toolboxheading {
+    font-size: 1rem;
+    /* letter-spacing: 1px;
+    opacity: 80%; */
+  }
+  /* .toolbox_checkout {
+    width: 17rem;
+    font-size: 0.9rem;
+    letter-spacing: 0.8px;
+    text-align: center;
+    margin: 5px auto;
+    opacity: 50%;
+  } */
+  .circle1 {
+    /* background: inherit; */
+    /* border: 0.8px solid rgb(82, 118, 191); */
+    width: 17rem;
+    height: 17rem;
+    /* margin: 4rem auto 0rem; */
+    /* 
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column; */
+  }
+  #mdnlogo,
+  #vsclogo,
+  #netlify,
+  #codecamp,
+  #youtubelogo,
+  #chatgptlogo {
+    width: 1.6rem;
+    height: 1.6rem;
+    /* border-radius: 50%;
+    opacity: 80%; */
+  }
+  #mdnlogo {
+    margin: -0.3rem 0rem 0 5rem;
+  }
+  #vsclogo {
+    margin: 10rem 0rem 0;
+  }
+  #netlify {
+    margin: -6rem 0rem 0 16rem;
+  }
+  .circle2 {
+    /* background: inherit; */
+    /* border: 0.8px solid rgb(82, 118, 191); */
+    width: 11.5rem;
+    height: 11.5rem;
+    margin: -5.8rem auto 0;
+    /* border-radius: 50%;
+    display: flex;
+    flex-direction: column; */
+  }
+  #codecamp {
+    margin: 3rem 0rem 0 -0.3rem;
+  }
+  #youtubelogo {
+    margin: -4.5rem 0rem 0 7.9rem;
+  }
+  #chatgptlogo {
+    margin: 8.5rem 0rem 0 7rem;
+  }
+  .circle3 {
+    width: 5.5rem;
+    height: 5.5rem;
+    margin: -8.8rem auto 0;
+  }
+  #mpluslogo {
+    width: 2rem;
+    height: 2rem;
+  }
+  /* TOOLBOX STOP */
+
+  /* CONNECTIONS START */
+  .connection_head {
+    font-size: 1rem;
+  }
+  .ever_evolvig {
+    font-size: 0.8rem;
+    margin: 3px 0 7px;
+  }
+  #adeyemi_ruqoyah,
+  #max_schumuller,
+  #colt_steele,
+  #damola_badmus,
+  #jaystar,
+  #adeyemiyusuff,
+  #braydon_coyer {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  #adeyemi_ruqoyah {
+    margin: 0 0 0 0rem;
+  }
+  #max_schumuller {
+    margin: -0.5rem 0 0 4rem;
+  }
+  #colt_steele {
+    margin: -2.5rem 0 0 10rem;
+  }
+  #damola_badmus {
+    width: 2.3rem;
+    height: 2.3rem;
+    margin: 0rem 0 0 7rem;
+  }
+  #jaystar {
+    width: 2.3rem;
+    height: 2.3rem;
+    margin: -2.4rem 0 0 12.5rem;
+  }
+  #adeyemiyusuff {
+    margin: -3rem 0 0 15.5rem;
+  }
+  #braydon_coyer {
+    margin: -2.6rem 0 -4rem 19rem;
+  }
+  /* CONNECTIONS STOP */
+}
+
+/* Mobile ----------- */
+@media only screen and (max-width: 767px) {
+  /* .container_footer {
+    padding: 3rem 2rem;
+  } */
 }
 </style>

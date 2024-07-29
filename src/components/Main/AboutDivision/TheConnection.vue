@@ -34,7 +34,7 @@ import Yusuff from "@/assets/connections/yusuff.jpg";
 import Islamiyyah from "@/assets/connections/islamiyyah.png";
 import Jeleel from "@/assets//connections/jeleel.png";
 import Sodiq from "@/assets/connections/sodiq.jpg";
-// import Ganiy from "@/assets/connections/ganiy.png";
+import Ganiy from "@/assets/connections/ganiyy.jpg";
 // import Mubaraq from "@/assets/connections/mubaraq.png";
 
 // LOVE TO MEET
@@ -58,14 +58,14 @@ export default {
         { image: Islamiyyah, s_name: "Islamiyyah Okesola" },
         { image: Jeleel, s_name: "Jeleel Adeyemi" },
         { image: Sodiq, s_name: "Sodiq Adebisi" },
-        // { image: Ganiy, s_name: "Ganiy Adebayo" },
+        { image: Ganiy, s_name: "Ganiy Adebayo" },
         // { image: Mubaraq, s_name: "Mubaraq Adeoye" },
       ],
       love_tomeet: [
         { image: Damola, s_name: "Damola Badmus" },
         { image: Jaystar, s_name: "John Ayilara" },
         { image: Max, s_name: "Max Schumuller" },
-        { image: Braydon, s_name: "Bradon Coyer " },
+        { image: Braydon, s_name: "Braydon Coyer " },
         { image: Colt, s_name: "Colt Steele" },
         { image: Jerry, s_name: "Jerry Uke" },
         { image: Tabitha, s_name: "Tabitha Kayvu" },
