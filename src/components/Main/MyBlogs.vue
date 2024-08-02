@@ -181,4 +181,47 @@ li {
   letter-spacing: 1px;
   margin-top: 1rem;
 }
+/* iPad */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    padding: 15rem 3rem 5rem;
+  }
+  .collection {
+    font-size: 2.5rem;
+    width: 35rem;
+    margin: 0 auto 4rem;
+  }
+  .blog_m {
+    padding: 0.5rem;
+  }
+  .medium_first {
+    padding: 6rem 0rem 0.5rem;
+  }
+  .custom_div {
+    width: 31rem;
+    padding: 0rem 0rem 0 2rem;
+  }
+  .custom_div h3 {
+    font-weight: bold;
+  }
+  .custom_div p {
+    line-height: 23px;
+  }
+  .conterhookblog {
+    width: 29rem;
+    height: 12rem;
+    margin: -4rem 2rem -2rem;
+    opacity: 80%;
+  }
+  .blog_grid {
+    margin: 1rem auto 3rem;
+  }
+  .grid_element p {
+    opacity: 70%;
+  }
+}
+
+/* Mobile ----------- */
+@media only screen and (max-width: 767px) {
+}
 </style>

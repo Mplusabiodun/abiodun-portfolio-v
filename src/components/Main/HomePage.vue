@@ -697,7 +697,6 @@ export default {
   grid-column: 1/3;
   display: flex;
   overflow: hidden;
-  padding-top: rem;
 }
 .custom_div {
   width: 30rem;
@@ -807,7 +806,6 @@ export default {
   margin: 1.7rem 0 0 0;
 }
 .project_Title {
-  /* color: rgb(82, 118, 191); */
   width: 26rem;
   font-size: 2.1rem;
   line-height: 40px;
@@ -831,7 +829,6 @@ export default {
   display: flex;
   justify-content: center;
   padding: 0.7rem 1.4rem;
-  /* width: 11rem; */
   font-size: 0.8rem;
   text-decoration: none;
   margin: 0 auto;
@@ -850,7 +847,7 @@ export default {
 /* iPad */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .container {
-    padding: 17rem 3rem;
+    padding: 17rem 3rem 3rem;
   }
   .myname {
     font-size: 2.8rem;
@@ -917,39 +914,12 @@ export default {
   }
   /* XACCOUNT STOP */
   /* TOOLBOX START*/
-  /* .toolbox {
-    grid-column: 3/5;
-    grid-row: 2/4;
-    text-align: center;
-    padding: 1rem 0rem 0;
-  } */
-  /* .toolbox:hover {
-    opacity: 90%;
-    cursor: pointer;
-  } */
   .toolboxheading {
     font-size: 1rem;
-    /* letter-spacing: 1px;
-    opacity: 80%; */
   }
-  /* .toolbox_checkout {
-    width: 17rem;
-    font-size: 0.9rem;
-    letter-spacing: 0.8px;
-    text-align: center;
-    margin: 5px auto;
-    opacity: 50%;
-  } */
   .circle1 {
-    /* background: inherit; */
-    /* border: 0.8px solid rgb(82, 118, 191); */
     width: 17rem;
     height: 17rem;
-    /* margin: 4rem auto 0rem; */
-    /* 
-    border-radius: 50%;
-    display: flex;
-    flex-direction: column; */
   }
   #mdnlogo,
   #vsclogo,
@@ -959,8 +929,6 @@ export default {
   #chatgptlogo {
     width: 1.6rem;
     height: 1.6rem;
-    /* border-radius: 50%;
-    opacity: 80%; */
   }
   #mdnlogo {
     margin: -0.3rem 0rem 0 5rem;
@@ -972,14 +940,9 @@ export default {
     margin: -6rem 0rem 0 16rem;
   }
   .circle2 {
-    /* background: inherit; */
-    /* border: 0.8px solid rgb(82, 118, 191); */
     width: 11.5rem;
     height: 11.5rem;
     margin: -5.8rem auto 0;
-    /* border-radius: 50%;
-    display: flex;
-    flex-direction: column; */
   }
   #codecamp {
     margin: 3rem 0rem 0 -0.3rem;
@@ -1045,6 +1008,76 @@ export default {
     margin: -2.6rem 0 -4rem 19rem;
   }
   /* CONNECTIONS STOP */
+  .blog_grid {
+    gap: 1rem;
+  }
+  .blog_m {
+    padding: 0.7rem;
+  }
+  /* .medium_first {
+    grid-column: 1/3;
+    display: flex;
+    overflow: hidden;
+  } */
+  .custom_div {
+    /* width: 30rem;
+    letter-spacing: 1px;
+    align-content: flex-end; */
+    padding: 0rem 1rem 0;
+  }
+  .custom_div h3 {
+    font-size: 1.3rem;
+    margin: -4rem 0 0.8rem;
+  }
+  .custom_div p {
+    line-height: 23px;
+  }
+  .conterhookblog {
+    width: 27rem;
+    height: 10rem;
+    margin: -6rem 1rem -2rem;
+  }
+  .medium_second {
+    padding-left: 1rem;
+    font-weight: bold;
+  }
+  .medium_second h3 {
+    color: rgb(2, 6, 23);
+  }
+  .syndrome {
+    color: rgb(2, 6, 23);
+  }
+  .imposterword {
+    color: rgb(2, 6, 23);
+  }
+  /* PROJECT START */
+  .project_ul {
+    margin-bottom: 3rem;
+  }
+  .project_li {
+    margin: 4rem -1rem 0 -3rem;
+  }
+  .myproject {
+    width: 24rem;
+    margin: 0 1rem 0 0;
+  }
+  #project_image {
+    width: 24.5rem;
+  }
+  .project_details {
+    margin: 1.5rem -6rem 0 0rem;
+  }
+  .project_Title {
+    width: 19rem;
+    font-size: 1.8rem;
+    line-height: 30px;
+  }
+  .about_project {
+    width: 19rem;
+    opacity: 70%;
+    margin: 1rem 0 0.7rem 0rem;
+    line-height: 22px;
+  }
 }
 
 /* Mobile ----------- */

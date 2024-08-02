@@ -106,12 +106,12 @@ export default {
   .container_header {
     padding: 1rem 7rem 0;
   }
+  .container_footer {
+    padding: 1rem 1rem 0;
+  }
 }
 
 /* Mobile ----------- */
 @media only screen and (max-width: 767px) {
-  /* .container_footer {
-    padding: 3rem 2rem;
-  } */
 }
 </style>

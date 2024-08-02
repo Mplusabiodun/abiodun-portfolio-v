@@ -12,73 +12,32 @@
           name="message"
           id="message"
           cols="35"
-          rows="3"
+          rows="5"
           placeholder="Leave a message or comment for Fatai."
         ></textarea>
-        <button>send</button>
+        <button>SEND</button>
       </div>
     </div>
     <div class="skill_div">
-      <h3 class="skills">Skills</h3>
+      <h3 class="skills">SKILLS</h3>
       <ul>
-        <li>
-          <img
-            class="logo"
-            src="@/assets/skills_social/html.png"
-            alt="html_logo"
-          />HTML
-        </li>
-        <li>
-          <img
-            class="logo"
-            src="@/assets/skills_social/css.png"
-            alt="css_logo"
-          />CSS
-        </li>
-        <li>
-          <img
-            class="logo"
-            src="@/assets/skills_social/tailwind.png"
-            alt="tailwind_logo"
-          />TAILWIND
-        </li>
-        <li>
-          <img
-            class="logo"
-            src="@/assets/skills_social/javascript.png"
-            alt="javascript_logo"
-          />
-          JAVASCRIPT
-        </li>
-        <li>
-          <img
-            class="logo"
-            src="@/assets/skills_social/vue.png"
-            alt="vue_logo"
-          />
-          VUE
-        </li>
-        <li>
-          <img
-            class="logo"
-            src="@/assets/skills_social/html.png"
-            alt="git_vc"
-          />
-          GIT VC
-        </li>
-        <li>
-          <img
-            class="logo"
-            src="@/assets/skills_social/react.png"
-            alt="react_logo"
-          />
-          REACT
+        <li v-for="skill in skills" :key="skill.skillName">
+          <img class="logo" :src="skill.image" alt="html_logo" />{{
+            skill.skillName
+          }}
         </li>
       </ul>
     </div>
   </section>
 </template>
 <script>
+import html from "@/assets/skills_social/html.png";
+import css from "@/assets/skills_social/css.png";
+import tailwind from "@/assets/skills_social/tailwind.png";
+import javascript from "@/assets/skills_social/javascript.png";
+import vue from "@/assets/skills_social/vue.png";
+import git from "@/assets/skills_social/html.png";
+import react from "@/assets/skills_social/react.png";
 export default {
   data() {
     return {
@@ -96,6 +55,18 @@ export default {
         "In life, people will HURT you and go free, don't sit and hope things will happen to them rather put yourself together and strive harder. GOD is for everyone.",
       ],
       displayedQuote: null,
+      skills: [
+        {
+          image: html,
+          skillName: "HTML",
+        },
+        { image: css, skillName: "CSS" },
+        { image: tailwind, skillName: "TAILWIND" },
+        { image: javascript, skillName: "JAVASCRIPT" },
+        { image: git, skillName: "GIT" },
+        { image: vue, skillName: "VUE" },
+        { image: react, skillName: "REACT" },
+      ],
     };
   },
   methods: {
@@ -149,8 +120,9 @@ export default {
   letter-spacing: 0.8px;
 }
 .input_div button {
-  padding: 0.8rem 1.4rem;
-  margin: 2rem 0 0 1rem;
+  padding: 0rem 1.4rem;
+  height: 4rem;
+  margin: 3rem 0 0 1rem;
   color: #020617;
   background: #fff;
   border: 1px solid #ffffff5b;
@@ -192,5 +164,57 @@ export default {
   width: 1.3rem;
   height: 1.3rem;
   margin: -1rem 0.6rem 0 0;
+}
+/* iPad */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .fav_cont {
+    flex-direction: column;
+    margin: 6rem 0 0;
+  }
+  .will_you {
+    font-size: 1.5rem;
+    line-height: 2.1rem;
+  }
+  .myquotes {
+    width: 22rem;
+    font-size: 1.3rem;
+  }
+  .input_div {
+    display: flex;
+    justify-content: center;
+    margin: 0 0rem 0 1rem;
+  }
+  #message {
+    width: 90%;
+    border: 2px solid #ffffff5b;
+  }
+  .input_div button {
+    padding: 0.8rem 1.8rem;
+    font-weight: 800;
+  }
+  .skill_div {
+    margin-left: 0rem;
+    margin-top: 6rem;
+    width: 42rem;
+  }
+  .skills {
+    width: 6rem;
+    margin: 0 auto;
+    padding: 0.8rem 1rem;
+  }
+  .skill_div ul {
+    margin: 3rem auto 0;
+    text-align: left;
+  }
+  .skill_div ul li {
+    margin: 1.3rem auto 0;
+  }
+  .logo {
+    display: none;
+  }
+}
+
+/* Mobile ----------- */
+@media only screen and (max-width: 767px) {
 }
 </style>

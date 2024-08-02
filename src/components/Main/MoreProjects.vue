@@ -178,4 +178,14 @@ li {
   letter-spacing: 0.9px;
   text-decoration: none;
 }
+/* iPad */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    padding: 14rem 5rem 5rem 2rem;
+  }
+}
+
+/* Mobile ----------- */
+@media only screen and (max-width: 767px) {
+}
 </style>
