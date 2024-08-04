@@ -7,9 +7,8 @@
     <!-- container 2 -->
     <div class="container2">
       <div class="left_cont">
-        <p class="forresponsive heythere">
-          Hey there! Let me quickly tell you about myself and what I enjoy
-          doing.
+        <p class="forresponsive">
+          Welcome! Let me quickly tell you about myself and what I enjoy doing.
         </p>
         <img class="fatai" src="@/assets/mypics/fataisnap.jpg" alt="Fatai" />
         <h3 class="started">
@@ -47,14 +46,16 @@
       <div class="right_cont">
         <h3 class="started value_inlife">What I truly value in life.</h3>
         <p>
-          I believe in the quite popular word that
-          <em>EXPECTATIONS HURT, stop living with entitlement mentality</em>.
-          Most importantly hardwork pays, its better to wait than to regret.
+          I believe in the quite popular phrase that
+          <em
+            >EXPECTATIONS HURT, we need to stop living with entitlement
+            mentality</em
+          >. Hardwork pays, its better to wait than to regret.
         </p>
         <p>
           I valued family maybe because am blessed with beautiful ones, great
           sisters and people around me. And of course definitely looking forward
-          to have mine someday, probably in the years to come.
+          to have mine someday, in the years to come.
         </p>
       </div>
     </div>
@@ -62,7 +63,7 @@
     <!-- CONTAINER 4 -->
     <div class="container4">
       <div class="left_cont">
-        <h3 class="started">What I'm doing now.</h3>
+        <h3 class="started doingnow">What I'm doing now.</h3>
         <p v-for="currently in currentlyOn" :key="currently">
           {{ currently }}
         </p>
@@ -125,13 +126,13 @@ export default {
   data() {
     return {
       myJourney: [
-        "In a world full of possibilities, I believe in the magic of kindness and strive to bring a sprinkle of joy to everything I do and everyone around.",
-        "A student at Altschool Africa, Creating designs that inspire positive and building applications that made life more easier have been my ultimate goal.",
+        "In a world full of possibilities, I believe in the magic of kindness and have always strive to bring a sprinkle of joy to everything I do and everyone around.",
+        "A student at Altschool Africa class '23, Creating designs that inspire positive and building applications that made life more easier have been my ultimate goal.",
         "A fans of nature and I have always love to spend my leisure time enjoying my peaceful thoughts without distraction. I'm always thrilled to meet fellow dreamers, explorers, the journey ahead and stories waiting to be told. Feel free to reach out, and let's create our own fairytale!.",
       ],
       myLearning: [
         "I decided to explore web development before too long. Given my inclination towards visual expression and design, I naturally gravitated towards frontend development.",
-        "I decided to explore web development before too long. Given my inclination towards visual expression and design, I naturally gravitated towards frontend development.",
+        // "I decided to explore web development before too long. Given my inclination towards visual expression and design, I naturally gravitated towards frontend development.",
       ],
       currentlyOn: [
         "Currently, am nearing the completion of my degree in Engineering, which have been years of roller coater for me.",
@@ -164,8 +165,8 @@ export default {
       } else {
         this.greeting = "Good Evening";
       }
-      console.log(currentHour);
-      console.log(new Date());
+      // console.log(currentHour);
+      // console.log(new Date());
     },
   },
   created() {
@@ -314,5 +315,209 @@ p {
 .cert p {
   margin: 0 auto;
   text-align: center;
+}
+/* iPad */
+/* and (min-width: 768px) */
+@media only screen and (max-width: 1024px) {
+  .container {
+    padding: 14rem 5rem 5rem;
+  }
+  .greetings {
+    font-size: 2.9rem;
+    width: 41rem;
+    line-height: 3.6rem;
+    margin: 0 0 0 -1rem;
+  }
+  /* container 2   */
+  .container2,
+  .container3,
+  .container4 {
+    flex-direction: column;
+    width: 100%;
+  }
+  .left_cont {
+    margin: 0 0rem 0 0;
+  }
+  .forresponsive {
+    display: flex;
+    font-size: 1.8rem;
+    margin: 0.8rem auto 1rem;
+    line-height: 2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-align: left;
+    opacity: 70%;
+  }
+  .fatai {
+    width: 35rem;
+    height: 48rem;
+    margin: 3rem 0rem 4rem 1.5rem;
+  }
+  p {
+    width: 100%;
+    text-align: left;
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+    letter-spacing: 2px;
+  }
+  .started {
+    width: 100%;
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+    letter-spacing: 2px;
+  }
+  .flower {
+    margin: 4rem 0 0 1.5rem;
+  }
+  .doingnow {
+    margin-top: 5rem;
+  }
+  .onlylaptop {
+    margin-top: 0rem;
+    display: none;
+  }
+
+  /* RIGHT CONT */
+  .right_cont {
+    margin: 2rem 0 0 0;
+  }
+  .heythere {
+    display: none;
+  }
+  .value_inlife {
+    margin-top: 2rem;
+  }
+  .experience_section li {
+    list-style-type: none;
+    margin: 4rem -3rem 0 -4rem;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    opacity: 80%;
+    letter-spacing: 0.9px;
+  }
+  .experience_details {
+    width: 60%;
+    margin: 0 -0.5rem 0 0rem;
+  }
+  .cert {
+    margin: 7rem 0;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 3rem;
+  }
+  .cert li {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  #certificates {
+    width: 37rem;
+    height: 25rem;
+  }
+  .cert p {
+    margin: 1.5rem auto;
+  }
+}
+
+/* Mobile ----------- */
+@media only screen and (max-width: 767px) {
+  .container {
+    padding: 14rem 2rem 5rem;
+  }
+  .greetings {
+    font-size: 2.9rem;
+    width: 20rem;
+    line-height: 3.6rem;
+    margin: 0 3rem 0 2rem;
+  }
+  /* container 2   */
+  .container2,
+  .container3,
+  .container4 {
+    flex-direction: column;
+    width: 100%;
+  }
+  .left_cont {
+    margin: 0 0rem 0 0;
+  }
+  .forresponsive {
+    display: flex;
+    font-size: 1.8rem;
+    margin: 0.8rem auto 1rem;
+    line-height: 2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-align: left;
+    opacity: 70%;
+  }
+  .fatai {
+    width: 15rem;
+    height: 18rem;
+    margin: 3rem 0rem 4rem 1.5rem;
+  }
+  p {
+    width: 100%;
+    text-align: left;
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+    letter-spacing: 2px;
+  }
+  .started {
+    width: 100%;
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+    letter-spacing: 2px;
+  }
+  .flower {
+    margin: 4rem 0 0 1.5rem;
+  }
+  .doingnow {
+    margin-top: 5rem;
+  }
+  .onlylaptop {
+    margin-top: 0rem;
+    display: none;
+  }
+
+  /* RIGHT CONT */
+  .right_cont {
+    margin: 2rem 0 0 0;
+  }
+  .heythere {
+    display: none;
+  }
+  .value_inlife {
+    margin-top: 2rem;
+  }
+  .experience_section li {
+    list-style-type: none;
+    margin: 4rem -3rem 0 -4rem;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    opacity: 80%;
+    letter-spacing: 0.9px;
+  }
+  .experience_details {
+    width: 60%;
+    margin: 0 -0.5rem 0 0rem;
+  }
+  .cert {
+    margin: 7rem 0;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 3rem;
+  }
+  .cert li {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  #certificates {
+    width: 17rem;
+    height: 15rem;
+  }
+  .cert p {
+    margin: 1.5rem auto;
+  }
 }
 </style>

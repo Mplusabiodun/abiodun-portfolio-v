@@ -1,8 +1,8 @@
 <template>
   <div class="container">
     <h2 class="myname">
-      Hey, I'm Fatai! <br />Welcome, and am glad <br />
-      you're here!
+      <span style="display: block">Hey, I'm Fatai!</span>
+      <span class="gladblock">Welcome, and am glad</span> you're here!
     </h2>
     <div class="images">
       <img
@@ -27,13 +27,7 @@
       />
     </div>
     <p class="brief_about">
-      A National Diploma Distinction holder and currently Civil Engineering
-      student at Federal University of Technology Minna, Niger State. A
-      FRONT-END DEVELOPER with great enthusiasm for building user centric
-      software products. I started this journey to explore my passion for
-      writing codes and solving complex software problems. Trust me, it was
-      indeed amazing writing my first HTML code ("Hello World") and being able
-      to display on the screen.
+      {{ briefAboutMe }}
     </p>
     <!-- class="target-component" -->
     <section id="target" class="about_section target-component">
@@ -48,6 +42,7 @@
             <h4 class="acall">Book a call with me</h4>
             <p class="love_to">I'd love to chat even if there's no agenda!</p>
           </div>
+          <div class="mobile_resume">Resume</div>
           <div class="calendar"></div>
         </div>
         <div @click="twitter" class="aboutme xaccount">
@@ -161,7 +156,7 @@
       <div class="blog_grid">
         <div class="blog_m medium_first">
           <div class="custom_div">
-            <h3>MY CUSTOM COUNTER HOOK</h3>
+            <h3>CUSTOM COUNTER HOOK</h3>
             <p>
               Started being a technical writer on this day Jan 6, 2023 and
               Published my first article edition on
@@ -210,24 +205,20 @@
       </h2>
       <ul v-for="project in projects" :key="project.name" class="project_ul">
         <li class="project_li">
-          <div class="projects_box">
-            <div class="myproject">
-              <img
-                id="project_image"
-                :src="project.image"
-                alt="laptop_screen"
-              />
-            </div>
-            <div class="project_details">
-              <h3 class="project_Title">{{ project.name }}</h3>
-              <p class="about_project">
-                {{ project.description }}
-              </p>
-              <a :href="project.livelink" target="blank">{{
-                project.linkName
-              }}</a>
-            </div>
+          <!-- <div class="projects_box"> -->
+          <div class="myproject">
+            <img id="project_image" :src="project.image" alt="laptop_screen" />
           </div>
+          <div class="project_details">
+            <h3 class="project_Title">{{ project.name }}</h3>
+            <p class="about_project">
+              {{ project.description }}
+            </p>
+            <a :href="project.livelink" target="blank">{{
+              project.linkName
+            }}</a>
+          </div>
+          <!-- </div> -->
         </li>
       </ul>
       <button @click="moreProjects" class="more_projects">
@@ -249,6 +240,13 @@ export default {
   },
   data() {
     return {
+      briefAboutMe: `A FRONT-END DEVELOPER with great enthusiasm for building user centric
+      software products. I started this journey to explore my passion for
+      writing codes and solving complex software problems. A National Diploma
+      Distinction holder and currently Civil Engineering student at Federal
+      University of Technology Minna, Niger State. Trust me, it was indeed
+      amazing writing my first HTML code ("Hello World") and being able to
+      display on the screen.`,
       projects: [
         {
           image: audiophile,
@@ -324,6 +322,9 @@ export default {
   letter-spacing: 1px;
   /* position: relative; */
 }
+.gladblock {
+  display: block;
+}
 .images {
   display: flex;
   margin: 4rem auto;
@@ -355,7 +356,7 @@ export default {
   text-align: center;
   margin-top: 10rem;
   opacity: 50%;
-  transition: opacity 0.5s ease-out;
+  /* transition: opacity 0.5s ease-out; */
 }
 .about_section,
 .blog_section,
@@ -437,6 +438,9 @@ export default {
 .bookacall:hover {
   opacity: 90%;
   cursor: pointer;
+}
+.mobile_resume {
+  display: none;
 }
 .acall {
   font-size: 1.2rem;
@@ -743,9 +747,9 @@ export default {
   align-content: center;
   font-weight: 800;
 }
-.medium_second h3 {
+/* .medium_second h3 {
   width: 15rem;
-}
+} */
 .medium_second a {
   color: black;
   font-weight: bold;
@@ -784,12 +788,15 @@ export default {
 .project_li {
   list-style-type: none;
   margin: 5rem 0 0 1rem;
+  display: flex;
+  /* margin-top: 0.6rem; */
+  text-align: left;
 }
-.projects_box {
+/* .projects_box {
   display: flex;
   margin-top: 0.6rem;
   text-align: left;
-}
+} */
 .myproject {
   width: 26rem;
   height: 18rem;
@@ -845,7 +852,8 @@ export default {
 }
 
 /* iPad */
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+/* and (min-width: 768px) */
+@media only screen and (max-width: 1024px) {
   .container {
     padding: 17rem 3rem 3rem;
   }
@@ -1014,15 +1022,7 @@ export default {
   .blog_m {
     padding: 0.7rem;
   }
-  /* .medium_first {
-    grid-column: 1/3;
-    display: flex;
-    overflow: hidden;
-  } */
   .custom_div {
-    /* width: 30rem;
-    letter-spacing: 1px;
-    align-content: flex-end; */
     padding: 0rem 1rem 0;
   }
   .custom_div h3 {
@@ -1082,8 +1082,219 @@ export default {
 
 /* Mobile ----------- */
 @media only screen and (max-width: 767px) {
-  /* .container_footer {
-    padding: 3rem 2rem;
-  } */
+  .container {
+    padding: 17rem 2rem 3rem;
+  }
+  .myname {
+    font-size: 2.4rem;
+    width: 100%;
+    font-weight: 600;
+    line-height: 2.8rem;
+    text-align: left;
+  }
+  .gladblock {
+    display: inline;
+  }
+  .images {
+    display: none;
+  }
+  .brief_about {
+    display: none;
+  }
+  .about,
+  .blog,
+  .project {
+    text-align: left;
+    font-size: 1.4rem;
+  }
+  .heres,
+  .blog_like,
+  .project_note {
+    text-align: left;
+    width: 100%;
+    font-size: 1.5rem;
+    opacity: 80%;
+    line-height: 1.8rem;
+    font-weight: 500;
+  }
+  .blog_like,
+  .project_note {
+    width: 100%;
+  }
+  .unique_list {
+    display: grid;
+    height: 55rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    gap: 1.3rem;
+    margin: 0 0 -3rem 0;
+  }
+  /* LEARNMORE START */
+  .learnmore {
+    grid-row: 1/3;
+    grid-column: 1/2;
+    opacity: 90%;
+  }
+  /* LEARNMORE STOP */
+  /* BOOKACALL START */
+  .bookacall {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 5rem 0;
+  }
+  .mobile_resume {
+    display: flex;
+    background: url("@/assets/mpluslogo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 6rem;
+    height: 6rem;
+    margin: 1rem 0;
+    border-radius: 1.5rem;
+    padding: 4.5rem 0 0 1rem;
+    text-align: center;
+    font-weight: bold;
+  }
+  .acall {
+    display: none;
+  }
+  .love_to {
+    display: none;
+  }
+  .calendar {
+    display: none;
+  }
+  /* BOOKACALL STOP */
+  /* XACCOUNT START */
+  .xaccount {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    padding-top: 1.2rem;
+  }
+  #xaccount_img {
+    width: 3rem;
+    height: 3.2rem;
+  }
+  .xaccount button {
+    margin-bottom: 0rem;
+  }
+  /* XACCOUNT STOP */
+  /* TOOLBOX START*/
+  .toolbox {
+    grid-column: 1/3;
+    grid-row: 3/6;
+    overflow: hidden;
+  }
+  /* TOOLBOX STOP */
+
+  /* CONNECTIONS START */
+  .connections {
+    grid-column: 1/3;
+    grid-row: 6/8;
+  }
+  .tomeet {
+    margin: 2rem 0 0 0;
+  }
+  #adeyemi_ruqoyah {
+    display: none;
+  }
+  #braydon_coyer {
+    display: none;
+  }
+  /* CONNECTIONS STOP */
+  .more_articles {
+    letter-spacing: 1px;
+  }
+  .learn_more,
+  .more_projects {
+    padding: 0.8rem 1.4rem;
+    letter-spacing: 1px;
+  }
+  .blog_grid {
+    height: 40rem;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+  }
+  .medium_first {
+    grid-column: 1/2;
+  }
+  .custom_div {
+    width: 100%;
+    letter-spacing: 1px;
+  }
+  .custom_div h3 {
+    font-size: 1.3rem;
+    margin: 0rem 0 0.8rem;
+  }
+  .custom_div p {
+    display: none;
+  }
+  .conterhookblog {
+    display: none;
+  }
+  .medium_second {
+    grid-column: 1/2;
+    background: url("@/assets/imposter_syndrome.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-left: 2rem;
+    align-content: flex-end;
+    font-weight: 800;
+  }
+  .medium_second a {
+    font-weight: 600;
+    color: #fff;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+  }
+  .medium_second p {
+    display: none;
+  }
+  .syndrome {
+    color: #fff;
+  }
+  .medium_third {
+    grid-column: 1/2;
+    align-content: center;
+    padding-left: 2rem;
+  }
+  .medium_third a {
+    font-weight: 700;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+  }
+  .medium_third p {
+    display: none;
+  }
+  .project_li {
+    margin: 4rem 0.3rem 0 -2.5rem;
+    flex-direction: column;
+  }
+  .myproject {
+    width: 100%;
+    margin: 0 auto 0;
+  }
+  .project_details {
+    margin: 1.5rem -6rem 0 0rem;
+  }
+  .project_Title {
+    width: 22rem;
+  }
+  .about_project {
+    width: 21.5rem;
+    opacity: 65%;
+    letter-spacing: 2px;
+    font-size: 1rem;
+  }
+  .more_projects {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border: 1.6px solid #ffffff5b;
+  }
 }
 </style>

@@ -136,7 +136,8 @@ a {
   font-size: 12px;
 }
 /* iPad */
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+/* and (min-width: 768px) */
+@media only screen and (max-width: 1024px) {
   .container {
     width: 100%;
     background-color: rgb(23, 31, 44);
@@ -170,8 +171,5 @@ a {
 
 /* Mobile ----------- */
 @media only screen and (max-width: 767px) {
-  /* .container_footer {
-    padding: 3rem 2rem;
-  } */
 }
 </style>

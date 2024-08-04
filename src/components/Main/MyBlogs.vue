@@ -182,7 +182,8 @@ li {
   margin-top: 1rem;
 }
 /* iPad */
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+/* and (min-width: 768px) */
+@media only screen and (max-width: 1024px) {
   .container {
     padding: 15rem 3rem 5rem;
   }

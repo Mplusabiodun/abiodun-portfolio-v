@@ -166,7 +166,8 @@ export default {
   margin: -1rem 0.6rem 0 0;
 }
 /* iPad */
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+/* and (min-width: 768px) */
+@media only screen and (max-width: 1024px) {
   .fav_cont {
     flex-direction: column;
     margin: 6rem 0 0;
@@ -193,7 +194,7 @@ export default {
     font-weight: 800;
   }
   .skill_div {
-    margin-left: 0rem;
+    margin-left: -3rem;
     margin-top: 6rem;
     width: 42rem;
   }
@@ -216,5 +217,42 @@ export default {
 
 /* Mobile ----------- */
 @media only screen and (max-width: 767px) {
+  .fav_cont {
+    flex-direction: column;
+    margin: 6rem 0 0;
+  }
+  .will_you {
+    width: 22rem;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    margin: 0 0rem 0 -0.5rem;
+    letter-spacing: 1.5px;
+  }
+  .myquotes {
+    width: 20rem;
+    font-size: 1.3rem;
+  }
+  #message {
+    line-height: 18px;
+  }
+  .input_div button {
+    letter-spacing: 1.8px;
+  }
+  .skill_div {
+    margin-left: -1rem;
+    margin-top: 6rem;
+    width: 100%;
+  }
+  .skills {
+    width: 6rem;
+    text-align: center;
+    padding: 0.8rem 1rem;
+  }
+  .skill_div ul {
+    margin: 1rem auto 0;
+  }
+  .skill_div ul li {
+    margin: 1rem auto 0;
+  }
 }
 </style>

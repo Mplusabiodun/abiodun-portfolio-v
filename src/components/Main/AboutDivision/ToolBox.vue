@@ -130,4 +130,85 @@ li p {
 .prop {
   opacity: 60%;
 }
+/* iPad */
+/* and (min-width: 768px) */
+@media only screen and (max-width: 1024px) {
+  .container {
+    padding: 14rem 4rem;
+  }
+  .hard_soft {
+    font-size: 3.3rem;
+    /* width: 38rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+    line-height: 3.5rem;
+    text-align: center;
+    margin: 0 auto; */
+  }
+  .app {
+    opacity: 80%;
+  }
+  .app_group {
+    /* width: 100%;
+    display: grid; */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    /* padding: 0;  */
+  }
+  li {
+    background: linear-gradient(
+      rgb(18, 48, 107),
+      rgb(18, 48, 107),
+      rgb(29, 39, 56),
+      rgb(29, 39, 56),
+      rgb(29, 39, 56),
+      rgb(23, 31, 44),
+      rgb(23, 31, 44)
+    );
+    border-radius: 20px;
+    border: 0.8px solid rgb(82, 118, 191);
+    padding: 1rem;
+    list-style-type: none;
+    height: 13rem;
+    text-align: center;
+  }
+  #app_img {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 2rem;
+    margin-top: 0.9rem;
+  }
+  li p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0rem 0 0 0;
+    opacity: 70%;
+  }
+
+  .hardware {
+    text-align: center;
+    margin: 10rem 0 2rem;
+    font-size: 2rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+  }
+  .myhardwares {
+    width: 18rem;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 30px;
+    font-size: 1.2rem;
+  }
+  #hp {
+    display: block;
+    font-weight: bold;
+  }
+  .prop {
+    opacity: 60%;
+  }
+}
+
+/* Mobile ----------- */
+@media only screen and (max-width: 767px) {
+}
 </style>

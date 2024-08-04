@@ -104,7 +104,7 @@ export default {
 /* iPad */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .container_header {
-    padding: 1rem 7rem 0;
+    padding: 1rem 0rem 0;
   }
   .container_footer {
     padding: 1rem 1rem 0;

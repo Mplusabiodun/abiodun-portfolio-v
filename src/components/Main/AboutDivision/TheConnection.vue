@@ -97,9 +97,6 @@ export default {
   font-weight: 300;
   letter-spacing: 1px;
 }
-.to_meet {
-  margin-top: 9rem;
-}
 .metindividual {
   width: 100%;
   display: grid;
@@ -138,5 +135,39 @@ li p {
 }
 .havnt_meet {
   opacity: 80%;
+}
+.to_meet {
+  margin-top: 9rem;
+}
+
+/* iPad */
+/* and (min-width: 768px) */
+@media only screen and (max-width: 1024px) {
+  .container {
+    padding: 14rem 5rem;
+  }
+  .connection {
+    font-size: 3.5rem;
+  }
+  .here {
+    opacity: 80%;
+  }
+  .to_meet {
+    margin-top: 9rem;
+  }
+  .metindividual {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  li p {
+    opacity: 80%;
+    letter-spacing: 1px;
+  }
+  .havnt_meet {
+    opacity: 70%;
+  }
+}
+
+/* Mobile ----------- */
+@media only screen and (max-width: 767px) {
 }
 </style>

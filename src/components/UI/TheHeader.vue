@@ -91,10 +91,11 @@ li:active {
 }
 
 /* iPad */
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+/* and (min-width: 768px) */
+@media only screen and (max-width: 1024px) {
   .container {
-    padding: 2rem 0;
-    border-bottom: 2px dashed #ffffff6f;
+    padding: 2rem 7rem;
+    border-bottom: 1.5px dashed #ffffff6f;
   }
   #logo {
     width: 4.5rem;
@@ -106,6 +107,7 @@ li:active {
     display: flex;
     width: 2.5rem;
     height: 2.5rem;
+    margin-top: 1rem;
   }
   ul {
     display: none;
