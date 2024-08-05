@@ -116,8 +116,18 @@ li:active {
 
 /* Mobile ----------- */
 @media only screen and (max-width: 767px) {
-  /* .container_footer {
-    padding: 3rem 2rem;
-  } */
+  .container {
+    width: 100%;
+    padding: 1.2rem 2rem 1.2rem;
+    border-bottom: 1.5px dashed #ffffff6f;
+  }
+  #logo {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+  #Hamburger {
+    width: 2.1rem;
+    height: 2.1rem;
+  }
 }
 </style>

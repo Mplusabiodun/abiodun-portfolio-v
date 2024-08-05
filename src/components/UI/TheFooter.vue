@@ -171,5 +171,35 @@ a {
 
 /* Mobile ----------- */
 @media only screen and (max-width: 767px) {
+  .container {
+    display: none;
+    width: 100%;
+    background-color: rgb(23, 31, 44);
+    padding: 1rem 2rem;
+  }
+  .quicklinks li {
+    margin-left: 2.7rem;
+    font-size: 15px;
+  }
+  .inner_cont {
+    margin: 1.8rem 0;
+  }
+  .get_cont {
+    margin: 2rem 0 0 1rem;
+  }
+  .horizontal {
+    margin: 0 5.3rem;
+  }
+  .second_inner_cont {
+    margin: 0.8rem 0 0 0rem;
+  }
+  .email,
+  .phone {
+    font-size: 14px;
+    margin: 0.8rem 0 0.5rem;
+  }
+  .copyright {
+    font-size: 14px;
+  }
 }
 </style>

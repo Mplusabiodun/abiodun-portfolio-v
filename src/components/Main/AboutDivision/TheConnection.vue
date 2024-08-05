@@ -169,5 +169,37 @@ li p {
 
 /* Mobile ----------- */
 @media only screen and (max-width: 767px) {
+  .container {
+    padding: 10rem 2rem;
+  }
+  .connection {
+    font-size: 2rem;
+    width: 18rem;
+    letter-spacing: 1.5px;
+  }
+  .here {
+    opacity: 80%;
+
+    width: 22rem;
+    margin: 2rem auto 2.2rem;
+    font-size: 1.5rem;
+  }
+  .to_meet {
+    margin-top: 9rem;
+  }
+  .metindividual {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  li {
+    height: 11rem;
+  }
+  #app_img {
+    width: 6.5rem;
+    height: 6.5rem;
+  }
+  li p {
+    letter-spacing: 1.2px;
+    margin-top: 0.3rem;
+  }
 }
 </style>

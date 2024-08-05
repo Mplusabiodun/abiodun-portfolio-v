@@ -30,7 +30,7 @@
       {{ briefAboutMe }}
     </p>
     <!-- class="target-component" -->
-    <section id="target" class="about_section target-component">
+    <section id="target" class="about_section">
       <h4 class="about">ABOUT</h4>
       <h2 class="heres">Here's what sets me apart and makes me unique</h2>
       <div class="unique_list">
@@ -1270,6 +1270,9 @@ export default {
   }
   .medium_third p {
     display: none;
+  }
+  .project_section {
+    overflow: hidden;
   }
   .project_li {
     margin: 4rem 0.3rem 0 -2.5rem;

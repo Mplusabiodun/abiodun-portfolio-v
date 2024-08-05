@@ -1,6 +1,6 @@
 <template>
   <section class="container">
-    <h2 class="hard_soft">Hardware and software I use on a daily basis.</h2>
+    <h2 class="hard_soft">Hardware and softwares I use on a daily basis.</h2>
     <h3 class="app">Applications</h3>
     <ul class="app_group">
       <li v-for="software in softwares" :key="software.s_name" class="list">
@@ -138,22 +138,13 @@ li p {
   }
   .hard_soft {
     font-size: 3.3rem;
-    /* width: 38rem;
-    font-weight: 800;
-    letter-spacing: 1px;
-    line-height: 3.5rem;
-    text-align: center;
-    margin: 0 auto; */
   }
   .app {
     opacity: 80%;
   }
   .app_group {
-    /* width: 100%;
-    display: grid; */
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
-    /* padding: 0;  */
   }
   li {
     background: linear-gradient(
@@ -210,5 +201,51 @@ li p {
 
 /* Mobile ----------- */
 @media only screen and (max-width: 767px) {
+  .container {
+    padding: 10rem 2rem;
+  }
+  .hard_soft {
+    font-size: 2rem;
+    width: 22rem;
+    letter-spacing: 1.2px;
+    line-height: 2.3rem;
+  }
+  .app_group {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.6rem;
+  }
+  li {
+    height: 12rem;
+  }
+  #app_img {
+    width: 7rem;
+    height: 7rem;
+    margin-top: 0.7rem;
+  }
+  li p {
+    margin: 0.5rem 0 0 0;
+  }
+
+  .hardware {
+    text-align: center;
+    margin: 10rem 0 2rem;
+    font-size: 2rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+  }
+  .myhardwares {
+    width: 18rem;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 30px;
+    font-size: 1.2rem;
+  }
+  #hp {
+    display: block;
+    font-weight: bold;
+  }
+  .prop {
+    opacity: 60%;
+  }
 }
 </style>

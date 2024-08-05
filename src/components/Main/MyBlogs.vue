@@ -5,7 +5,7 @@
     </h3>
     <div class="blog_m medium_first">
       <div class="custom_div">
-        <h3>MY CUSTOM COUNTER HOOK</h3>
+        <h3>CUSTOM COUNTER HOOK</h3>
         <p>
           Started being a technical writer on this day Jan 6, 2023 and Published
           my first article edition on
@@ -224,5 +224,56 @@ li {
 
 /* Mobile ----------- */
 @media only screen and (max-width: 767px) {
+  .container {
+    padding: 9rem 1.8rem 3rem;
+  }
+  .collection {
+    font-size: 2rem;
+    width: 22rem;
+    line-height: 2.2rem;
+    margin: 0 auto 3rem;
+  }
+  .blog_m {
+    padding: 0.5rem;
+  }
+  .medium_first {
+    padding: 6rem 0rem 0.5rem;
+    /* justify-content: center; */
+  }
+  .custom_div {
+    width: 100%;
+    height: 6rem;
+    padding: 0rem 0rem 0 2rem;
+  }
+  .custom_div h3 {
+    font-weight: bold;
+    font-size: 1.3rem;
+  }
+  .custom_div p {
+    display: none;
+  }
+  .conterhookblog {
+    display: none;
+  }
+  .blog_grid {
+    margin: 1rem auto 3rem;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: 1.7rem;
+    padding: 0;
+  }
+  .grid_element {
+    padding: 0 2rem 2rem;
+  }
+  .grid_element a {
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    justify-content: center;
+  }
+  .grid_element p {
+    display: none;
+  }
 }
 </style>

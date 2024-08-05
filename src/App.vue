@@ -8,7 +8,7 @@
       class="header"
     ></the-header>
   </div>
-  <router-view ref="targetComponent"></router-view>
+  <router-view class="home" ref="targetComponent"></router-view>
   <div class="container_footer">
     <the-footer
       @to-Projects="scrollToProjects"
@@ -113,5 +113,14 @@ export default {
 
 /* Mobile ----------- */
 @media only screen and (max-width: 767px) {
+  .container_header {
+    padding: 0rem 0rem 0;
+  }
+  .container_footer {
+    padding: 1rem 0rem 0;
+  }
+  /* .home {
+    margin-right: -4rem;
+  } */
 }
 </style>

@@ -2,7 +2,7 @@
   <section class="container">
     <h2 class="greetings">
       <span class="good">{{ greeting }}</span
-      >I'm Fatai, an enthusiasm frontend developer
+      >, I'm Fatai, an enthusiasm frontend developer
     </h2>
     <!-- container 2 -->
     <div class="container2">
@@ -182,7 +182,7 @@ export default {
 }
 .greetings {
   font-size: 3.3rem;
-  width: 45rem;
+  width: 48rem;
   font-weight: 800;
   letter-spacing: 1px;
   line-height: 3.3rem;
@@ -422,13 +422,16 @@ p {
 /* Mobile ----------- */
 @media only screen and (max-width: 767px) {
   .container {
-    padding: 14rem 2rem 5rem;
+    padding: 10rem 1.6rem 5rem;
   }
   .greetings {
-    font-size: 2.9rem;
-    width: 20rem;
-    line-height: 3.6rem;
-    margin: 0 3rem 0 2rem;
+    font-size: 1.8rem;
+    width: 22rem;
+    line-height: 2.5rem;
+    margin: 0 auto 0;
+  }
+  .good {
+    display: inline;
   }
   /* container 2   */
   .container2,
@@ -441,54 +444,34 @@ p {
     margin: 0 0rem 0 0;
   }
   .forresponsive {
-    display: flex;
-    font-size: 1.8rem;
-    margin: 0.8rem auto 1rem;
-    line-height: 2rem;
-    font-weight: 700;
-    letter-spacing: 1px;
-    text-align: left;
-    opacity: 70%;
+    font-size: 1.4rem;
+    margin: 0rem auto 0rem;
+    line-height: 1.8rem;
   }
   .fatai {
-    width: 15rem;
-    height: 18rem;
-    margin: 3rem 0rem 4rem 1.5rem;
+    width: 90%;
+    height: 30rem;
+    margin: 2rem 0rem 2.5rem 1rem;
   }
   p {
     width: 100%;
     text-align: left;
     font-size: 1.2rem;
-    line-height: 1.7rem;
+    line-height: 1.6rem;
     letter-spacing: 2px;
   }
   .started {
     width: 100%;
-    font-size: 1.5rem;
-    line-height: 2.2rem;
-    letter-spacing: 2px;
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+    letter-spacing: 1.8px;
   }
   .flower {
-    margin: 4rem 0 0 1.5rem;
+    margin: 4rem 0 0 1rem;
   }
-  .doingnow {
-    margin-top: 5rem;
-  }
-  .onlylaptop {
-    margin-top: 0rem;
+  /* .experience_section {
     display: none;
-  }
-
-  /* RIGHT CONT */
-  .right_cont {
-    margin: 2rem 0 0 0;
-  }
-  .heythere {
-    display: none;
-  }
-  .value_inlife {
-    margin-top: 2rem;
-  }
+  } */
   .experience_section li {
     list-style-type: none;
     margin: 4rem -3rem 0 -4rem;

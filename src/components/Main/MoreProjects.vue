@@ -188,5 +188,24 @@ li {
 
 /* Mobile ----------- */
 @media only screen and (max-width: 767px) {
+  .container {
+    padding: 10rem 1.5rem 5rem 0rem;
+  }
+  .collection {
+    font-size: 2rem;
+    width: 20rem;
+    letter-spacing: 1.5px;
+    line-height: 2.2rem;
+  }
+  li {
+    margin: 5rem 0 0 -1rem;
+  }
+  .pics_cont {
+    height: 18rem;
+  }
+  #project_pics {
+    width: 100%;
+    height: 18rem;
+  }
 }
 </style>
