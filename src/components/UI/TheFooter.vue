@@ -40,6 +40,51 @@
       2024.
     </p>
   </div>
+  <!-- SECOND FOOTER -->
+  <div class="container2">
+    <div class="footer_aboutdiv">
+      <img id="logo" src="@/assets/mpluslogo.png" alt="" />
+      <p>
+        I'm Fatai - an enthusiasm frontend developer, lover of nature, football
+        and . Thanks for checking out mymy site!
+      </p>
+      <ul class="accounts">
+        <li>
+          <i class="fa-brands fa-github"></i>
+        </li>
+        <li>
+          <i class="fa-brands fa-linkedin"></i>
+        </li>
+        <li>
+          <i class="fa-brands fa-square-x-twitter"></i>
+        </li>
+      </ul>
+      <p id="rightreserved">
+        <span class="copy">&copy;</span>2024 Abiodun Fatai
+      </p>
+    </div>
+    <div class="general_extra">
+      <div class="general_cont">
+        <h3>GENERAL</h3>
+        <ul>
+          <li><router-link to="/home">Home</router-link></li>
+          <li @click="$emit('to-about')">About</li>
+          <li><router-link to="/resume">Resume</router-link></li>
+          <li @click="$emit('to-Projects')">Projects</li>
+          <li @click="$emit('to-blogs')">Blogs</li>
+        </ul>
+      </div>
+      <div class="general_cont">
+        <h3>EXTRA</h3>
+        <ul>
+          <li>Connections</li>
+          <li>Resume</li>
+          <li>Toolbox</li>
+          <li>Skills</li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </template>
 <script>
 export default {};
@@ -47,7 +92,6 @@ export default {};
 <style scoped>
 .container {
   width: 100%;
-  /* background: rgb(29, 39, 56); */
   background-color: rgb(23, 31, 44);
   padding: 1rem 4rem;
   color: #fff;
@@ -135,71 +179,121 @@ a {
 .copy {
   font-size: 12px;
 }
+.container2 {
+  display: none;
+}
+
 /* iPad */
-/* and (min-width: 768px) */
 @media only screen and (max-width: 1024px) {
   .container {
+    display: none;
+  }
+  .container2 {
+    display: inline;
     width: 100%;
     background-color: rgb(23, 31, 44);
-    padding: 1rem 2rem;
+    color: #fff;
+    margin: 0;
   }
-  .quicklinks li {
-    margin-left: 2.7rem;
-    font-size: 15px;
+  #logo {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    border: 1.6px solid #fff;
+    margin-bottom: 1.5rem;
   }
-  .inner_cont {
-    margin: 1.8rem 0;
+  .footer_aboutdiv p {
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    font-weight: 300;
+    opacity: 93%;
   }
-  .get_cont {
-    margin: 2rem 0 0 1rem;
+  #rightreserved {
+    margin-top: 2rem;
+    letter-spacing: 1px;
   }
-  .horizontal {
-    margin: 0 5.3rem;
+  #rightreserved .copy {
+    font-size: 1.5rem;
+    margin-right: 3px;
   }
-  .second_inner_cont {
-    margin: 0.8rem 0 0 0rem;
+  .general_extra {
+    display: flex;
+    margin-top: 2rem;
   }
-  .email,
-  .phone {
-    font-size: 14px;
-    margin: 0.8rem 0 0.5rem;
+  .general_cont,
+  .general_cont {
+    text-align: left;
+    font-size: 1.3rem;
+    margin-right: 17rem;
   }
-  .copyright {
-    font-size: 14px;
+  .general_cont ul,
+  .general_cont ul {
+    margin: 0;
+    padding: 0;
+    opacity: 70%;
+  }
+  .general_cont h3,
+  .general_cont h3 {
+    font-size: 1.3rem;
+    opacity: 90%;
+  }
+  .general_cont li,
+  .general_cont li {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    opacity: 70%;
+  }
+  a {
+    text-decoration: none;
+    color: white;
   }
 }
 
 /* Mobile ----------- */
 @media only screen and (max-width: 767px) {
-  .container {
-    display: none;
+  .container2 {
+    display: inline;
     width: 100%;
     background-color: rgb(23, 31, 44);
-    padding: 1rem 2rem;
+    color: #fff;
+    margin: 0;
   }
-  .quicklinks li {
-    margin-left: 2.7rem;
-    font-size: 15px;
+  #logo {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-bottom: 1rem;
   }
-  .inner_cont {
-    margin: 1.8rem 0;
+  .footer_aboutdiv p {
+    font-size: 1rem;
+    letter-spacing: 1.5px;
+    opacity: 80%;
   }
-  .get_cont {
-    margin: 2rem 0 0 1rem;
+  .accounts li {
+    margin: 1.5rem 1.5rem 0 0;
   }
-  .horizontal {
-    margin: 0 5.3rem;
+  #rightreserved {
+    font-size: 1rem;
+    margin-top: 1.5rem;
+    opacity: 50%;
   }
-  .second_inner_cont {
-    margin: 0.8rem 0 0 0rem;
+  #rightreserved .copy {
+    font-size: 1.2rem;
   }
-  .email,
-  .phone {
-    font-size: 14px;
-    margin: 0.8rem 0 0.5rem;
+  .general_cont,
+  .general_cont {
+    text-align: left;
+    font-size: 1.3rem;
+    margin-right: 9rem;
   }
-  .copyright {
-    font-size: 14px;
+  .general_cont h3,
+  .general_cont h3 {
+    font-size: 1.3rem;
+  }
+  .general_cont li,
+  .general_cont li {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    opacity: 70%;
   }
 }
 </style>

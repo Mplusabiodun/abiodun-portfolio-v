@@ -11,8 +11,9 @@
   <router-view class="home" ref="targetComponent"></router-view>
   <div class="container_footer">
     <the-footer
-      @to-Projects="scrollToProjects"
       @to-about="scrollToAbout"
+      @to-blogs="scrollToBlog"
+      @to-Projects="scrollToProjects"
       class="footer"
     ></the-footer>
   </div>
@@ -107,7 +108,8 @@ export default {
     padding: 1rem 0rem 0;
   }
   .container_footer {
-    padding: 1rem 1rem 0;
+    padding: 2.5rem 2.5rem 2rem;
+    margin: 0;
   }
 }
 
@@ -117,10 +119,8 @@ export default {
     padding: 0rem 0rem 0;
   }
   .container_footer {
-    padding: 1rem 0rem 0;
+    padding: 2.5rem 1.5rem 2rem;
+    /* margin: 0; */
   }
-  /* .home {
-    margin-right: -4rem;
-  } */
 }
 </style>

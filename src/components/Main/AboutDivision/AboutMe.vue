@@ -137,7 +137,6 @@ export default {
       currentlyOn: [
         "Currently, am nearing the completion of my degree in Engineering, which have been years of roller coater for me.",
         "In my free time, I enjoy creative coding, watching or playing football, watching movies, playing games with friends and spending time with my family.",
-        // "Thanks for checking out my corner of the web.",
       ],
       experiences: [
         {
@@ -472,23 +471,34 @@ p {
   /* .experience_section {
     display: none;
   } */
+  .experience_note {
+    width: 100%;
+    font-size: 1.5rem;
+    margin: 0.5rem auto 2rem;
+    line-height: 2rem;
+  }
   .experience_section li {
-    list-style-type: none;
-    margin: 4rem -3rem 0 -4rem;
-    display: flex;
-    justify-content: space-between;
-    font-size: 1.2rem;
+    /* list-style-type: none; */
+    margin: 3rem 0rem 0 -2.5rem;
+    /* display: flex; */
+    flex-direction: column;
+    /* justify-content: space-between; */
+    /* font-size: 1.2rem;
     opacity: 80%;
-    letter-spacing: 0.9px;
+    letter-spacing: 0.9px; */
   }
   .experience_details {
-    width: 60%;
-    margin: 0 -0.5rem 0 0rem;
+    width: 100%;
+    /* margin: 0 -0.5rem 0 0rem; */
+  }
+  .experience_details h3 {
+    margin: 2rem 0;
+    opacity: 80%;
   }
   .cert {
-    margin: 7rem 0;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 3rem;
+    /* margin: 7rem 0; */
+    /* grid-template-columns: repeat(1, 1fr); */
+    gap: 2rem;
   }
   .cert li {
     display: flex;
@@ -496,11 +506,11 @@ p {
     margin: 0 auto;
   }
   #certificates {
-    width: 17rem;
+    width: 100%;
     height: 15rem;
   }
   .cert p {
-    margin: 1.5rem auto;
+    margin: 1.2rem auto;
   }
 }
 </style>

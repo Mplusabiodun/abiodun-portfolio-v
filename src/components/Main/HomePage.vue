@@ -37,12 +37,12 @@
         <div @click="about" class="aboutme learnmore">
           <p>Learn more about me</p>
         </div>
-        <div @click="bookacall" class="aboutme bookacall">
-          <div>
+        <div class="aboutme bookacall">
+          <div @click="bookacall">
             <h4 class="acall">Book a call with me</h4>
             <p class="love_to">I'd love to chat even if there's no agenda!</p>
           </div>
-          <div class="mobile_resume">Resume</div>
+          <div @click="resume" class="mobile_resume">Resume</div>
           <div class="calendar"></div>
         </div>
         <div @click="twitter" class="aboutme xaccount">
@@ -242,9 +242,9 @@ export default {
     return {
       briefAboutMe: `A FRONT-END DEVELOPER with great enthusiasm for building user centric
       software products. I started this journey to explore my passion for
-      writing codes and solving complex software problems. A National Diploma
+      writing codes and solving complex software problems. \nA National Diploma
       Distinction holder and currently Civil Engineering student at Federal
-      University of Technology Minna, Niger State. Trust me, it was indeed
+      University of Technology Minna, Niger State. \nTrust me, it was indeed
       amazing writing my first HTML code ("Hello World") and being able to
       display on the screen.`,
       projects: [
@@ -289,6 +289,9 @@ export default {
     twitter() {
       window.open("https://twitter.com/Mplus51610027", "_blank");
     },
+    resume() {
+      window.open("https://twitter.com/Mplus51610027", "_blank");
+    },
     moreProjects() {
       this.$router.push("/projects");
     },
@@ -320,7 +323,6 @@ export default {
   text-align: center;
   margin: 0 auto;
   letter-spacing: 1px;
-  /* position: relative; */
 }
 .gladblock {
   display: block;
@@ -1147,17 +1149,18 @@ export default {
   }
   .mobile_resume {
     display: flex;
-    background: url("@/assets/mpluslogo.png");
+    background: url("@/assets/resume.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     width: 6rem;
     height: 6rem;
     margin: 1rem 0;
+    color: #020617;
     border-radius: 1.5rem;
-    padding: 4.5rem 0 0 1rem;
+    padding: 4.1rem 0 0 1rem;
     text-align: center;
-    font-weight: bold;
+    font-weight: 800;
   }
   .acall {
     display: none;
