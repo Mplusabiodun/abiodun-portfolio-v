@@ -290,7 +290,10 @@ export default {
       window.open("https://twitter.com/Mplus51610027", "_blank");
     },
     resume() {
-      window.open("https://twitter.com/Mplus51610027", "_blank");
+      window.open(
+        "https://docs.google.com/document/d/1UCOT7mxYsHYn7b3DxeBBm5SJrXSGscuMce1l2DF7IEg/edit#heading=h.y7d3xdxnr44m",
+        "_blank"
+      );
     },
     moreProjects() {
       this.$router.push("/projects");
@@ -1224,6 +1227,13 @@ export default {
   }
   .medium_first {
     grid-column: 1/2;
+    background: url("@/assets/counterh.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* font-weight: 800;
+     */
+    opacity: 70%;
   }
   .custom_div {
     width: 100%;
@@ -1232,6 +1242,9 @@ export default {
   .custom_div h3 {
     font-size: 1.3rem;
     margin: 0rem 0 0.8rem;
+    font-weight: 800;
+    opacity: 100%;
+    color: #fff;
   }
   .custom_div p {
     display: none;

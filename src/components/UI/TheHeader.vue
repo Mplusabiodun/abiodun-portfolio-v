@@ -5,10 +5,10 @@
     </div>
     <nav>
       <ul>
-        <li @click="scrollToTarget" class="about">ABOUT</li>
-        <li @click="scrollToBlog">BLOG</li>
-        <li @click="scrollToProjects">PROJECTS</li>
-        <li @click="scrollToContact">CONTACT</li>
+        <li @click="$emit('scroll-to-target')" class="about">ABOUT</li>
+        <li @click="$emit('scroll-to-blog')">BLOG</li>
+        <li @click="$emit('scroll-to-projects')">PROJECTS</li>
+        <li @click="$emit('scroll-to-contact')">CONTACT</li>
       </ul>
       <img
         id="Hamburger"
@@ -20,11 +20,12 @@
   </div>
   <div v-if="hamburger" @click="hamburgerDisplay" class="backdrop"></div>
   <dialog open v-if="hamburger" class="hamburger">
+    <i @click="hamburgerDisplay" class="fa-sharp fa-solid fa-xmark"></i>
     <ul>
       <li @click="toHome">Home</li>
-      <li @click="$emit('scroll-to-target')">About</li>
-      <li @click="$emit('scroll-to-blog')">Blogs</li>
-      <li @click="$emit('scroll-to-projects')">Projects</li>
+      <li @click="toAbout">About</li>
+      <li @click="toBlogs">Blogs</li>
+      <li @click="toProjects">Projects</li>
       <!-- <li @click="$emit('scroll-to-contact')">Contact</li> -->
     </ul>
   </dialog>
@@ -42,7 +43,21 @@ export default {
     },
     toHome() {
       this.$router.push("/home");
+      this.hamburger = false;
     },
+    toAbout() {
+      this.$emit("scroll-to-target");
+      this.hamburger = !this.hamburger;
+    },
+    toBlogs() {
+      this.$emit("scroll-to-blog");
+      this.hamburger = !this.hamburger;
+    },
+    toProjects() {
+      this.$emit("scroll-to-projects");
+      this.hamburger = !this.hamburger;
+    },
+    toContacts() {},
   },
 };
 </script>
@@ -51,7 +66,6 @@ export default {
   display: flex;
   justify-content: space-between;
   color: #fff;
-  /* padding: 1rem 7rem 1rem; */
   padding-bottom: 1rem;
   border-bottom: 1px dashed #ffffff6f;
 }
@@ -125,20 +139,16 @@ li:active {
     height: 100dvh;
     background-color: rgba(0, 0, 0, 0.75);
     backdrop-filter: blur(1px);
-    /* cursor: pointer; */
     z-index: 50;
   }
   .hamburger {
     position: absolute;
-    top: 80%;
-    left: 60%;
+    top: 20%;
+    left: 73%;
     transform: translate(-50%, 0%);
     width: 50%;
-    /* height: 15rem; */
-    background-color: inherit;
-    /* background-color: #fff; */
+    background-color: rgba(0, 0, 0, 0.75);
     color: #fff;
-    /* border: 2px solid #ccc; */
     border: none;
     padding: 15px 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
@@ -146,11 +156,14 @@ li:active {
     font-weight: bold;
     border-radius: 8px;
   }
+  .fa-xmark {
+    font-size: 3rem;
+  }
   .hamburger li {
     list-style-type: none;
-    /* color: #fff; */
-    /* display: inline; */
-    font-size: 18px;
+    font-size: 2.5rem;
+    text-align: right;
+    padding-right: 2rem;
     margin: 1rem 0 1rem -1rem;
     letter-spacing: 1px;
   }
@@ -172,14 +185,17 @@ li:active {
     height: 2.1rem;
   }
   .hamburger {
-    top: 75%;
-    left: 19%;
+    top: 15%;
+    left: 76%;
     width: 40%;
     padding: 15px 0;
   }
+  .fa-xmark {
+    font-size: 2rem;
+  }
   .hamburger li {
     list-style-type: none;
-    font-size: 15px;
+    font-size: 1.8rem;
     margin: 1rem 0 1rem -1rem;
   }
 }

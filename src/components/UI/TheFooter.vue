@@ -3,7 +3,7 @@
     <ul class="quicklinks">
       <li><router-link to="/home">HOME</router-link></li>
       <li @click="$emit('to-about')">ABOUT</li>
-      <li><router-link to="/resume">RESUME</router-link></li>
+      <li @click="resume">RESUME</li>
       <li @click="$emit('to-Projects')">PROJECTS</li>
     </ul>
     <div class="inner_cont">
@@ -69,7 +69,7 @@
         <ul>
           <li><router-link to="/home">Home</router-link></li>
           <li @click="$emit('to-about')">About</li>
-          <li><router-link to="/resume">Resume</router-link></li>
+          <li @click="resume">Resume</li>
           <li @click="$emit('to-Projects')">Projects</li>
           <li @click="$emit('to-blogs')">Blogs</li>
         </ul>
@@ -77,17 +77,35 @@
       <div class="general_cont">
         <h3>EXTRA</h3>
         <ul>
-          <li>Connections</li>
-          <li>Resume</li>
-          <li>Toolbox</li>
-          <li>Skills</li>
+          <li @click="connections">Connections</li>
+          <li @click="resume">Resume</li>
+          <li @click="toolbox">Toolbox</li>
+          <li @click="$emit('to-skills')">Skills</li>
         </ul>
       </div>
     </div>
   </div>
 </template>
 <script>
-export default {};
+export default {
+  methods: {
+    resume() {
+      window.open(
+        "https://docs.google.com/document/d/1UCOT7mxYsHYn7b3DxeBBm5SJrXSGscuMce1l2DF7IEg/edit#heading=h.y7d3xdxnr44m",
+        "_blank"
+      );
+    },
+    connections() {
+      this.$router.push("/connections");
+    },
+    toolbox() {
+      this.$router.push("/toolbox");
+    },
+    // toolbox() {
+    //   this.$route.push("/toolbox");
+    // },
+  },
+};
 </script>
 <style scoped>
 .container {
