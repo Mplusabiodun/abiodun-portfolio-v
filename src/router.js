@@ -13,9 +13,9 @@ const router = createRouter({
   history: createWebHistory(),
   routes: [
     { path: "/", redirect: "/home" },
-    { path: "/home", component: HomePage },
-    { path: "/projects", component: MoreProjects },
-    { path: "/blogs", component: MyBlogs },
+    { path: "/home", name: "home", component: HomePage },
+    { path: "/projects", name: "projects", component: MoreProjects },
+    { path: "/blogs", name: "blogs", component: MyBlogs },
     { path: "/resume", component: MyResume },
     // { path: "/abiodun_resume", component: AboutMe },
     { path: "/:notFound(.*)", component: NotFound },

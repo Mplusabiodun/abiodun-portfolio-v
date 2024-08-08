@@ -18,13 +18,13 @@
           <p class="email">fataimonsuru2020@gmail.com</p>
         </div>
         <ul class="accounts">
-          <li>
+          <li @click="github">
             <i class="fa-brands fa-github"></i>
           </li>
-          <li>
+          <li @click="linkedIn">
             <i class="fa-brands fa-linkedin"></i>
           </li>
-          <li>
+          <li @click="twitter">
             <i class="fa-brands fa-square-x-twitter"></i>
           </li>
         </ul>
@@ -49,13 +49,13 @@
         and . Thanks for checking out mymy site!
       </p>
       <ul class="accounts">
-        <li>
+        <li @click="github">
           <i class="fa-brands fa-github"></i>
         </li>
-        <li>
+        <li @click="linkedIn">
           <i class="fa-brands fa-linkedin"></i>
         </li>
-        <li>
+        <li @click="twitter">
           <i class="fa-brands fa-square-x-twitter"></i>
         </li>
       </ul>
@@ -81,6 +81,7 @@
           <li @click="resume">Resume</li>
           <li @click="toolbox">Toolbox</li>
           <li @click="$emit('to-skills')">Skills</li>
+          <!-- <li>Comments</li> -->
         </ul>
       </div>
     </div>
@@ -89,6 +90,18 @@
 <script>
 export default {
   methods: {
+    github() {
+      window.open("https://github.com/Mplusabiodun", "_blank");
+    },
+    linkedIn() {
+      window.open(
+        "https://www.linkedin.com/in/fatai-m-abiodun-844298255/",
+        "_blank"
+      );
+    },
+    twitter() {
+      window.open("https://x.com/Mplus51610027", "_blank");
+    },
     resume() {
       window.open(
         "https://docs.google.com/document/d/1UCOT7mxYsHYn7b3DxeBBm5SJrXSGscuMce1l2DF7IEg/edit#heading=h.y7d3xdxnr44m",
@@ -249,6 +262,10 @@ a {
     margin: 0;
     padding: 0;
     opacity: 70%;
+  }
+  .accounts .fa-brands {
+    font-size: 1.5rem;
+    opacity: 90%;
   }
   .general_cont h3,
   .general_cont h3 {

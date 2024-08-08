@@ -311,6 +311,12 @@ export default {
       this.$router.push("/about");
     },
   },
+  mounted() {
+    const scrollTo = this.$route.query.scrollTo;
+    if (scrollTo) {
+      window.scrollTo({ top: parseInt(scrollTo), behavior: "smooth" });
+    }
+  },
 };
 </script>
 <style scoped>

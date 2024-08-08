@@ -116,7 +116,7 @@ li {
   );
   border-radius: 20px;
   border: 0.8px solid rgb(82, 118, 191);
-  padding: 1rem;
+  padding: 0.9rem;
   list-style-type: none;
   height: 12rem;
   text-align: center;
@@ -130,7 +130,7 @@ li {
 li p {
   font-size: 1rem;
   font-weight: bold;
-  margin: 0rem 0 0 0;
+  margin: 0 0 0rem 0;
   opacity: 70%;
 }
 .havnt_meet {
@@ -161,6 +161,8 @@ li p {
   li p {
     opacity: 80%;
     letter-spacing: 1px;
+    line-height: 18px;
+    margin-bottom: 1rem;
   }
   .havnt_meet {
     opacity: 70%;

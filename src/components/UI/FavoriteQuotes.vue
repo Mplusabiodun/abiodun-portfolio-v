@@ -14,8 +14,9 @@
           cols="35"
           rows="5"
           placeholder="Leave a message or comment for Fatai."
+          v-model.trim="message"
         ></textarea>
-        <button>SEND</button>
+        <button @click="sendMessage">SEND</button>
       </div>
     </div>
     <div class="skill_div">
@@ -55,6 +56,8 @@ export default {
         "In life, people will HURT you and go free, don't sit and hope things will happen to them rather put yourself together and strive harder. GOD is for everyone.",
       ],
       displayedQuote: null,
+      message: "",
+      compliments: [],
       skills: [
         {
           image: html,
@@ -70,6 +73,11 @@ export default {
     };
   },
   methods: {
+    sendMessage() {
+      this.compliments.push(this.message);
+      this.message = "";
+      console.log(this.compliments);
+    },
     displayRandomItem() {
       const randomIndex = Math.floor(Math.random() * this.myFavQuotes.length);
       this.displayedQuote = this.myFavQuotes[randomIndex];
@@ -97,9 +105,10 @@ export default {
 }
 .myquotes {
   width: 15rem;
+  height: 11rem;
   text-align: left;
   font-size: 1rem;
-  margin: 2rem auto 3rem;
+  margin: 2rem auto 1rem;
   line-height: 1.8rem;
   letter-spacing: 1.2px;
   opacity: 60%;
@@ -140,7 +149,7 @@ export default {
   background: rgb(25, 60, 129);
   width: 5rem;
   margin: 0 auto;
-  padding: 0.4rem 0.7rem;
+  padding: 0.4rem 0.7rem 0.4rem 0.5rem;
   border-radius: 10px;
 }
 

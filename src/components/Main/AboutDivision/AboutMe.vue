@@ -1,8 +1,8 @@
 <template>
   <section class="container">
     <h2 class="greetings">
-      <span class="good">{{ greeting }}</span
-      >, I'm Fatai, an enthusiasm frontend developer
+      <span class="good">{{ greeting }},</span> I'm Fatai, an enthusiasm
+      frontend developer
     </h2>
     <!-- container 2 -->
     <div class="container2">
@@ -323,7 +323,7 @@ p {
   }
   .greetings {
     font-size: 2.9rem;
-    width: 41rem;
+    width: 40rem;
     line-height: 3.6rem;
     margin: 0 0 0 -1rem;
   }

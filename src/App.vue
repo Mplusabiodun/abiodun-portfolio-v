@@ -31,39 +31,44 @@ export default {
   },
   methods: {
     scrollToAbout() {
-      // this.$router.push(`/home`);
       window.scrollTo({
-        top: 1560, // vertical scroll position
-        left: 0, // horizontal scroll position
-        behavior: "smooth", // smooth scrolling
+        top: 1560,
+        left: 0,
+        behavior: "smooth",
       });
     },
     scrollToBlog() {
+      // this.$router.push({ name: "home" }).then(() => {
+      //   window.scrollTo({ top: 2590, behavior: "smooth" });
+      // });
       window.scrollTo({
-        top: 2590, // vertical scroll position
-        left: 0, // horizontal scroll position
-        behavior: "smooth", // smooth scrolling
+        top: 2590,
+        left: 0,
+        behavior: "smooth",
       });
     },
+    // scrollToProjects() {
+    // this.$router.push({ name: "home", query: { scrollTo: "3440" } });
+    // },
     scrollToProjects() {
       window.scrollTo({
-        top: 3440, // vertical scroll position
-        left: 0, // horizontal scroll position
-        behavior: "smooth", // smooth scrolling
+        top: 3440,
+        left: 0,
+        behavior: "smooth",
       });
     },
     scrollToContact() {
       window.scrollTo({
-        top: 5390, // vertical scroll position
-        left: 0, // horizontal scroll position
-        behavior: "smooth", // smooth scrolling
+        top: 5390,
+        left: 0,
+        behavior: "smooth",
       });
     },
     scrollToSkills() {
       window.scrollTo({
-        top: 5070, // vertical scroll position
-        left: 0, // horizontal scroll position
-        behavior: "smooth", // smooth scrolling
+        top: 5070,
+        left: 0,
+        behavior: "smooth",
       });
     },
   },
