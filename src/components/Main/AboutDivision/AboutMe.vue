@@ -132,7 +132,6 @@ export default {
       ],
       myLearning: [
         "I decided to explore web development before too long. Given my inclination towards visual expression and design, I naturally gravitated towards frontend development.",
-        // "I decided to explore web development before too long. Given my inclination towards visual expression and design, I naturally gravitated towards frontend development.",
       ],
       currentlyOn: [
         "Currently, am nearing the completion of my degree in Engineering, which have been years of roller coater for me.",
@@ -468,9 +467,6 @@ p {
   .flower {
     margin: 4rem 0 0 1rem;
   }
-  /* .experience_section {
-    display: none;
-  } */
   .experience_note {
     width: 100%;
     font-size: 1.5rem;
@@ -478,26 +474,17 @@ p {
     line-height: 2rem;
   }
   .experience_section li {
-    /* list-style-type: none; */
     margin: 3rem 0rem 0 -2.5rem;
-    /* display: flex; */
     flex-direction: column;
-    /* justify-content: space-between; */
-    /* font-size: 1.2rem;
-    opacity: 80%;
-    letter-spacing: 0.9px; */
   }
   .experience_details {
     width: 100%;
-    /* margin: 0 -0.5rem 0 0rem; */
   }
   .experience_details h3 {
     margin: 2rem 0;
     opacity: 80%;
   }
   .cert {
-    /* margin: 7rem 0; */
-    /* grid-template-columns: repeat(1, 1fr); */
     gap: 2rem;
   }
   .cert li {

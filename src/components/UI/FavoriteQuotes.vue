@@ -149,7 +149,7 @@ export default {
   background: rgb(25, 60, 129);
   width: 5rem;
   margin: 0 auto;
-  padding: 0.4rem 0.7rem 0.4rem 0.5rem;
+  padding: 0.4rem 0.7rem 0.4rem 0.3rem;
   border-radius: 10px;
 }
 

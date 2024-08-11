@@ -46,7 +46,7 @@
       <img id="logo" src="@/assets/mpluslogo.png" alt="" />
       <p>
         I'm Fatai - an enthusiasm frontend developer, lover of nature, football
-        and . Thanks for checking out mymy site!
+        and a big fan of Messi. Thanks for checking out my site!
       </p>
       <ul class="accounts">
         <li @click="github">
@@ -114,9 +114,6 @@ export default {
     toolbox() {
       this.$router.push("/toolbox");
     },
-    // toolbox() {
-    //   this.$route.push("/toolbox");
-    // },
   },
 };
 </script>
@@ -172,6 +169,7 @@ li {
   margin: 0 6rem;
 }
 .accounts .fa-brands {
+  /* font-size: 1.2rem; */
   padding: 6px;
   border: 1px solid #fff;
   border-radius: 10px;
@@ -222,7 +220,6 @@ a {
   .container2 {
     display: inline;
     width: 100%;
-    background-color: rgb(23, 31, 44);
     color: #fff;
     margin: 0;
   }
@@ -235,7 +232,8 @@ a {
   }
   .footer_aboutdiv p {
     font-size: 1.2rem;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
+    line-height: 28px;
     font-weight: 300;
     opacity: 93%;
   }

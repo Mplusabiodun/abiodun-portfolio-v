@@ -26,7 +26,6 @@
       <li @click="toAbout">About</li>
       <li @click="toBlogs">Blogs</li>
       <li @click="toProjects">Projects</li>
-      <!-- <li @click="$emit('scroll-to-contact')">Contact</li> -->
     </ul>
   </dialog>
 </template>

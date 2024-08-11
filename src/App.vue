@@ -15,7 +15,6 @@
       @to-blogs="scrollToBlog"
       @to-Projects="scrollToProjects"
       @to-skills="scrollToSkills"
-      class="footer"
     ></the-footer>
   </div>
 </template>
@@ -91,7 +90,6 @@ export default {
   right: 0;
   left: 0;
   z-index: 50;
-  /* margin-bottom: 4rem; */
 }
 .container_footer {
   background: rgb(2, 6, 23);
@@ -119,7 +117,6 @@ export default {
   }
   .container_footer {
     padding: 2.5rem 1.5rem 2rem;
-    /* margin: 0; */
   }
 }
 </style>

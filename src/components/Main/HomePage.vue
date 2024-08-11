@@ -29,7 +29,6 @@
     <p class="brief_about">
       {{ briefAboutMe }}
     </p>
-    <!-- class="target-component" -->
     <section id="target" class="about_section">
       <h4 class="about">ABOUT</h4>
       <h2 class="heres">Here's what sets me apart and makes me unique</h2>
@@ -205,7 +204,6 @@
       </h2>
       <ul v-for="project in projects" :key="project.name" class="project_ul">
         <li class="project_li">
-          <!-- <div class="projects_box"> -->
           <div class="myproject">
             <img id="project_image" :src="project.image" alt="laptop_screen" />
           </div>
@@ -218,7 +216,6 @@
               project.linkName
             }}</a>
           </div>
-          <!-- </div> -->
         </li>
       </ul>
       <button @click="moreProjects" class="more_projects">
@@ -326,9 +323,9 @@ export default {
   color: #fff;
 }
 .myname {
-  font-size: 3.7rem;
-  font-weight: 750;
-  line-height: 4.3rem;
+  font-size: 3.8rem;
+  font-weight: 700;
+  line-height: 4.2rem;
   text-align: center;
   margin: 0 auto;
   letter-spacing: 1px;
@@ -367,7 +364,6 @@ export default {
   text-align: center;
   margin-top: 10rem;
   opacity: 50%;
-  /* transition: opacity 0.5s ease-out; */
 }
 .about_section,
 .blog_section,
@@ -401,7 +397,7 @@ export default {
   height: 36rem;
   grid-template-columns: repeat(4, 1fr);
   /* grid-template-rows: repeat(3, 1fr); */
-  gap: 1.7rem;
+  gap: 1.3rem;
 }
 .aboutme {
   background: linear-gradient(
@@ -758,9 +754,6 @@ export default {
   align-content: center;
   font-weight: 800;
 }
-/* .medium_second h3 {
-  width: 15rem;
-} */
 .medium_second a {
   color: black;
   font-weight: bold;
@@ -800,14 +793,8 @@ export default {
   list-style-type: none;
   margin: 5rem 0 0 1rem;
   display: flex;
-  /* margin-top: 0.6rem; */
   text-align: left;
 }
-/* .projects_box {
-  display: flex;
-  margin-top: 0.6rem;
-  text-align: left;
-} */
 .myproject {
   width: 26rem;
   height: 18rem;
@@ -842,7 +829,6 @@ export default {
   letter-spacing: 1px;
   text-decoration: none;
 }
-/* .project_section a  */
 .more_projects {
   display: flex;
   justify-content: center;
@@ -1138,7 +1124,7 @@ export default {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(8, 1fr);
     gap: 1.3rem;
-    margin: 0 0 -3rem 0;
+    margin: 0 0 -6rem 0;
   }
   /* LEARNMORE START */
   .learnmore {

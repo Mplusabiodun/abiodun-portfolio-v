@@ -21,10 +21,8 @@
     </div>
     <ul class="blog_grid">
       <li v-for="blog in blogs" :key="blog.blogName" class="grid_element">
-        <!-- <div class="medium_second"> -->
         <a :href="blog.blogLink" target="blank">{{ blog.blogName }}</a>
         <p>{{ blog.blogWord }}</p>
-        <!-- </div> -->
       </li>
     </ul>
     <favorite-quotes></favorite-quotes>
@@ -160,11 +158,9 @@ li {
     rgb(23, 31, 44),
     rgb(23, 31, 44)
   );
-  /* background: url("@/assets/imposter_syndrome.png"); */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  /* color: rgb(2, 6, 23); */
   padding: 0 2rem 1.5rem;
   height: 14rem;
   align-content: flex-end;
@@ -238,7 +234,6 @@ li {
   }
   .medium_first {
     padding: 6rem 0rem 0.5rem;
-    /* justify-content: center; */
   }
   .custom_div {
     width: 100%;

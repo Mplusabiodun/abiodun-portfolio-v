@@ -35,7 +35,6 @@ import Islamiyyah from "@/assets/connections/islamiyyah.png";
 import Jeleel from "@/assets//connections/jeleel.png";
 import Sodiq from "@/assets/connections/sodiq.jpg";
 import Ganiy from "@/assets/connections/ganiyy.jpg";
-// import Mubaraq from "@/assets/connections/mubaraq.png";
 
 // LOVE TO MEET
 import Damola from "@/assets/connections/damolabadmus.png";
@@ -59,7 +58,6 @@ export default {
         { image: Jeleel, s_name: "Jeleel Adeyemi" },
         { image: Sodiq, s_name: "Sodiq Adebisi" },
         { image: Ganiy, s_name: "Ganiy Adebayo" },
-        // { image: Mubaraq, s_name: "Mubaraq Adeoye" },
       ],
       love_tomeet: [
         { image: Damola, s_name: "Damola Badmus" },
@@ -125,7 +123,7 @@ li {
   width: 8rem;
   height: 8rem;
   border-radius: 50%;
-  margin-top: 0rem;
+  margin-top: 0.7rem;
 }
 li p {
   font-size: 1rem;
@@ -163,6 +161,9 @@ li p {
     letter-spacing: 1px;
     line-height: 18px;
     margin-bottom: 1rem;
+  }
+  #app_img {
+    margin-top: 0rem;
   }
   .havnt_meet {
     opacity: 70%;

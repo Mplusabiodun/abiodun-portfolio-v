@@ -1,6 +1,6 @@
 <template>
   <section class="container">
-    <h2 class="hard_soft">Hardware and softwares I use on a daily basis.</h2>
+    <h2 class="hard_soft">Hardware and Softwares I use on a daily basis.</h2>
     <h3 class="app">Applications</h3>
     <ul class="app_group">
       <li v-for="software in softwares" :key="software.s_name" class="list">
@@ -27,11 +27,12 @@ import netlify from "@/assets/toolboxpics/netlify.png";
 import youtube from "@/assets/toolboxpics/youtube.png";
 import MDN from "@/assets/toolboxpics/mdn.png";
 import github from "@/assets/toolboxpics/github.png";
-// import slack from "@/assets/toolboxpics/slack.png";
-// import gmail from "@/assets/toolboxpics/gmail.png";
-// import audiomack from "@/assets/toolboxpics/audiomack.png";
-// import twitter from "@/assets/toolboxpics/twitter.png";
-// import linkedln from "@/assets/toolboxpics/linkedln.png";
+import linkedln from "@/assets/toolboxpics/linkedln.png";
+import twitter from "@/assets/toolboxpics/twitter.png";
+import audiomack from "@/assets/toolboxpics/audiomack.png";
+import spotify from "@/assets/toolboxpics/spotify.png";
+import slack from "@/assets/toolboxpics/slack.png";
+import gmail from "@/assets/toolboxpics/gmail.png";
 
 export default {
   components: {
@@ -45,6 +46,12 @@ export default {
         { image: youtube, s_name: "Youtube" },
         { image: MDN, s_name: "MDN" },
         { image: github, s_name: "Github" },
+        { image: linkedln, s_name: "Linkedln" },
+        { image: twitter, s_name: "X" },
+        { image: audiomack, s_name: "Audiomack" },
+        { image: spotify, s_name: "Spotify" },
+        { image: slack, s_name: "Slack" },
+        { image: gmail, s_name: "Gmail" },
       ],
     };
   },
@@ -76,7 +83,7 @@ export default {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 1.5rem;
+  gap: 2rem;
   padding: 0;
 }
 li {

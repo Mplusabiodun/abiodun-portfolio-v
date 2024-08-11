@@ -159,7 +159,6 @@ li {
 }
 #project_pics {
   width: 100%;
-  /* height: 28.5rem; */
   height: 25rem;
 }
 .project_name {
