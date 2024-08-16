@@ -29,6 +29,7 @@ import twotruth from "@/assets/projects/read_my_mind.png";
 import colormarkers from "@/assets/projects/colormarkers2.png";
 import counterhook from "@/assets/projects/counterhook.png";
 import photogallery from "@/assets/projects/photogallery.png";
+import palindrome from "@/assets/projects/palindrome.png";
 
 export default {
   components: {
@@ -68,6 +69,14 @@ export default {
             "Find a Coach app is a digital platform designed to connect individuals seeking personal or professional development with qualified coaches. Users can search for coaches based on specialty, experience, location, ratings, and availability. This app aims to streamline the process of finding and connecting with a coach, enhancing accessibility and convenience for users worldwide.",
           livelink: "https://a-recipe-page.netlify.app/",
           linkName: "find-a-coach",
+        },
+        {
+          image: palindrome,
+          name: "Palindrome Checker",
+          description:
+            "A palindrome is a word or phrase that can be read the same way forwards and backwards, ignoring punctuation, case, and spacing.",
+          livelink: "https://palindromechecke-r.netlify.app/",
+          linkName: "palindrome-checker",
         },
         {
           image: technical,

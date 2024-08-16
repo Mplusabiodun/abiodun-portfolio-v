@@ -1,12 +1,10 @@
 <template>
   <div class="container">
     <h2 class="myname">
-      <!-- <span style="display: block">Hey, I'm Fatai!</span> -->
       <span style="display: block"
-        >Hey <span class="smile">&#128522;</span>, I'm Fatai!</span
+        >Hey<span class="smile">&#128522;</span>, I'm Fatai!</span
       >
       <span class="gladblock">Welcome to my corner</span> of the internet!
-      <!-- <span class="gladblock">Welcome, and am glad</span> you're here! -->
     </h2>
     <div class="images">
       <img
@@ -349,7 +347,7 @@ export default {
 }
 .smile {
   font-size: 2.5rem;
-  margin-left: -12px;
+  margin-left: -6px;
   opacity: 0.7;
 }
 .gladblock {
@@ -857,7 +855,6 @@ export default {
   letter-spacing: 1px;
   text-decoration: none;
   color: rgb(54, 106, 208);
-  /* color: rgb(82, 118, 191); */
 }
 .more_projects {
   display: flex;
@@ -893,7 +890,7 @@ export default {
   }
   .smile {
     font-size: 2.2rem;
-    margin-left: -5px;
+    margin-left: -2px;
     opacity: 0.8;
   }
   .images {

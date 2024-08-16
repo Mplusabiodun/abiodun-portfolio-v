@@ -73,16 +73,9 @@ export default {
         console.log(this.routeParams);
       }
     },
-    // scrollToProjects() {
-    //   window.scrollTo({
-    //     top: 3440,
-    //     left: 0,
-    //     behavior: "smooth",
-    //   });
-    // },
     scrollToContact() {
       window.scrollTo({
-        top: 5390,
+        top: document.documentElement.scrollHeight,
         left: 0,
         behavior: "smooth",
       });
@@ -117,7 +110,6 @@ export default {
 }
 .container_footer {
   background: rgb(2, 7, 25);
-  /* background: rgb(2, 6, 23); */
   padding: 1rem 4rem 0;
   bottom: 0;
   right: 0;
