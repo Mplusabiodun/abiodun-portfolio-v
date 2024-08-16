@@ -28,34 +28,58 @@ export default {
     TheHeader,
     TheFooter,
   },
+  data() {
+    return {
+      routeParams: "",
+    };
+  },
+  created() {
+    this.routeParams = this.$route.params;
+  },
   methods: {
     scrollToAbout() {
-      window.scrollTo({
-        top: 1560,
-        left: 0,
-        behavior: "smooth",
-      });
+      if (this.routeParams === "home") {
+        window.scrollTo({
+          top: 1560,
+          left: 0,
+          behavior: "smooth",
+        });
+      } else {
+        this.$router.push("/about");
+        console.log(this.routeParams);
+      }
     },
     scrollToBlog() {
-      // this.$router.push({ name: "home" }).then(() => {
-      //   window.scrollTo({ top: 2590, behavior: "smooth" });
-      // });
-      window.scrollTo({
-        top: 2590,
-        left: 0,
-        behavior: "smooth",
-      });
+      if (this.routeParams === "home") {
+        window.scrollTo({
+          top: 2590,
+          left: 0,
+          behavior: "smooth",
+        });
+      } else {
+        this.$router.push("/blogs");
+        console.log(this.routeParams);
+      }
+    },
+    scrollToProjects() {
+      if (this.routeParams === "home") {
+        window.scrollTo({
+          top: 3440,
+          left: 0,
+          behavior: "smooth",
+        });
+      } else {
+        this.$router.push("/projects");
+        console.log(this.routeParams);
+      }
     },
     // scrollToProjects() {
-    // this.$router.push({ name: "home", query: { scrollTo: "3440" } });
+    //   window.scrollTo({
+    //     top: 3440,
+    //     left: 0,
+    //     behavior: "smooth",
+    //   });
     // },
-    scrollToProjects() {
-      window.scrollTo({
-        top: 3440,
-        left: 0,
-        behavior: "smooth",
-      });
-    },
     scrollToContact() {
       window.scrollTo({
         top: 5390,
@@ -92,7 +116,8 @@ export default {
   z-index: 50;
 }
 .container_footer {
-  background: rgb(2, 6, 23);
+  background: rgb(2, 7, 25);
+  /* background: rgb(2, 6, 23); */
   padding: 1rem 4rem 0;
   bottom: 0;
   right: 0;
@@ -100,7 +125,7 @@ export default {
 }
 
 /* iPad */
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (max-width: 1024px) {
   .container_header {
     padding: 1rem 0rem 0;
   }

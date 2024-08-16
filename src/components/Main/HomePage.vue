@@ -1,43 +1,55 @@
 <template>
   <div class="container">
     <h2 class="myname">
-      <span style="display: block">Hey, I'm Fatai!</span>
-      <span class="gladblock">Welcome, and am glad</span> you're here!
+      <!-- <span style="display: block">Hey, I'm Fatai!</span> -->
+      <span style="display: block"
+        >Hey <span class="smile">&#128522;</span>, I'm Fatai!</span
+      >
+      <span class="gladblock">Welcome to my corner</span> of the internet!
+      <!-- <span class="gladblock">Welcome, and am glad</span> you're here! -->
     </h2>
     <div class="images">
       <img
         class="myphotos photo1"
-        src="@/assets/mypics/try2.jpg"
+        src="@/assets/mypics/code3.jpg"
         alt="fataipics1"
       />
       <img
         class="myphotos photo2"
-        src="@/assets/mypics/fatai2.jpg"
+        src="@/assets/mypics/code8.jpg"
         alt="fataipics2"
       />
       <img
         class="myphotos photo3"
-        src="@/assets/mypics/new2.jpg"
+        src="@/assets/mypics/code9.jpg"
         alt="fataipics3"
       />
       <img
         class="myphotos photo4"
-        src="@/assets/mypics/westernsun.jpg"
+        src="@/assets/mypics/code6.jpg"
         alt="fatai@westernsun"
       />
     </div>
-    <p class="brief_about">
+    <p
+      class="brief_about"
+      :class="{ hover: isHovering }"
+      @mouseover="isHovering = true"
+      @mouseleave="isHovering = false"
+      tabindex="0"
+      @focus="isHovering = true"
+      @blur="isHovering = false"
+    >
       {{ briefAboutMe }}
     </p>
     <section id="target" class="about_section">
       <h4 class="about">ABOUT</h4>
       <h2 class="heres">Here's what sets me apart and makes me unique</h2>
       <div class="unique_list">
-        <div @click="about" class="aboutme learnmore">
+        <div @click="goToAbout" class="aboutme learnmore">
           <p>Learn more about me</p>
         </div>
-        <div class="aboutme bookacall">
-          <div @click="bookacall">
+        <div @click="bookacall" class="aboutme bookacall">
+          <div>
             <h4 class="acall">Book a call with me</h4>
             <p class="love_to">I'd love to chat even if there's no agenda!</p>
           </div>
@@ -145,7 +157,7 @@
           </div>
         </div>
       </div>
-      <button @click="about" class="learn_more">Learn more</button>
+      <button @click="goToAbout" class="learn_more">Learn more</button>
     </section>
     <section class="blog_section">
       <h4 class="blog">BLOG</h4>
@@ -237,6 +249,7 @@ export default {
   },
   data() {
     return {
+      isHovering: false,
       briefAboutMe: `A FRONT-END DEVELOPER with great enthusiasm for building user centric
       software products. I started this journey to explore my passion for
       writing codes and solving complex software problems. \nA National Diploma
@@ -275,6 +288,10 @@ export default {
   },
   methods: {
     bookacall() {
+      if (!confirm("You're about to mail Fatai")) {
+        return;
+      }
+      // confirm("You're about to mail Fatai");
       const email = "fataimonsuru2020@gmail.com";
       const subject = "Call or chat";
       const body =
@@ -304,7 +321,7 @@ export default {
     connections() {
       this.$router.push("/connections");
     },
-    about() {
+    goToAbout() {
       this.$router.push("/about");
     },
   },
@@ -323,12 +340,17 @@ export default {
   color: #fff;
 }
 .myname {
-  font-size: 3.8rem;
+  font-size: 4rem;
   font-weight: 700;
   line-height: 4.2rem;
   text-align: center;
   margin: 0 auto;
   letter-spacing: 1px;
+}
+.smile {
+  font-size: 2.5rem;
+  margin-left: -12px;
+  opacity: 0.7;
 }
 .gladblock {
   display: block;
@@ -358,13 +380,19 @@ export default {
   transform: rotate(-11deg);
 }
 .brief_about {
-  font-size: 2rem;
-  line-height: 4rem;
-  letter-spacing: 1px;
   text-align: center;
+  font-size: 2rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+  line-height: 4rem;
   margin-top: 10rem;
-  opacity: 50%;
+  opacity: 0.5;
+  transition: opacity 3s ease-in-out;
 }
+.hover {
+  opacity: 1;
+}
+
 .about_section,
 .blog_section,
 .project_section {
@@ -799,7 +827,7 @@ export default {
   width: 26rem;
   height: 18rem;
   overflow: hidden;
-  border: 2px solid rgb(82, 118, 191);
+  border: 2px solid rgba(82, 118, 191, 0.3);
   border-radius: 20px;
   margin: 0 4rem 0 0;
 }
@@ -828,6 +856,8 @@ export default {
   font-size: 1rem;
   letter-spacing: 1px;
   text-decoration: none;
+  color: rgb(54, 106, 208);
+  /* color: rgb(82, 118, 191); */
 }
 .more_projects {
   display: flex;
@@ -856,9 +886,15 @@ export default {
   }
   .myname {
     font-size: 2.8rem;
+    line-height: 3.5rem;
     width: 39rem;
     letter-spacing: 1.5px;
     margin: 0 auto;
+  }
+  .smile {
+    font-size: 2.2rem;
+    margin-left: -5px;
+    opacity: 0.8;
   }
   .images {
     margin: 8rem auto;
@@ -870,6 +906,10 @@ export default {
   }
   .photo1 {
     margin-left: 0rem;
+  }
+  .brief_about {
+    line-height: 3.8rem;
+    margin-top: 9.4rem;
   }
   .about,
   .blog,

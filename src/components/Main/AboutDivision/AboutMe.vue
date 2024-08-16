@@ -1,14 +1,18 @@
 <template>
   <section class="container">
     <h2 class="greetings">
-      <span class="good">{{ greeting }},</span> I'm Fatai, an enthusiasm
-      frontend developer
+      <span class="good">{{ greeting }},</span> I'm so glad you stopped by!,
+      feel free to explore.
+      <!-- an enthusiasm frontend developer -->
     </h2>
     <!-- container 2 -->
     <div class="container2">
       <div class="left_cont">
         <p class="forresponsive">
-          Welcome! Let me quickly tell you about myself and what I enjoy doing.
+          <em>
+            Welcome! Let me quickly tell you about myself and what I enjoy
+            doing.
+          </em>
         </p>
         <img class="fatai" src="@/assets/mypics/fataisnap.jpg" alt="Fatai" />
         <h3 class="started">
@@ -23,8 +27,9 @@
       <!-- START OF RIGHT SIDE -->
       <div class="right_cont">
         <p class="heythere">
-          Hey there! Let me quickly tell you about myself and what I enjoy
-          doing.
+          <em>
+            Let me quickly tell you about myself and what I enjoy doing.
+          </em>
         </p>
         <img class="fatai" src="@/assets/mypics/fatai2.jpg" alt="Fatai" />
         <h3 class="started">The leap over to web development.</h3>
@@ -179,13 +184,13 @@ export default {
   color: #fff;
 }
 .greetings {
-  font-size: 3.3rem;
   width: 48rem;
-  font-weight: 800;
-  letter-spacing: 1px;
-  line-height: 3.3rem;
+  font-size: 3.4rem;
+  font-weight: 700;
+  line-height: 3.5rem;
   text-align: center;
   margin: 0 auto;
+  letter-spacing: 1.3px;
 }
 .good {
   display: block;
@@ -211,7 +216,7 @@ export default {
   display: none;
 }
 .fatai {
-  width: 24rem;
+  width: 22rem;
   height: 37rem;
   border: 4px solid #ffffff6e;
   border-radius: 1.5rem;
@@ -243,7 +248,7 @@ p {
 }
 /* RIGHT CONT */
 .right_cont {
-  margin: 5rem 0 0 0;
+  margin: 5.7rem 0 0 0;
 }
 .heythere {
   font-size: 1.6rem;
@@ -339,17 +344,17 @@ p {
   .forresponsive {
     display: flex;
     font-size: 1.8rem;
-    margin: 0.8rem auto 1rem;
-    line-height: 2rem;
-    font-weight: 700;
-    letter-spacing: 1px;
+    margin: 0.8rem auto 0rem;
+    line-height: 2.3rem;
+    font-weight: 300;
+    letter-spacing: 1.5px;
     text-align: left;
-    opacity: 70%;
+    opacity: 80%;
   }
   .fatai {
-    width: 35rem;
+    width: 33rem;
     height: 48rem;
-    margin: 3rem 0rem 4rem 1.5rem;
+    margin: 3rem 0rem 4rem 2.3rem;
   }
   p {
     width: 100%;
@@ -427,6 +432,13 @@ p {
     width: 22rem;
     line-height: 2.5rem;
     margin: 0 auto 0;
+
+    /* font-size: 3.8rem;
+  font-weight: 700;
+  line-height: 4.2rem;
+  text-align: center;
+  margin: 0 auto;
+  letter-spacing: 1px; */
   }
   .good {
     display: inline;

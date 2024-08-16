@@ -45,8 +45,10 @@
     <div class="footer_aboutdiv">
       <img id="logo" src="@/assets/mpluslogo.png" alt="" />
       <p>
-        I'm Fatai - an enthusiasm frontend developer, lover of nature, football
-        and a big fan of Messi. Thanks for checking out my site!
+        <em>
+          An enthusiasm frontend developer, lover of nature, football and a big
+          fan of Messi. Thanks for checking out my site!
+        </em>
       </p>
       <ul class="accounts">
         <li @click="github">
@@ -219,6 +221,7 @@ a {
   }
   .container2 {
     display: inline;
+    font-family: sans-serif;
     width: 100%;
     color: #fff;
     margin: 0;
@@ -228,18 +231,19 @@ a {
     height: 3rem;
     border-radius: 50%;
     border: 1.6px solid #fff;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.3rem;
   }
   .footer_aboutdiv p {
     font-size: 1.2rem;
-    letter-spacing: 2px;
-    line-height: 28px;
+    letter-spacing: 2.5px;
+    line-height: 2rem;
     font-weight: 300;
-    opacity: 93%;
+    opacity: 80%;
   }
   #rightreserved {
     margin-top: 2rem;
     letter-spacing: 1px;
+    opacity: 70%;
   }
   #rightreserved .copy {
     font-size: 1.5rem;
@@ -252,7 +256,7 @@ a {
   .general_cont,
   .general_cont {
     text-align: left;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     margin-right: 17rem;
   }
   .general_cont ul,
@@ -267,13 +271,14 @@ a {
   }
   .general_cont h3,
   .general_cont h3 {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     opacity: 90%;
+    letter-spacing: 2px;
   }
   .general_cont li,
   .general_cont li {
     margin-top: 1rem;
-    font-size: 1.1rem;
+    font-size: 1rem;
     opacity: 70%;
   }
   a {
@@ -298,6 +303,7 @@ a {
   }
   .footer_aboutdiv p {
     font-size: 1rem;
+    /* line-height: 3rem; */
     letter-spacing: 1.5px;
     opacity: 80%;
   }

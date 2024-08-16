@@ -138,17 +138,17 @@ export default {
   color: #fff;
 }
 .collection {
-  font-size: 3.5rem;
   width: 35rem;
-  font-weight: 800;
-  letter-spacing: 1px;
+  font-size: 3.4rem;
+  font-weight: 700;
   line-height: 3.5rem;
   text-align: center;
-  margin: 0 auto;
+  margin: 1rem auto;
+  letter-spacing: 1.3px;
 }
 li {
   list-style-type: none;
-  margin: 5rem 0 9rem;
+  margin: 7rem 0 9rem;
 }
 .pics_cont {
   overflow: hidden;
@@ -176,6 +176,7 @@ li {
   font-size: 1.2rem;
   letter-spacing: 0.9px;
   text-decoration: none;
+  color: rgb(54, 106, 208);
 }
 /* iPad */
 /* and (min-width: 768px) */

@@ -73,13 +73,13 @@ export default {
   color: #fff;
 }
 .collection {
-  font-size: 3rem;
   width: 45rem;
-  font-weight: 800;
-  letter-spacing: 1px;
-  line-height: 3.3rem;
+  font-size: 3.4rem;
+  font-weight: 700;
+  line-height: 3.5rem;
   text-align: center;
-  margin: 0 auto 2rem;
+  margin: 1rem auto;
+  letter-spacing: 1.3px;
 }
 li {
   list-style-type: none;
@@ -97,6 +97,7 @@ li {
   );
   border-radius: 20px;
   border: 0.8px solid rgb(82, 118, 191);
+  margin-top: 5rem;
   padding: 1rem;
 }
 .medium_first {
@@ -123,6 +124,7 @@ li {
   line-height: 25px;
 }
 .custom_div a {
+  color: rgb(54, 106, 208);
   font-size: 0.9rem;
   opacity: 100%;
   font-weight: bold;
@@ -166,6 +168,7 @@ li {
   align-content: flex-end;
 }
 .grid_element a {
+  color: rgb(54, 106, 208);
   font-weight: 800;
   font-size: 1.4rem;
   text-decoration: none;
@@ -262,6 +265,8 @@ li {
   }
   .grid_element a {
     color: #fff;
+    /* color: rgb(54, 106, 208); */
+
     font-weight: 700;
     font-size: 1.3rem;
     letter-spacing: 1px;
