@@ -176,12 +176,12 @@ li:active {
     border-bottom: 1px dashed #ffffff6f;
   }
   #logo {
-    width: 3.1rem;
-    height: 3.1rem;
+    width: 2.8rem;
+    height: 2.8rem;
   }
   #Hamburger {
-    width: 1.8rem;
-    height: 1.8rem;
+    width: 1.6rem;
+    height: 1.6rem;
   }
   .hamburger {
     top: 15%;

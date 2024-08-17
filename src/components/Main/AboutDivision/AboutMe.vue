@@ -187,7 +187,7 @@ export default {
 <style scoped>
 .container {
   background: #020617;
-  padding: 7rem 9rem;
+  padding: 9rem 9rem;
   color: #fff;
 }
 .greetings {
@@ -236,7 +236,7 @@ p {
   margin: 0.8rem auto 0rem;
   line-height: 1.8rem;
   letter-spacing: 0.7px;
-  opacity: 60%;
+  opacity: 0.5;
 }
 .started {
   width: 25rem;
@@ -432,12 +432,12 @@ p {
 /* Mobile ----------- */
 @media only screen and (max-width: 767px) {
   .container {
-    padding: 10rem 2rem 5rem;
+    padding: 7.5rem 2rem 5rem;
   }
   .greetings {
     font-size: 1.7rem;
     width: 22rem;
-    line-height: 2.5rem;
+    line-height: 2rem;
     margin: 0 auto 0;
   }
   .good {
@@ -456,7 +456,7 @@ p {
   .forresponsive {
     font-size: 1.2rem;
     margin: 0rem auto 0rem;
-    line-height: 1.6rem;
+    line-height: 1.5rem;
   }
   .fatai {
     width: 88%;
@@ -470,14 +470,14 @@ p {
     width: 100%;
     text-align: left;
     font-size: 1rem;
-    line-height: 1.6rem;
+    line-height: 1.5rem;
     letter-spacing: 2px;
     /* margin: 0.8rem 0rem 0rem 0rem; */
   }
   .started {
     width: 100%;
     font-size: 1.1rem;
-    line-height: 1.6rem;
+    line-height: 1.5rem;
     letter-spacing: 1.8px;
   }
   .flower {
@@ -490,7 +490,7 @@ p {
     width: 100%;
     font-size: 1.3rem;
     margin: 0.5rem auto 2rem;
-    line-height: 1.7rem;
+    line-height: 1.6rem;
   }
   .experience_section li {
     margin: 3rem 0rem 0 -2.5rem;

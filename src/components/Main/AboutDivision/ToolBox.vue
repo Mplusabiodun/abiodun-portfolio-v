@@ -209,17 +209,24 @@ li p {
 /* Mobile ----------- */
 @media only screen and (max-width: 767px) {
   .container {
-    padding: 10rem 2rem;
+    padding: 7.5rem 2rem;
   }
   .hard_soft {
     font-size: 2rem;
     width: 22rem;
     letter-spacing: 1.2px;
-    line-height: 2.3rem;
+    line-height: 2rem;
+  }
+  .app {
+    opacity: 0.7;
+    font-size: 1.4rem;
   }
   .app_group {
     grid-template-columns: repeat(2, 1fr);
     gap: 1.6rem;
+  }
+  .app_group p {
+    font-size: 1rem;
   }
   li {
     height: 12rem;
@@ -235,8 +242,8 @@ li p {
 
   .hardware {
     text-align: center;
-    margin: 10rem 0 2rem;
-    font-size: 2rem;
+    margin: 5rem 0 2rem;
+    font-size: 1.4rem;
     font-weight: 300;
     letter-spacing: 1px;
   }
@@ -250,9 +257,11 @@ li p {
   #hp {
     display: block;
     font-weight: bold;
+    font-size: 1.1rem;
   }
   .prop {
     opacity: 60%;
+    font-size: 1.1rem;
   }
 }
 </style>

@@ -173,7 +173,7 @@ li p {
 /* Mobile ----------- */
 @media only screen and (max-width: 767px) {
   .container {
-    padding: 10rem 2rem;
+    padding: 7.5rem 2rem;
   }
   .connection {
     font-size: 2rem;
@@ -184,11 +184,11 @@ li p {
     opacity: 80%;
 
     width: 22rem;
-    margin: 2rem auto 2.2rem;
-    font-size: 1.5rem;
+    margin: 1.5rem auto 2.2rem;
+    font-size: 1.3rem;
   }
   .to_meet {
-    margin-top: 9rem;
+    margin-top: 7rem;
   }
   .metindividual {
     grid-template-columns: repeat(2, 1fr);
@@ -203,6 +203,7 @@ li p {
   li p {
     letter-spacing: 1.2px;
     margin-top: 0.3rem;
+    font-size: 0.9rem;
   }
 }
 </style>

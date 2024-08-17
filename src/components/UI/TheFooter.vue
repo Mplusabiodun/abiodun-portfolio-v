@@ -66,7 +66,7 @@
       </p>
     </div>
     <div class="general_extra">
-      <div class="general_cont">
+      <div class="general_cont generalcont1">
         <h3>GENERAL</h3>
         <ul>
           <li><router-link to="/home">Home</router-link></li>
@@ -257,6 +257,8 @@ a {
   .general_cont {
     text-align: left;
     font-size: 1.2rem;
+  }
+  .generalcont1 {
     margin-right: 17rem;
   }
   .general_cont ul,
@@ -321,9 +323,16 @@ a {
   .general_cont,
   .general_cont {
     text-align: left;
-    /* font-size: 1.1rem; */
-    margin-right: 9rem;
   }
+  .generalcont1 {
+    margin-right: 7rem;
+  }
+  /* .general_cont,
+  .general_cont {
+    text-align: left;
+    font-size: 1.2rem;
+    margin-right: 17rem;
+  } */
   .general_cont h3,
   .general_cont h3 {
     font-size: 1.1rem;

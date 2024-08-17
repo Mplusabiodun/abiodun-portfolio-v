@@ -202,7 +202,7 @@ li {
 /* Mobile ----------- */
 @media only screen and (max-width: 767px) {
   .container {
-    padding: 9rem 2rem 5rem 0.5rem;
+    padding: 7rem 2rem 5rem 0.5rem;
   }
   .collection {
     font-size: 1.8rem;

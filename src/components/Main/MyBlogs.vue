@@ -224,12 +224,12 @@ li {
 /* Mobile ----------- */
 @media only screen and (max-width: 767px) {
   .container {
-    padding: 9rem 2.1rem 3rem;
+    padding: 7.5rem 2.1rem 3rem;
   }
   .collection {
     font-size: 1.8rem;
     width: 22rem;
-    line-height: 2.2rem;
+    line-height: 2.1rem;
     margin: 0 auto 3rem;
   }
   .blog_m {

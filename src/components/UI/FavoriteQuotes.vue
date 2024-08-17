@@ -231,16 +231,16 @@ export default {
     margin: 6rem 0 0;
   }
   .will_you {
-    width: 22rem;
+    width: 20rem;
     font-size: 1.2rem;
-    line-height: 1.8rem;
-    margin: 0 0rem 0 0rem;
+    line-height: 1.6rem;
+    margin: 0 auto 0;
     letter-spacing: 1.5px;
   }
   .myquotes {
     width: 17rem;
     font-size: 0.9rem;
-    line-height: 1.5rem;
+    line-height: 1.4rem;
     margin: 2rem auto 0rem;
     height: 9rem;
   }
@@ -265,7 +265,7 @@ export default {
     margin: 1rem auto 0;
   }
   .skill_div ul li {
-    margin: 1rem auto 0;
+    margin: 0.7rem auto 0;
     font-size: 0.8rem;
   }
 }

@@ -1162,6 +1162,7 @@ export default {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(8, 1fr);
     gap: 1.1rem;
+    overflow: hidden;
     margin: 0 0 -6rem 0;
   }
   /* LEARNMORE START */
@@ -1195,7 +1196,7 @@ export default {
     margin: 1rem 0;
     color: #020617;
     border-radius: 1.5rem;
-    padding: 4.1rem 0 0 1rem;
+    padding: 4rem 0 0 1rem;
     text-align: center;
     font-weight: 800;
   }
