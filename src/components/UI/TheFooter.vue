@@ -297,13 +297,13 @@ a {
     margin: 0;
   }
   #logo {
-    width: 2.5rem;
-    height: 2.5rem;
-    margin-bottom: 1rem;
+    width: 2.2rem;
+    height: 2.2rem;
+    margin-bottom: 0.8rem;
   }
   .footer_aboutdiv p {
-    font-size: 1rem;
-    /* line-height: 3rem; */
+    font-size: 0.9rem;
+    line-height: 1.5rem;
     letter-spacing: 1.5px;
     opacity: 80%;
   }
@@ -311,28 +311,28 @@ a {
     margin: 1.5rem 1.5rem 0 0;
   }
   #rightreserved {
-    font-size: 1rem;
+    font-size: 0.8rem;
     margin-top: 1.5rem;
-    opacity: 50%;
+    opacity: 0.5;
   }
   #rightreserved .copy {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
   .general_cont,
   .general_cont {
     text-align: left;
-    font-size: 1.3rem;
+    /* font-size: 1.1rem; */
     margin-right: 9rem;
   }
   .general_cont h3,
   .general_cont h3 {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
   }
   .general_cont li,
   .general_cont li {
     margin-top: 1rem;
-    font-size: 1.1rem;
-    opacity: 70%;
+    font-size: 0.9rem;
+    opacity: 0.6;
   }
 }
 </style>

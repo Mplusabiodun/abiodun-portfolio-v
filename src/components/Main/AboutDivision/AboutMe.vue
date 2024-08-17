@@ -3,7 +3,6 @@
     <h2 class="greetings">
       <span class="good">{{ greeting }},</span> I'm so glad you stopped by!,
       feel free to explore.
-      <!-- an enthusiasm frontend developer -->
     </h2>
     <!-- container 2 -->
     <div class="container2">
@@ -19,9 +18,11 @@
           I Started my creativity journey years back and I can proudly say I
           learned from the best, always on the lookout for my next adventure.
         </h3>
-        <p v-for="journey in myJourney" :key="journey">
-          {{ journey }}
-        </p>
+        <div class="pargraphpadding">
+          <p v-for="journey in myJourney" :key="journey">
+            {{ journey }}
+          </p>
+        </div>
       </div>
 
       <!-- START OF RIGHT SIDE -->
@@ -33,9 +34,11 @@
         </p>
         <img class="fatai" src="@/assets/mypics/fatai2.jpg" alt="Fatai" />
         <h3 class="started">The leap over to web development.</h3>
-        <p v-for="learning in myLearning" :key="learning">
-          {{ learning }}
-        </p>
+        <div class="pargraphpadding">
+          <p v-for="learning in myLearning" :key="learning">
+            {{ learning }}
+          </p>
+        </div>
       </div>
     </div>
 
@@ -50,18 +53,20 @@
       </div>
       <div class="right_cont">
         <h3 class="started value_inlife">What I truly value in life.</h3>
-        <p>
-          I believe in the quite popular phrase that
-          <em
-            >EXPECTATIONS HURT, we need to stop living with entitlement
-            mentality</em
-          >. Hardwork pays, its better to wait than to regret.
-        </p>
-        <p>
-          I valued family maybe because am blessed with beautiful ones, great
-          sisters and people around me. And of course definitely looking forward
-          to have mine someday, in the years to come.
-        </p>
+        <div class="pargraphpadding">
+          <p>
+            I believe in the quite popular phrase that
+            <em
+              >EXPECTATIONS HURT, we need to stop living with entitlement
+              mentality</em
+            >. Hardwork pays, its better to wait than to regret.
+          </p>
+          <p>
+            I valued family maybe because am blessed with beautiful ones, great
+            sisters and people around me. And of course definitely looking
+            forward to have mine someday, in the years to come.
+          </p>
+        </div>
       </div>
     </div>
 
@@ -69,12 +74,14 @@
     <div class="container4">
       <div class="left_cont">
         <h3 class="started doingnow">What I'm doing now.</h3>
-        <p v-for="currently in currentlyOn" :key="currently">
-          {{ currently }}
-        </p>
-        <p>
-          Thanks for checking out my corner of the web. <span>&#127863;</span>
-        </p>
+        <div class="pargraphpadding">
+          <p v-for="currently in currentlyOn" :key="currently">
+            {{ currently }}
+          </p>
+          <p>
+            Thanks for checking out my corner of the web. <span>&#127863;</span>
+          </p>
+        </div>
       </div>
       <!-- START OF RIGHT SIDE -->
       <div class="right_cont">
@@ -94,7 +101,7 @@
       <ul>
         <li v-for="experience in experiences" :key="experience.title">
           <h2>{{ experience.title }}</h2>
-          <div class="experience_details">
+          <div class="experience_details pargraphpadding">
             <h3>{{ experience.role }}</h3>
             <p>{{ experience.year }}</p>
             <p>
@@ -425,20 +432,13 @@ p {
 /* Mobile ----------- */
 @media only screen and (max-width: 767px) {
   .container {
-    padding: 10rem 1.6rem 5rem;
+    padding: 10rem 2rem 5rem;
   }
   .greetings {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     width: 22rem;
     line-height: 2.5rem;
     margin: 0 auto 0;
-
-    /* font-size: 3.8rem;
-  font-weight: 700;
-  line-height: 4.2rem;
-  text-align: center;
-  margin: 0 auto;
-  letter-spacing: 1px; */
   }
   .good {
     display: inline;
@@ -454,45 +454,54 @@ p {
     margin: 0 0rem 0 0;
   }
   .forresponsive {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     margin: 0rem auto 0rem;
-    line-height: 1.8rem;
+    line-height: 1.6rem;
   }
   .fatai {
-    width: 90%;
+    width: 88%;
     height: 30rem;
-    margin: 2rem 0rem 2.5rem 1rem;
+    margin: 1.5rem 0rem 2rem 1.3rem;
+  }
+  .pargraphpadding {
+    padding: 0 0.5rem 0 0.7rem;
   }
   p {
     width: 100%;
     text-align: left;
-    font-size: 1.2rem;
+    font-size: 1rem;
     line-height: 1.6rem;
     letter-spacing: 2px;
+    /* margin: 0.8rem 0rem 0rem 0rem; */
   }
   .started {
     width: 100%;
-    font-size: 1.3rem;
-    line-height: 1.8rem;
+    font-size: 1.1rem;
+    line-height: 1.6rem;
     letter-spacing: 1.8px;
   }
   .flower {
-    margin: 4rem 0 0 1rem;
+    margin: 3rem 0 0 1rem;
+  }
+  .experience {
+    font-size: 0.9rem;
   }
   .experience_note {
     width: 100%;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     margin: 0.5rem auto 2rem;
-    line-height: 2rem;
+    line-height: 1.7rem;
   }
   .experience_section li {
     margin: 3rem 0rem 0 -2.5rem;
     flex-direction: column;
+    font-size: 1rem;
   }
   .experience_details {
     width: 100%;
   }
   .experience_details h3 {
+    font-size: 1rem;
     margin: 2rem 0;
     opacity: 80%;
   }

@@ -232,14 +232,17 @@ export default {
   }
   .will_you {
     width: 22rem;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     line-height: 1.8rem;
-    margin: 0 0rem 0 -0.5rem;
+    margin: 0 0rem 0 0rem;
     letter-spacing: 1.5px;
   }
   .myquotes {
-    width: 20rem;
-    font-size: 1.3rem;
+    width: 17rem;
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    margin: 2rem auto 0rem;
+    height: 9rem;
   }
   #message {
     line-height: 18px;
@@ -254,14 +257,16 @@ export default {
   }
   .skills {
     width: 6rem;
+    font-size: 0.9rem;
     text-align: center;
-    padding: 0.8rem 1rem;
+    padding: 0.7rem 0.9rem;
   }
   .skill_div ul {
     margin: 1rem auto 0;
   }
   .skill_div ul li {
     margin: 1rem auto 0;
+    font-size: 0.8rem;
   }
 }
 </style>

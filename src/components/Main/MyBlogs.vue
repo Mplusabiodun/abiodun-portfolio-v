@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <h3 class="collection">
-      Insightful and helpful content you may find interesting.
+      Insightful and helpful content you may find interesting
     </h3>
     <div class="blog_m medium_first">
       <div class="custom_div">
@@ -224,10 +224,10 @@ li {
 /* Mobile ----------- */
 @media only screen and (max-width: 767px) {
   .container {
-    padding: 9rem 1.8rem 3rem;
+    padding: 9rem 2.1rem 3rem;
   }
   .collection {
-    font-size: 2rem;
+    font-size: 1.8rem;
     width: 22rem;
     line-height: 2.2rem;
     margin: 0 auto 3rem;
@@ -245,7 +245,7 @@ li {
   }
   .custom_div h3 {
     font-weight: bold;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
   }
   .custom_div p {
     display: none;

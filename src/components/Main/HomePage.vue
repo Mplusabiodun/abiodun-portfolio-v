@@ -1117,7 +1117,7 @@ export default {
 /* Mobile ----------- */
 @media only screen and (max-width: 767px) {
   .container {
-    padding: 17rem 2rem 3rem;
+    padding: 17rem 1.5rem 3rem 1.8rem;
   }
   .myname {
     font-size: 2.4rem;
@@ -1139,15 +1139,16 @@ export default {
   .blog,
   .project {
     text-align: left;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
   .heres,
   .blog_like,
   .project_note {
     text-align: left;
     width: 100%;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     opacity: 80%;
+    margin: 0.3rem auto 2rem;
     line-height: 1.8rem;
     font-weight: 500;
   }
@@ -1160,7 +1161,7 @@ export default {
     height: 55rem;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(8, 1fr);
-    gap: 1.3rem;
+    gap: 1.1rem;
     margin: 0 0 -6rem 0;
   }
   /* LEARNMORE START */
@@ -1168,6 +1169,10 @@ export default {
     grid-row: 1/3;
     grid-column: 1/2;
     opacity: 90%;
+    align-content: flex-end;
+  }
+  .learnmore p {
+    font-size: 1.3rem;
   }
   /* LEARNMORE STOP */
   /* BOOKACALL START */
@@ -1214,6 +1219,9 @@ export default {
     width: 3rem;
     height: 3.2rem;
   }
+  .xaccount h3 {
+    font-size: 0.9rem;
+  }
   .xaccount button {
     margin-bottom: 0rem;
   }
@@ -1224,12 +1232,25 @@ export default {
     grid-row: 3/6;
     overflow: hidden;
   }
+  .toolboxheading {
+    font-size: 1.1rem;
+  }
+  .toolbox_checkout {
+    width: 18rem;
+    font-size: 0.8rem;
+  }
   /* TOOLBOX STOP */
 
   /* CONNECTIONS START */
   .connections {
     grid-column: 1/3;
     grid-row: 6/8;
+  }
+  .connection_head {
+    font-size: 1.1rem;
+  }
+  .ever_evolvig {
+    font-size: 0.8rem;
   }
   .tomeet {
     margin: 2rem 0 0 0;
@@ -1294,7 +1315,7 @@ export default {
   .medium_second a {
     font-weight: 600;
     color: #fff;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     letter-spacing: 1px;
   }
   .medium_second p {
@@ -1327,17 +1348,26 @@ export default {
     width: 100%;
     margin: 0 auto 0;
   }
+  #project_image {
+    margin-left: -1.1rem;
+  }
   .project_details {
-    margin: 1.5rem -6rem 0 0rem;
+    margin: 1.3rem -6rem 0 0rem;
   }
   .project_Title {
+    font-size: 1.9rem;
     width: 22rem;
+    line-height: 38.5px;
   }
   .about_project {
     width: 21.5rem;
+    margin: 0.8rem 0 0.7rem 0rem;
     opacity: 65%;
     letter-spacing: 2px;
-    font-size: 1rem;
+    font-size: 0.9rem;
+  }
+  .project_li a {
+    font-size: 0.9rem;
   }
   .more_projects {
     padding: 0.8rem 1.5rem;

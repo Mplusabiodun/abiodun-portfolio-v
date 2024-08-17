@@ -112,19 +112,19 @@ li:active {
 /* iPad */
 @media only screen and (max-width: 1024px) {
   .container {
-    padding: 2rem 7rem;
-    border-bottom: 1.5px dashed #ffffff6f;
+    padding: 1.2rem 7rem;
+    border-bottom: 1.2px dashed #ffffff6f;
   }
   #logo {
-    width: 4.5rem;
-    height: 4.5rem;
+    width: 4rem;
+    height: 4rem;
     border-radius: 50%;
     border: 1.6px solid #fff;
   }
   #Hamburger {
     display: flex;
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 2rem;
+    height: 2rem;
     margin-top: 1rem;
   }
   .container ul {
@@ -172,16 +172,16 @@ li:active {
 @media only screen and (max-width: 767px) {
   .container {
     width: 100%;
-    padding: 1.2rem 2rem 1.2rem;
-    border-bottom: 1.5px dashed #ffffff6f;
+    padding: 0.7rem 2.2rem 0.7rem;
+    border-bottom: 1px dashed #ffffff6f;
   }
   #logo {
-    width: 3.5rem;
-    height: 3.5rem;
+    width: 3.1rem;
+    height: 3.1rem;
   }
   #Hamburger {
-    width: 2.1rem;
-    height: 2.1rem;
+    width: 1.8rem;
+    height: 1.8rem;
   }
   .hamburger {
     top: 15%;
@@ -190,11 +190,11 @@ li:active {
     padding: 15px 0;
   }
   .fa-xmark {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
   .hamburger li {
     list-style-type: none;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     margin: 1rem 0 1rem -1rem;
   }
 }

@@ -7,9 +7,13 @@
           <img id="project_pics" :src="project.image" alt="" />
         </div>
         <div class="project_details">
-          <h3 class="project_name">{{ project.name }}</h3>
-          <p class="about_project">{{ project.description }}</p>
-          <a :href="project.livelink" target="blank">{{ project.linkName }}</a>
+          <div class="littlepadding">
+            <h3 class="project_name">{{ project.name }}</h3>
+            <p class="about_project">{{ project.description }}</p>
+            <a :href="project.livelink" target="blank">{{
+              project.linkName
+            }}</a>
+          </div>
         </div>
       </li>
     </ul>
@@ -198,10 +202,10 @@ li {
 /* Mobile ----------- */
 @media only screen and (max-width: 767px) {
   .container {
-    padding: 10rem 1.5rem 5rem 0rem;
+    padding: 9rem 2rem 5rem 0.5rem;
   }
   .collection {
-    font-size: 2rem;
+    font-size: 1.8rem;
     width: 20rem;
     letter-spacing: 1.5px;
     line-height: 2.2rem;
@@ -215,6 +219,21 @@ li {
   #project_pics {
     width: 100%;
     height: 18rem;
+  }
+  .project_name {
+    font-size: 1.7rem;
+  }
+  .littlepadding {
+    padding: 0 0.5rem;
+  }
+  .about_project {
+    font-size: 1rem;
+    line-height: 25px;
+    margin: 0.8rem 0;
+    opacity: 0.6;
+  }
+  .project_details a {
+    font-size: 1.1rem;
   }
 }
 </style>

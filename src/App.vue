@@ -133,7 +133,7 @@ export default {
     padding: 0rem 0rem 0;
   }
   .container_footer {
-    padding: 2.5rem 1.5rem 2rem;
+    padding: 2.5rem 2rem 2rem;
   }
 }
 </style>
