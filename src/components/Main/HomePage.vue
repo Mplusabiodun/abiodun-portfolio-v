@@ -10,22 +10,22 @@
       <img
         class="myphotos photo1"
         src="@/assets/mypics/code3.jpg"
-        alt="fataipics1"
+        alt="A_coder"
       />
       <img
         class="myphotos photo2"
         src="@/assets/mypics/code8.jpg"
-        alt="fataipics2"
+        alt="Code_pics"
       />
       <img
         class="myphotos photo3"
         src="@/assets/mypics/code9.jpg"
-        alt="fataipics3"
+        alt="Code_pics"
       />
       <img
         class="myphotos photo4"
         src="@/assets/mypics/code6.jpg"
-        alt="fatai@westernsun"
+        alt="A_coder"
       />
     </div>
     <p
@@ -60,7 +60,7 @@
             src="@/assets/mypics/fatai2.jpg"
             alt="twitter_profile_pics"
           />
-          <h3>@Mplus51610027</h3>
+          <h3>@mplusAbiodun</h3>
           <button>Follow</button>
         </div>
         <div @click="toolbox" class="aboutme toolbox">
@@ -215,7 +215,7 @@
       <ul v-for="project in projects" :key="project.name" class="project_ul">
         <li class="project_li">
           <div class="myproject">
-            <img id="project_image" :src="project.image" alt="laptop_screen" />
+            <img id="project_image" :src="project.image" alt="project_image" />
           </div>
           <div class="project_details">
             <h3 class="project_Title">{{ project.name }}</h3>
@@ -277,7 +277,7 @@ export default {
           name: "ABIODUN PORTFOLIO",
           description:
             "My portfolio is a reflection of my dedication, passion for giving a friendly user interface,  describing my skills, creativity, and commitment to excellence. Each project showcases my ability to adapt and excel in different environments and challenges.",
-          livelink: "https://a-recipe-page.netlify.app/",
+          livelink: "https://m-abiodun-fatai.netlify.app/",
           linkName: "abiodun-portfolio-v",
         },
       ],
@@ -299,7 +299,7 @@ export default {
       )}&body=${encodeURIComponent(body)}`;
     },
     twitter() {
-      window.open("https://twitter.com/Mplus51610027", "_blank");
+      window.open("https://x.com/mplusAbiodun", "_blank");
     },
     resume() {
       window.open(
@@ -1125,6 +1125,9 @@ export default {
     font-weight: 600;
     line-height: 2.8rem;
     text-align: left;
+  }
+  .smile {
+    margin: 0 -3px 0 2px;
   }
   .gladblock {
     display: inline;

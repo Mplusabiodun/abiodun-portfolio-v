@@ -25,7 +25,7 @@ import FavoriteQuotes from "../UI/FavoriteQuotes.vue";
 import audiophile from "@/assets/projects/audiophile.png";
 import recipePage from "@/assets/projects/recipe.png";
 import portfolio from "@/assets/projects/my_portfolio.png";
-import findacoach from "@/assets/projects/find_a_coach.png";
+// import findacoach from "@/assets/projects/find_a_coach.png";
 import technical from "@/assets/projects/technical_docpage.png";
 import drfcc from "@/assets/projects/DrFCC.png";
 import authtest from "@/assets/projects/auth_test.png";
@@ -66,14 +66,14 @@ export default {
           livelink: "https://a-recipe-page.netlify.app/",
           linkName: "abiodun-portfolio-v",
         },
-        {
-          image: findacoach,
-          name: "Find a coach",
-          description:
-            "Find a Coach app is a digital platform designed to connect individuals seeking personal or professional development with qualified coaches. Users can search for coaches based on specialty, experience, location, ratings, and availability. This app aims to streamline the process of finding and connecting with a coach, enhancing accessibility and convenience for users worldwide.",
-          livelink: "https://a-recipe-page.netlify.app/",
-          linkName: "find-a-coach",
-        },
+        // {
+        //   image: findacoach,
+        //   name: "Find a coach",
+        //   description:
+        //     "Find a Coach app is a digital platform designed to connect individuals seeking personal or professional development with qualified coaches. Users can search for coaches based on specialty, experience, location, ratings, and availability. This app aims to streamline the process of finding and connecting with a coach, enhancing accessibility and convenience for users worldwide.",
+        //   livelink: "https://a-recipe-page.netlify.app/",
+        //   linkName: "find-a-coach",
+        // },
         {
           image: palindrome,
           name: "Palindrome Checker",

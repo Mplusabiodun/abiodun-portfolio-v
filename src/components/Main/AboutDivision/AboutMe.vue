@@ -104,7 +104,7 @@
           <div class="experience_details pargraphpadding">
             <h3>{{ experience.role }}</h3>
             <p>{{ experience.year }}</p>
-            <p>
+            <p class="experience_about">
               {{ experience.about }}
             </p>
           </div>
@@ -140,7 +140,7 @@ export default {
       myJourney: [
         "In a world full of possibilities, I believe in the magic of kindness and have always strive to bring a sprinkle of joy to everything I do and everyone around.",
         "A student at Altschool Africa class '23, Creating designs that inspire positive and building applications that made life more easier have been my ultimate goal.",
-        "A fans of nature and I have always love to spend my leisure time enjoying my peaceful thoughts without distraction. I'm always thrilled to meet fellow dreamers, explorers, the journey ahead and stories waiting to be told. Feel free to reach out, and let's create our own fairytale!.",
+        "A fans of nature, love to spend my leisure time enjoying my peaceful thoughts without distraction. I'm always thrilled to meet fellow dreamers, explorers, the journey ahead and stories waiting to be told. Feel free to reach out, and let's create our own fairytale!.",
       ],
       myLearning: [
         "I decided to explore web development before too long. Given my inclination towards visual expression and design, I naturally gravitated towards frontend development.",
@@ -504,6 +504,12 @@ p {
     font-size: 1rem;
     margin: 2rem 0;
     opacity: 80%;
+  }
+  .experience_about {
+    font-size: 1rem;
+    line-height: 1.8rem;
+    letter-spacing: 0.7px;
+    /* opacity: 0.5; */
   }
   .cert {
     gap: 2rem;

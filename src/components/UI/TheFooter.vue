@@ -46,8 +46,11 @@
       <img id="logo" src="@/assets/mpluslogo.png" alt="" />
       <p>
         <em>
-          An enthusiasm frontend developer, lover of nature, football and a big
-          fan of Messi. Thanks for checking out my site!
+          <!-- An enthusiasm frontend developer, lover of nature, football and a big
+          fan of Messi. Thanks for checking out my site! -->
+          A lover of innovation, constantly exploring the newest technologies
+          and trends, to stay ahead of the curve.
+          <span style="display: block">Thanks for checking out my site!</span>
         </em>
       </p>
       <ul class="accounts">
@@ -102,7 +105,7 @@ export default {
       );
     },
     twitter() {
-      window.open("https://x.com/Mplus51610027", "_blank");
+      window.open("https://x.com/mplusAbiodun", "_blank");
     },
     resume() {
       window.open(
