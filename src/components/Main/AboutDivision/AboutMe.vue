@@ -128,6 +128,7 @@
 </template>
 <script>
 import FavoriteQuotes from "@/components/UI/FavoriteQuotes.vue";
+import javascript from "@/assets/certificates/Javascript_FCC.png";
 import responsiveness from "@/assets/certificates/responsiveness.png";
 import softwareCareer from "@/assets/certificates/software_career.png";
 
@@ -159,6 +160,7 @@ export default {
         },
       ],
       accomplishments: [
+        { certificate: javascript, from: "FreeCodeCamp" },
         { certificate: responsiveness, from: "FreeCodeCamp" },
         { certificate: softwareCareer, from: "Udemy" },
       ],

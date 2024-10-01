@@ -23,8 +23,13 @@
 <script>
 import FavoriteQuotes from "../UI/FavoriteQuotes.vue";
 import audiophile from "@/assets/projects/audiophile.png";
-import recipePage from "@/assets/projects/recipe.png";
+import cashRegister from "@/assets/projects/cash_register.png";
+import pokemon from "@/assets/projects/pokemon.png";
 import portfolio from "@/assets/projects/my_portfolio.png";
+import authorsPageAPI from "@/assets/projects/authors_page.png";
+import fccForum from "@/assets/projects/fcc_forum.png";
+import telephoneNumberValidator from "@/assets/projects/telephone_no_validator.png";
+import recipePage from "@/assets/projects/recipe.png";
 // import findacoach from "@/assets/projects/find_a_coach.png";
 import technical from "@/assets/projects/technical_docpage.png";
 import drfcc from "@/assets/projects/DrFCC.png";
@@ -34,6 +39,7 @@ import colormarkers from "@/assets/projects/colormarkers2.png";
 import counterhook from "@/assets/projects/counterhook.png";
 import photogallery from "@/assets/projects/photogallery.png";
 import palindrome from "@/assets/projects/palindrome.png";
+import romanConverter from "@/assets/projects/roman_converter.png";
 
 export default {
   components: {
@@ -51,6 +57,21 @@ export default {
           linkName: "audiophile-ecommerce",
         },
         {
+          image: cashRegister,
+          name: "Cash Register App",
+          description: `The cash register app return change to the customer based on the price of the item, the amount of cash provided by the customer and the amount of cash in the cash drawer. It also shows different messages in different scenarios, such as when the customer provides too little cash or when the cash drawer doesn't have enough to issue the correct change `,
+          livelink: "https://cash-register-fccamp.netlify.app/",
+          linkName: "cash-register-app",
+        },
+        {
+          image: pokemon,
+          name: "Pokémon Search App",
+          description:
+            "The Pokémon search app allows users to look up detailed information about various Pokémon species. Here are some typical features that the app include: Pokémon Database, Search and Filter, Pokédex Functionality, Stat Charts and Comparisons.",
+          livelink: "https://pokemon-searc-happ.netlify.app/",
+          linkName: "pokémon-search-app",
+        },
+        {
           image: recipePage,
           name: "Recipe Page",
           description:
@@ -65,6 +86,27 @@ export default {
             "My portfolio is a reflection of my dedication, passion for giving a friendly user interface,  describing my skills, creativity, and commitment to excellence. Each project showcases my ability to adapt and excel in different environments and challenges.",
           livelink: "https://a-recipe-page.netlify.app/",
           linkName: "abiodun-portfolio-v",
+        },
+        {
+          image: authorsPageAPI,
+          name: "Authors Page",
+          description: `The Authors page project helps on how to use the fetch method, then dynamically update the DOM to display the fetched data. And also paginating data in order to load results in batches.`,
+          livelink: "https://authors-page-api-fcc.netlify.app/",
+          linkName: "authors-page-API",
+        },
+        {
+          image: fccForum,
+          name: "FreeCodeCamp Forum",
+          description: `This project helps to gain proficiency in asynchronous concepts. Buildig freeCodeCamp forum leaderboard, this project cover the Fetch API, promises, Async/Await, and the try..catch statement. `,
+          livelink: "https://fcc-forum-l-aysnc-await.netlify.app/",
+          linkName: "freeCodeCamp-forum",
+        },
+        {
+          image: telephoneNumberValidator,
+          name: "Telephone Number Validator",
+          description: `The telephone number validator is a program used to verify whether a given phone number is formatted correctly and potentially valid. Validators can be designed to check for different formats depending on the country and type of phone number (e.g., mobile, landline). `,
+          livelink: "https://telephone-number-validatorapp.netlify.app/",
+          linkName: "telephone-number-validator",
         },
         // {
         //   image: findacoach,
@@ -81,6 +123,14 @@ export default {
             "A palindrome is a word or phrase that can be read the same way forwards and backwards, ignoring punctuation, case, and spacing.",
           livelink: "https://palindromechecke-r.netlify.app/",
           linkName: "palindrome-checker",
+        },
+        {
+          image: romanConverter,
+          name: "Roman Numeral Converter",
+          description:
+            "Roman numerals are based on seven symbols and can be written using various combinations to represent Arabic numerals. The Roman numeral converter helps to conver numbers to roman numbers.",
+          livelink: "https://romannumeral-converter.netlify.app/",
+          linkName: "roman-numeral-converter",
         },
         {
           image: technical,
