@@ -216,12 +216,14 @@ li {
 .pics_cont {
   overflow: hidden;
   width: 100%;
+  /* width: 50rem; */
   height: 25rem;
   border-radius: 1.2rem;
   margin-bottom: 1rem;
 }
 #project_pics {
   width: 100%;
+  /* width: 50rem; */
   height: 25rem;
 }
 .project_name {

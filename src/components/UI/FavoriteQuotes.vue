@@ -93,6 +93,7 @@ export default {
 .fav_cont {
   display: flex;
   margin: 8rem 0 0;
+  justify-content: center;
 }
 .will_you {
   width: 24rem;

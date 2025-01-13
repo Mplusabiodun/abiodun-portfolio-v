@@ -356,9 +356,11 @@ export default {
 .images {
   display: flex;
   margin: 4rem auto;
+  justify-content: center;
+  opacity: 0.9;
 }
 .myphotos {
-  width: 13rem;
+  width: 14rem;
   height: 22rem;
   border-radius: 1.7rem;
   margin: 0 0.5rem 0 0;
@@ -814,36 +816,46 @@ export default {
 /* PROJECT START */
 .project_ul {
   margin-bottom: 3rem;
+  /* background: red; */
 }
 .project_li {
   list-style-type: none;
   margin: 5rem 0 0 1rem;
   display: flex;
   text-align: left;
+  /* background: red; */
+  /* justify-content: center; */
 }
 .myproject {
-  width: 26rem;
-  height: 18rem;
+  /* width: 26rem; */
+  /* height: 18rem; */
+  width: 33rem;
+  height: 22rem;
   overflow: hidden;
   border: 2px solid rgba(82, 118, 191, 0.3);
   border-radius: 20px;
-  margin: 0 4rem 0 0;
+  /* margin: 0 4rem 0 0; */
+  margin: 0 10rem 0 0;
 }
 #project_image {
-  width: 26.5rem;
-  height: 18rem;
+  /* width: 26.5rem;
+  height: 18rem; */
+  width: 33.5rem;
+  height: 22rem;
 }
 .project_details {
   margin: 1.7rem 0 0 0;
 }
 .project_Title {
-  width: 26rem;
-  font-size: 2.1rem;
-  line-height: 40px;
+  /* width: 26rem;
+  font-size: 2.1rem; */
+  /* width: 29rem; */
+  font-size: 2.8rem;
+  line-height: 45px;
   letter-spacing: 1px;
 }
 .about_project {
-  width: 27rem;
+  width: 29rem;
   margin: 1.5rem 0 1rem 0rem;
   opacity: 60%;
   font-size: 0.9rem;

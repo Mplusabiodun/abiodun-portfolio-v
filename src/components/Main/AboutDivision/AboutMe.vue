@@ -1,7 +1,7 @@
 <template>
   <section class="container">
     <h2 class="greetings">
-      <span class="good">{{ greeting }},</span> I'm so glad you stopped by!,
+      <span class="good">{{ greetings }},</span> I'm so glad you stopped by!,
       feel free to explore.
     </h2>
     <!-- container 2 -->
@@ -15,7 +15,7 @@
         </p>
         <img class="fatai" src="@/assets/mypics/fataisnap.jpg" alt="Fatai" />
         <h3 class="started">
-          I Started my creativity journey years back and I can proudly say I
+          I started my creativity journey years back and I can proudly say I
           learned from the best, always on the lookout for my next adventure.
         </h3>
         <div class="pargraphpadding">
@@ -171,11 +171,11 @@ export default {
     updateGreeting() {
       const currentHour = new Date().getHours();
       if (5 <= currentHour && currentHour < 12) {
-        this.greeting = "Good Morning";
+        this.greetings = "Good Morning";
       } else if (12 <= currentHour && currentHour < 18) {
-        this.greeting = "Good Afternoon";
+        this.greetings = "Good Afternoon";
       } else {
-        this.greeting = "Good Evening";
+        this.greetings = "Good Evening";
       }
       // console.log(currentHour);
       // console.log(new Date());
@@ -211,6 +211,8 @@ export default {
   display: flex;
   width: 90%;
   margin: 4rem auto 0;
+  justify-content: center;
+  /* background: red; */
 }
 .container3 {
   margin: 0rem auto 0;
