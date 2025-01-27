@@ -216,14 +216,12 @@ li {
 .pics_cont {
   overflow: hidden;
   width: 100%;
-  /* width: 50rem; */
   height: 25rem;
   border-radius: 1.2rem;
   margin-bottom: 1rem;
 }
 #project_pics {
   width: 100%;
-  /* width: 50rem; */
   height: 25rem;
 }
 .project_name {
@@ -266,11 +264,14 @@ li {
     margin: 5rem 0 0 -1rem;
   }
   .pics_cont {
+    width: 20rem;
     height: 18rem;
   }
   #project_pics {
-    width: 100%;
+    /* width: 100%; */
+    width: 20rem;
     height: 18rem;
+    object-fit: contain;
   }
   .project_name {
     font-size: 1.7rem;

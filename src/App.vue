@@ -106,7 +106,7 @@ export default {
   top: 0;
   right: 0;
   left: 0;
-  z-index: 50;
+  z-index: 1000;
 }
 .container_footer {
   background: rgb(2, 7, 25);

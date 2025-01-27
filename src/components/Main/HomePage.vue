@@ -816,30 +816,22 @@ export default {
 /* PROJECT START */
 .project_ul {
   margin-bottom: 3rem;
-  /* background: red; */
 }
 .project_li {
   list-style-type: none;
   margin: 5rem 0 0 1rem;
   display: flex;
   text-align: left;
-  /* background: red; */
-  /* justify-content: center; */
 }
 .myproject {
-  /* width: 26rem; */
-  /* height: 18rem; */
   width: 33rem;
   height: 22rem;
   overflow: hidden;
   border: 2px solid rgba(82, 118, 191, 0.3);
   border-radius: 20px;
-  /* margin: 0 4rem 0 0; */
   margin: 0 10rem 0 0;
 }
 #project_image {
-  /* width: 26.5rem;
-  height: 18rem; */
   width: 33.5rem;
   height: 22rem;
 }
